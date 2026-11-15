@@ -1,0 +1,9 @@
+{
+  "schemaVersion": "1.0",
+  "description": "Field Verse demonstration regions. Observations are real prepared data (see each observations.json). Rotations, scenarios and gap candidates are ILLUSTRATIVE DEMO FIXTURES, not ML predictions.",
+  "regions": [
+    { "id": "sri-lanka-anuradhapura", "folder": "sri-lanka" },
+    { "id": "kenya-nakuru", "folder": "kenya" },
+    { "id": "brazil-mato-grosso", "folder": "brazil" }
+  ]
+}

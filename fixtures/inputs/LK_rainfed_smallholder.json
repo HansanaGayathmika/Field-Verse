@@ -1,0 +1,26 @@
+{
+ "location": {
+  "lat": 8.2632,
+  "lon": 80.2082
+ },
+ "current_crop": "wetland_rice",
+ "harvest_month": 2,
+ "previous_crop": "fallow",
+ "previous_crop_2": "wetland_rice",
+ "next_planting_month": 4,
+ "seasons_per_year": 2,
+ "water_access": "rainfall_only",
+ "waterlogging": "days",
+ "input_level": "moderate",
+ "soil_texture": "unknown",
+ "soil_ph": null,
+ "excluded_crops": [],
+ "priorities": {
+  "water_saving": "very_important",
+  "soil_health": "important",
+  "risk_reduction": "important",
+  "income": "important",
+  "fallow_use": "slightly_important",
+  "food_security": "slightly_important"
+ }
+}

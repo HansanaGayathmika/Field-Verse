@@ -1,0 +1,72 @@
+{
+  "schemaVersion": "1.0",
+  "provider": "demo",
+  "name": "FieldVerse Demo Analysis Adapter (illustrative fixtures — no ML)",
+  "modelVersion": null,
+  "status": "ready",
+  "capabilities": {
+    "rotationComparison": true,
+    "climateScenario": true,
+    "gapAnalysis": true,
+    "constraints": "rules",
+    "scenarioInput": "presets"
+  },
+  "supportedRegions": [
+    "sri-lanka-anuradhapura",
+    "kenya-nakuru",
+    "brazil-mato-grosso"
+  ],
+  "supportedCrops": [
+    "rice",
+    "maize",
+    "mung-bean",
+    "cowpea",
+    "common-bean",
+    "sorghum",
+    "soybean",
+    "sunn-hemp",
+    "lablab",
+    "wheat",
+    "cassava"
+  ],
+  "scenarioPresets": [
+    {
+      "rainfallChangePercent": 0,
+      "temperatureChangeCelsius": 0,
+      "id": "baseline",
+      "label": "Today's climate (baseline)",
+      "description": "Observed 2001–2025 average conditions."
+    },
+    {
+      "rainfallChangePercent": -20,
+      "temperatureChangeCelsius": 0,
+      "id": "drier",
+      "label": "20% less rain",
+      "description": "What if every month had a fifth less rain?"
+    },
+    {
+      "rainfallChangePercent": 20,
+      "temperatureChangeCelsius": 0,
+      "id": "wetter",
+      "label": "20% more rain",
+      "description": "What if every month had a fifth more rain?"
+    },
+    {
+      "rainfallChangePercent": 0,
+      "temperatureChangeCelsius": 2,
+      "id": "hotter",
+      "label": "2 °C warmer",
+      "description": "What if every month were 2 °C warmer?"
+    },
+    {
+      "rainfallChangePercent": -20,
+      "temperatureChangeCelsius": 2,
+      "id": "hot-dry",
+      "label": "Hotter and drier",
+      "description": "20% less rain and 2 °C warmer together."
+    }
+  ],
+  "trainingDataSummary": null,
+  "lastUpdated": null,
+  "notes": "Returns prepared demonstration content only. Replace with ANALYSIS_PROVIDER=remote once the AI/ML FastAPI service is available."
+}

@@ -1,0 +1,15 @@
+{
+  "schemaVersion": "1.0",
+  "fixtureType": "illustrative_demo",
+  "note": "Demo crop calendar for a typical rice field near Anuradhapura, and hand-picked gap candidates. Fit is calculated by a documented rule (crop duration vs. idle window length); it is NOT a model prediction.",
+  "calendar": [
+    { "cropId": "rice", "label": "Maha rice", "months": [10, 11, 12, 1, 2], "plantingMonths": [10, 11], "harvestMonths": [2], "sourceType": "demo" },
+    { "cropId": "rice", "label": "Yala rice (when water allows)", "months": [4, 5, 6, 7, 8], "plantingMonths": [4, 5], "harvestMonths": [8], "sourceType": "demo" }
+  ],
+  "defaultIdleMonths": [3, 9],
+  "candidates": [
+    { "cropId": "mung-bean", "role": "short_season", "benefits": ["Short crop that uses less water than rice.", "Legume that may add nitrogen."], "risks": ["Damaged by waterlogging.", "Heavy rain at harvest can spoil pods."], "explanation": "Commonly discussed as a short-season crop on paddy land in the Dry Zone." },
+    { "cropId": "cowpea", "role": "short_season", "benefits": ["Copes with heat and dry spells.", "Food for the household and possible sale."], "risks": ["Does not like waterlogged soils.", "Insect pests can damage pods."], "explanation": "A hardy legume that can fit short dry windows." },
+    { "cropId": "sunn-hemp", "role": "cover", "benefits": ["Protects bare soil.", "Adds organic matter when turned in."], "risks": ["Needs some moisture to establish.", "Seed may be hard to find."], "explanation": "A green-manure cover crop for a gap before the main season." }
+  ]
+}

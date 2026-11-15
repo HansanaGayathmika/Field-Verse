@@ -1,0 +1,137 @@
+{
+  "schemaVersion": "1.0",
+  "fixtureType": "illustrative_demo",
+  "note": "ILLUSTRATIVE DEMO FIXTURE prepared by the Field Verse SE team. NOT ML predictions or agronomic recommendations. Indicator ratings are illustrative 1–5 values chosen by people from general crop knowledge.",
+  "appliesTo": { "currentCrops": ["soybean"] },
+  "limitations": [
+    "Demo strategies were prepared by hand for a typical rain-fed soybean farm near Sorriso; they are not calculated for your exact field.",
+    "No market prices, logistics or input costs were used.",
+    "Soil values come from a global estimate (SoilGrids), not a soil test of your field."
+  ],
+  "strategies": [
+    {
+      "id": "current-soybean-maize",
+      "name": "Soybean – Second-crop maize (current)",
+      "kind": "current",
+      "summary": "Soybean in the main wet season, then maize planted right after harvest to use the last rains.",
+      "steps": [
+        { "cropId": "soybean", "role": "main", "season": { "name": "Main season", "startMonth": 10, "endMonth": 1 }, "plantingWindow": { "startMonth": 9, "endMonth": 10 } },
+        { "cropId": "maize", "role": "main", "season": { "name": "Second crop", "startMonth": 2, "endMonth": 6 }, "plantingWindow": { "startMonth": 2, "endMonth": 2 } },
+        { "cropId": "fallow", "role": "fallow", "season": { "name": "Dry season", "startMonth": 7, "endMonth": 9 } }
+      ],
+      "feasibility": { "status": "feasible", "reasons": ["This double-crop pattern is widely used in the region."] },
+      "suitability": { "level": "medium", "score": null, "scoreType": "none", "sourceType": "demo" },
+      "indicators": [
+        { "id": "water_demand", "label": "Water needed", "rating": 3, "direction": "lower_is_better", "ratingType": "illustrative", "sourceType": "demo", "explanation": "Both crops are rain-fed; maize needs moisture late in the season." },
+        { "id": "soil_cover", "label": "Soil cover through the year", "rating": 3, "direction": "higher_is_better", "ratingType": "illustrative", "sourceType": "demo", "explanation": "Field is bare in the dry season (July–September)." },
+        { "id": "nitrogen_contribution", "label": "Natural nitrogen added", "rating": 3, "direction": "higher_is_better", "ratingType": "illustrative", "sourceType": "demo", "explanation": "Soybean is a legume." },
+        { "id": "climate_risk", "label": "Exposure to dry spells", "rating": 4, "direction": "lower_is_better", "ratingType": "illustrative", "sourceType": "demo", "explanation": "Second-crop maize is exposed if the rains stop early." },
+        { "id": "income_opportunity", "label": "Range of products to sell", "rating": 4, "direction": "higher_is_better", "ratingType": "illustrative", "sourceType": "demo", "explanation": "Two commodities. No price data was used." }
+      ],
+      "water": { "relativeDemand": "similar", "notes": ["NASA POWER shows rain falls sharply from about 112 mm in April to about 30 mm in May, so late maize is exposed."], "sourceType": "observed" },
+      "soilCover": { "monthsCovered": 9, "notes": ["Bare during the dry season unless residues are kept."], "sourceType": "demo" },
+      "benefits": [
+        { "text": "Two harvests from the same land each year.", "sourceType": "demo" },
+        { "text": "Soybean is a legume and may leave some nitrogen for the maize.", "sourceType": "estimated" }
+      ],
+      "risks": [
+        { "text": "If soybean is planted late, the maize grows into the dry season and yields can drop.", "severity": "high", "sourceType": "observed" },
+        { "text": "Repeated soybean can build up soybean pests and diseases.", "severity": "medium", "sourceType": "estimated" }
+      ],
+      "explanation": {
+        "summary": "This is your current pattern, shown as the starting point for comparison.",
+        "details": ["Rainfall data shows a long wet season, then almost no rain from May to September."],
+        "technical": "Baseline strategy. Indicator ratings are illustrative demo values."
+      },
+      "dataGaps": [
+        { "id": "planting-date", "text": "Your actual soybean planting and harvest dates.", "impact": "high" },
+        { "id": "field-soil-test", "text": "No soil test of your field is available.", "impact": "medium" }
+      ],
+      "localChecks": ["Check the agricultural zoning calendar (planting windows) for your municipality."],
+      "uncertainty": { "level": "high", "notes": "Illustrative demo content; no model has evaluated this field." }
+    },
+    {
+      "id": "alt-soybean-sorghum",
+      "name": "Soybean – Second-crop sorghum",
+      "kind": "alternative",
+      "summary": "Soybean in the main season, then sorghum, which copes better if the rains end early.",
+      "steps": [
+        { "cropId": "soybean", "role": "main", "season": { "name": "Main season", "startMonth": 10, "endMonth": 1 }, "plantingWindow": { "startMonth": 9, "endMonth": 10 } },
+        { "cropId": "sorghum", "role": "main", "season": { "name": "Second crop", "startMonth": 2, "endMonth": 5 }, "plantingWindow": { "startMonth": 2, "endMonth": 3 } },
+        { "cropId": "fallow", "role": "fallow", "season": { "name": "Dry season", "startMonth": 6, "endMonth": 9 } }
+      ],
+      "feasibility": { "status": "feasible", "reasons": ["Sorghum is often discussed as a second crop when planting is late."] },
+      "suitability": { "level": "medium", "score": null, "scoreType": "none", "sourceType": "demo" },
+      "indicators": [
+        { "id": "water_demand", "label": "Water needed", "rating": 2, "direction": "lower_is_better", "ratingType": "illustrative", "sourceType": "demo", "explanation": "Sorghum generally needs less water than maize." },
+        { "id": "soil_cover", "label": "Soil cover through the year", "rating": 3, "direction": "higher_is_better", "ratingType": "illustrative", "sourceType": "demo", "explanation": "Bare in the driest months." },
+        { "id": "nitrogen_contribution", "label": "Natural nitrogen added", "rating": 3, "direction": "higher_is_better", "ratingType": "illustrative", "sourceType": "demo", "explanation": "Soybean is a legume." },
+        { "id": "climate_risk", "label": "Exposure to dry spells", "rating": 2, "direction": "lower_is_better", "ratingType": "illustrative", "sourceType": "demo", "explanation": "Sorghum tolerates heat and dry spells better than maize." },
+        { "id": "income_opportunity", "label": "Range of products to sell", "rating": 3, "direction": "higher_is_better", "ratingType": "illustrative", "sourceType": "demo", "explanation": "Sorghum markets can be smaller than maize. No price data used." }
+      ],
+      "water": { "relativeDemand": "lower", "notes": ["Better matched to the falling rainfall in April–May (NASA POWER)."], "sourceType": "observed" },
+      "soilCover": { "monthsCovered": 8, "notes": ["Bare from June to September."], "sourceType": "demo" },
+      "benefits": [
+        { "text": "Lower risk when the rains finish early.", "sourceType": "estimated" },
+        { "text": "Allows a slightly later second-crop planting than maize.", "sourceType": "estimated" }
+      ],
+      "risks": [
+        { "text": "Sorghum markets and prices may be less attractive than maize locally.", "severity": "medium", "sourceType": "demo" },
+        { "text": "Birds can damage sorghum grain heads.", "severity": "low", "sourceType": "estimated" }
+      ],
+      "explanation": {
+        "summary": "This option lowers dry-season risk for the second crop by choosing a more drought-tolerant grain.",
+        "details": ["Rainfall data shows a steep drop after April, which is when the second crop is filling grain."],
+        "technical": "Illustrative demo strategy. Indicator ratings are hand-prepared, not model outputs."
+      },
+      "dataGaps": [
+        { "id": "market", "text": "Local sorghum buyers and prices.", "impact": "high" },
+        { "id": "planting-date", "text": "Your soybean harvest date.", "impact": "medium" }
+      ],
+      "localChecks": ["Talk with local buyers or cooperatives about sorghum demand."],
+      "uncertainty": { "level": "high", "notes": "Illustrative demo content." }
+    },
+    {
+      "id": "alt-soybean-sunn-hemp",
+      "name": "Soybean – Sunn hemp cover",
+      "kind": "alternative",
+      "summary": "Soybean in the main season, then a sunn hemp cover crop to protect and build the soil.",
+      "steps": [
+        { "cropId": "soybean", "role": "main", "season": { "name": "Main season", "startMonth": 10, "endMonth": 1 }, "plantingWindow": { "startMonth": 9, "endMonth": 10 } },
+        { "cropId": "sunn-hemp", "role": "cover", "season": { "name": "Cover crop", "startMonth": 2, "endMonth": 4 } },
+        { "cropId": "fallow", "role": "fallow", "season": { "name": "Dry season (residue cover)", "startMonth": 5, "endMonth": 9 }, "notes": "Cover-crop residue left on the surface." }
+      ],
+      "feasibility": { "status": "feasible", "reasons": ["Sunn hemp is a fast cover crop that can use the late wet-season rains."] },
+      "suitability": { "level": "medium", "score": null, "scoreType": "none", "sourceType": "demo" },
+      "indicators": [
+        { "id": "water_demand", "label": "Water needed", "rating": 2, "direction": "lower_is_better", "ratingType": "illustrative", "sourceType": "demo", "explanation": "A short cover crop in the wet months." },
+        { "id": "soil_cover", "label": "Soil cover through the year", "rating": 4, "direction": "higher_is_better", "ratingType": "illustrative", "sourceType": "demo", "explanation": "Residue can protect soil into the dry season." },
+        { "id": "nitrogen_contribution", "label": "Natural nitrogen added", "rating": 5, "direction": "higher_is_better", "ratingType": "illustrative", "sourceType": "demo", "explanation": "Two legumes in the rotation." },
+        { "id": "climate_risk", "label": "Exposure to dry spells", "rating": 2, "direction": "lower_is_better", "ratingType": "illustrative", "sourceType": "demo", "explanation": "No second cash crop at risk from early dry season." },
+        { "id": "income_opportunity", "label": "Range of products to sell", "rating": 2, "direction": "higher_is_better", "ratingType": "illustrative", "sourceType": "demo", "explanation": "Gives up the second harvest. No price data used." }
+      ],
+      "water": { "relativeDemand": "lower", "notes": ["Uses February–April rains (about 110–260 mm per month, NASA POWER)."], "sourceType": "observed" },
+      "soilCover": { "monthsCovered": 10, "notes": ["Residue cover through much of the dry season."], "sourceType": "demo" },
+      "benefits": [
+        { "text": "Builds soil organic matter and protects soil from erosion.", "sourceType": "estimated" },
+        { "text": "Some farmers use sunn hemp to help manage certain soil pests (nematodes) — verify locally.", "sourceType": "estimated" },
+        { "text": "Lower cash risk than a late second crop.", "sourceType": "demo" }
+      ],
+      "risks": [
+        { "text": "No second harvest to sell this year.", "severity": "high", "sourceType": "demo" },
+        { "text": "Cover-crop seed and sowing add cost.", "severity": "medium", "sourceType": "demo" }
+      ],
+      "explanation": {
+        "summary": "This option trades the second harvest for longer-term soil benefits.",
+        "details": ["Useful in years when soybean is harvested too late for a safe second crop."],
+        "technical": "Illustrative demo strategy. Indicator ratings are hand-prepared, not model outputs."
+      },
+      "dataGaps": [
+        { "id": "economics", "text": "Whether the soil benefit pays back the lost second harvest on your farm.", "impact": "high" },
+        { "id": "seed", "text": "Sunn hemp seed price and availability.", "impact": "medium" }
+      ],
+      "localChecks": ["Ask a local agronomist whether a cover-crop year suits your soil and pest situation."],
+      "uncertainty": { "level": "high", "notes": "Illustrative demo content; soil benefits build over several years." }
+    }
+  ]
+}

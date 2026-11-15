@@ -1,0 +1,1093 @@
+{
+ "knowledge_base_version": "starter-0.1 (unreviewed by agronomists)",
+ "farmer_input_normalised": {
+  "lat": 8.2632,
+  "lon": 80.2082,
+  "current_crop": "wetland_rice",
+  "previous_crop": "wetland_rice",
+  "previous_crop_2": "wetland_rice",
+  "harvested": true,
+  "harvest_month": null,
+  "next_planting_month": 4,
+  "seasons_per_year": 2,
+  "water_access": "reliable_irrigation",
+  "waterlogging": "none",
+  "input_level": "high",
+  "soil_texture": "clay",
+  "soil_ph": 6.4,
+  "excluded_crops": [
+   "wheat"
+  ],
+  "priorities": {
+   "water_saving": "important",
+   "soil_health": "slightly_important",
+   "risk_reduction": "slightly_important",
+   "income": "very_important",
+   "fallow_use": "important",
+   "food_security": "not_important"
+  }
+ },
+ "assumptions": [],
+ "warnings": [],
+ "site_profile": {
+  "gaez_cell_id": "r980c3122",
+  "gaez_cell_lat": 8.291667,
+  "gaez_cell_lon": 80.208333,
+  "distance_to_cell_km": 3.2,
+  "gaez_classes_by_management": {
+   "HRLM": {
+    "wetland_rice": 4,
+    "maize": 1,
+    "soybean": 1,
+    "wheat": 8,
+    "sorghum": 2,
+    "pearl_millet": 4,
+    "phaseolus_bean": 2,
+    "cowpea": 1,
+    "pigeonpea": 1,
+    "groundnut": 1,
+    "sesame": 2,
+    "sweet_potato": 2
+   },
+   "HILM": {
+    "wetland_rice": 2,
+    "maize": 1,
+    "soybean": 1,
+    "wheat": 8,
+    "sorghum": 1,
+    "pearl_millet": 3,
+    "phaseolus_bean": 2,
+    "cowpea": 1,
+    "pigeonpea": 1,
+    "groundnut": 1,
+    "sesame": 2,
+    "sweet_potato": 1
+   },
+   "LRLM": {
+    "wetland_rice": 5,
+    "maize": 2,
+    "soybean": 4,
+    "wheat": 8,
+    "sorghum": 3,
+    "pearl_millet": 4,
+    "phaseolus_bean": 4,
+    "cowpea": 4,
+    "pigeonpea": 2,
+    "groundnut": 4,
+    "sesame": 4,
+    "sweet_potato": 4
+   },
+   "LILM": {
+    "wetland_rice": 3,
+    "maize": 2,
+    "soybean": 4,
+    "wheat": 8,
+    "sorghum": 3,
+    "pearl_millet": 4,
+    "phaseolus_bean": 4,
+    "cowpea": 3,
+    "pigeonpea": 2,
+    "groundnut": 3,
+    "sesame": 4,
+    "sweet_potato": 3
+   }
+  },
+  "soil": {
+   "ph": 5.87,
+   "clay_pct": 27.0,
+   "sand_pct": 49.9,
+   "silt_pct": 23.1,
+   "organic_carbon_g_kg": 25.8,
+   "total_nitrogen_g_kg": 2.08,
+   "texture_class": "loam",
+   "source": "SoilGrids 5 km, 0-30 cm depth-weighted, at the suitability cell"
+  },
+  "rainfall": {
+   "source": "GPM IMERG monthly 11 years at site AS01 (0 km away)",
+   "monthly_mean_mm": [
+    80.9,
+    60.8,
+    66.6,
+    151.5,
+    195.6,
+    42.9,
+    42.9,
+    70.5,
+    100.5,
+    243.2,
+    303.2,
+    183.5
+   ],
+   "monthly_cv": [
+    0.82,
+    0.64,
+    0.83,
+    0.51,
+    0.61,
+    0.39,
+    1.06,
+    0.57,
+    0.54,
+    0.51,
+    0.35,
+    0.53
+   ],
+   "annual_mm": 1542.0,
+   "wet_months_ge_100mm": 6
+  },
+  "neighbourhood_variation_classes": 1.42,
+  "seasons_per_year_used": 2,
+  "season_plan": [
+   {
+    "season": 1,
+    "plant_month": "Apr"
+   },
+   {
+    "season": 2,
+    "plant_month": "Oct"
+   },
+   {
+    "season": 3,
+    "plant_month": "Apr"
+   }
+  ],
+  "minimum_suitability_score_used": 40
+ },
+ "crops_considered": [
+  {
+   "crop": "wetland_rice",
+   "eligible_in_seasons": [
+    1,
+    2,
+    3
+   ],
+   "suitability_score": 85.0,
+   "why_not": []
+  },
+  {
+   "crop": "maize",
+   "eligible_in_seasons": [
+    1,
+    2,
+    3
+   ],
+   "suitability_score": 100.0,
+   "why_not": []
+  },
+  {
+   "crop": "soybean",
+   "eligible_in_seasons": [
+    1,
+    2,
+    3
+   ],
+   "suitability_score": 100.0,
+   "why_not": []
+  },
+  {
+   "crop": "wheat",
+   "eligible_in_seasons": [],
+   "suitability_score": 0.0,
+   "why_not": [
+    "excluded by the farmer"
+   ]
+  },
+  {
+   "crop": "sorghum",
+   "eligible_in_seasons": [
+    1,
+    2,
+    3
+   ],
+   "suitability_score": 100.0,
+   "why_not": []
+  },
+  {
+   "crop": "pearl_millet",
+   "eligible_in_seasons": [
+    1,
+    2,
+    3
+   ],
+   "suitability_score": 70.0,
+   "why_not": []
+  },
+  {
+   "crop": "phaseolus_bean",
+   "eligible_in_seasons": [
+    1,
+    2,
+    3
+   ],
+   "suitability_score": 85.0,
+   "why_not": []
+  },
+  {
+   "crop": "cowpea",
+   "eligible_in_seasons": [
+    1,
+    2,
+    3
+   ],
+   "suitability_score": 100.0,
+   "why_not": []
+  },
+  {
+   "crop": "pigeonpea",
+   "eligible_in_seasons": [
+    1,
+    2,
+    3
+   ],
+   "suitability_score": 100.0,
+   "why_not": []
+  },
+  {
+   "crop": "groundnut",
+   "eligible_in_seasons": [
+    1,
+    2,
+    3
+   ],
+   "suitability_score": 100.0,
+   "why_not": []
+  },
+  {
+   "crop": "sesame",
+   "eligible_in_seasons": [
+    1,
+    2,
+    3
+   ],
+   "suitability_score": 85.0,
+   "why_not": []
+  },
+  {
+   "crop": "sweet_potato",
+   "eligible_in_seasons": [
+    1,
+    2,
+    3
+   ],
+   "suitability_score": 100.0,
+   "why_not": []
+  }
+ ],
+ "confidence": {
+  "level": "High",
+  "score": 95,
+  "reasons": [],
+  "note": "Heuristic: points are deducted for each unknown or weak input. Not a statistical probability."
+ },
+ "status": "ok",
+ "status_note": "",
+ "plans": [
+  {
+   "option": 1,
+   "label": "Best match to your priorities",
+   "sequence": [
+    {
+     "season": 1,
+     "plant_month": "Apr",
+     "crop": "pigeonpea",
+     "crop_name": "Pigeonpea",
+     "suitability_score": 100.0,
+     "suitability_range": [
+      100.0,
+      100.0
+     ],
+     "approx_duration_days": 168,
+     "rain_fit": {
+      "ratio": 0.76,
+      "status": "marginal"
+     },
+     "gaez_classes_at_site": {
+      "HRLM": 1,
+      "HILM": 1,
+      "LRLM": 2,
+      "LILM": 2
+     },
+     "notes": [
+      "needs an early-maturing variety (about 168 days) to fit the season"
+     ]
+    },
+    {
+     "season": 2,
+     "plant_month": "Oct",
+     "crop": "maize",
+     "crop_name": "Maize",
+     "suitability_score": 100.0,
+     "suitability_range": [
+      100.0,
+      100.0
+     ],
+     "approx_duration_days": 115,
+     "rain_fit": {
+      "ratio": 0.82,
+      "status": "good"
+     },
+     "gaez_classes_at_site": {
+      "HRLM": 1,
+      "HILM": 1,
+      "LRLM": 2,
+      "LILM": 2
+     },
+     "notes": []
+    },
+    {
+     "season": 3,
+     "plant_month": "Apr",
+     "crop": "pigeonpea",
+     "crop_name": "Pigeonpea",
+     "suitability_score": 100.0,
+     "suitability_range": [
+      100.0,
+      100.0
+     ],
+     "approx_duration_days": 168,
+     "rain_fit": {
+      "ratio": 0.76,
+      "status": "marginal"
+     },
+     "gaez_classes_at_site": {
+      "HRLM": 1,
+      "HILM": 1,
+      "LRLM": 2,
+      "LILM": 2
+     },
+     "notes": [
+      "needs an early-maturing variety (about 168 days) to fit the season"
+     ]
+    }
+   ],
+   "scores": {
+    "agronomic_fit": 100.0,
+    "composite": 88.3,
+    "goals": {
+     "water_saving": 79.6,
+     "soil_health": 85.0,
+     "risk_reduction": 85.4,
+     "income": 65.0,
+     "fallow_use": 82.6,
+     "food_security": 100.0
+    }
+   },
+   "benefits": [
+    {
+     "goal": "soil_health",
+     "title": "Nitrogen and yield carry-over from legumes",
+     "text": "Legume-to-next-crop sequences in this plan (pigeonpea then maize) are the pattern that rotation studies link to higher yield in the following crop: 23% on average for legume pre-crops versus 16% for non-legumes in 3,663 field comparisons worldwide.",
+     "evidence_level": "meta-analysis (peer-reviewed)",
+     "conditions": [
+      "Average of many trials, not a forecast for your field; roughly one trial in four showed no gain or a loss.",
+      "The gain shrinks where nitrogen fertiliser use is high - you reported high input use, so expect less."
+     ],
+     "sources": [
+      {
+       "id": "S1",
+       "cite": "Mudare S., Jing J., Makowski D., et al. (2025). Crop rotations synergize yield, nutrition, and revenue: a meta-analysis. Nature Communications 16, 9552.",
+       "url": "https://doi.org/10.1038/s41467-025-64567-9"
+      },
+      {
+       "id": "S8",
+       "cite": "Global systematic review with meta-analysis reveals yield advantage of legume-based rotations and its drivers. Nature Communications 13 (2022).",
+       "url": "https://pmc.ncbi.nlm.nih.gov/articles/9395539"
+      }
+     ]
+    },
+    {
+     "goal": "water_saving",
+     "title": "Lower seasonal water demand",
+     "text": "This plan is in the top quarter of the options for your field on water use; Pigeonpea is its least water-demanding crop (about 400-650 mm per season, FAO 1986 ranges).",
+     "evidence_level": "FAO guideline values (the score itself is a heuristic)",
+     "conditions": [
+      "Seasonal need varies with climate; values are approximate ranges."
+     ],
+     "sources": [
+      {
+       "id": "S4",
+       "cite": "FAO (1986) seasonal crop water needs, as tabulated by SSWM (Crop Selection factsheet).",
+       "url": "https://sswm.info/water-nutrient-cycle/water-use/hardwares/conservation-soil-moisture/crop-selection"
+      }
+     ]
+    },
+    {
+     "goal": "fallow_use",
+     "title": "Land in use for most of each season",
+     "text": "Crop durations fill about 83% of the available season length.",
+     "evidence_level": "calculation from typical crop durations (starter values)",
+     "conditions": [
+      "Duration values are general starter figures; local varieties differ."
+     ],
+     "sources": []
+    },
+    {
+     "goal": "food_security",
+     "title": "Staple grain plus protein-rich legume",
+     "text": "Combining cereals and legumes supports both energy and protein from your own fields; rotation systems in the global analysis produced about 24% more dietary energy and 14% more protein.",
+     "evidence_level": "meta-analysis (peer-reviewed)",
+     "conditions": [
+      "Experimental averages; depends on how much of the harvest your household eats."
+     ],
+     "sources": [
+      {
+       "id": "S1",
+       "cite": "Mudare S., Jing J., Makowski D., et al. (2025). Crop rotations synergize yield, nutrition, and revenue: a meta-analysis. Nature Communications 16, 9552.",
+       "url": "https://doi.org/10.1038/s41467-025-64567-9"
+      }
+     ]
+    },
+    {
+     "goal": "income",
+     "title": "Higher-value crops matched to good suitability",
+     "text": "Income is indicative only: it combines how suitable the land is with a rough market class (high, medium, low) for each crop. No local prices are included.",
+     "evidence_level": "heuristic (no price data)",
+     "conditions": [
+      "Check local prices before deciding."
+     ],
+     "sources": []
+    }
+   ],
+   "trade_offs": [],
+   "vs_current_practice": {
+    "current_practice_sequence": [
+     "wetland_rice",
+     "wetland_rice",
+     "wetland_rice"
+    ],
+    "composite_change": 28.6,
+    "goal_changes": {
+     "water_saving": 69.6,
+     "soil_health": 85.0,
+     "risk_reduction": 28.3,
+     "income": 9.8,
+     "fallow_use": 12.7,
+     "food_security": 28.8
+    },
+    "note": "Compared with repeating your current crop for three seasons (scored with the same method)."
+   },
+   "rule_events": [
+    {
+     "rule": "same_family_2back",
+     "season": 2,
+     "detail": "maize",
+     "points": -2
+    },
+    {
+     "rule": "legume_credit",
+     "season": 2,
+     "detail": "pigeonpea->maize",
+     "points": 7.2
+    },
+    {
+     "rule": "same_family_2back",
+     "season": 3,
+     "detail": "pigeonpea",
+     "points": -2
+    }
+   ]
+  },
+  {
+   "option": 2,
+   "label": "Makes the most of your land",
+   "sequence": [
+    {
+     "season": 1,
+     "plant_month": "Apr",
+     "crop": "groundnut",
+     "crop_name": "Groundnut",
+     "suitability_score": 92.0,
+     "suitability_range": [
+      100.0,
+      100.0
+     ],
+     "approx_duration_days": 120,
+     "rain_fit": {
+      "ratio": 0.49,
+      "status": "poor"
+     },
+     "gaez_classes_at_site": {
+      "HRLM": 1,
+      "HILM": 1,
+      "LRLM": 4,
+      "LILM": 3
+     },
+     "notes": [
+      "clay soil is a poorer match for this crop"
+     ]
+    },
+    {
+     "season": 2,
+     "plant_month": "Oct",
+     "crop": "sweet_potato",
+     "crop_name": "Sweet potato",
+     "suitability_score": 92.0,
+     "suitability_range": [
+      100.0,
+      100.0
+     ],
+     "approx_duration_days": 120,
+     "rain_fit": {
+      "ratio": 0.99,
+      "status": "good"
+     },
+     "gaez_classes_at_site": {
+      "HRLM": 2,
+      "HILM": 1,
+      "LRLM": 4,
+      "LILM": 3
+     },
+     "notes": [
+      "clay soil is a poorer match for this crop"
+     ]
+    },
+    {
+     "season": 3,
+     "plant_month": "Apr",
+     "crop": "groundnut",
+     "crop_name": "Groundnut",
+     "suitability_score": 92.0,
+     "suitability_range": [
+      100.0,
+      100.0
+     ],
+     "approx_duration_days": 120,
+     "rain_fit": {
+      "ratio": 0.49,
+      "status": "poor"
+     },
+     "gaez_classes_at_site": {
+      "HRLM": 1,
+      "HILM": 1,
+      "LRLM": 4,
+      "LILM": 3
+     },
+     "notes": [
+      "clay soil is a poorer match for this crop"
+     ]
+    }
+   ],
+   "scores": {
+    "agronomic_fit": 93.3,
+    "composite": 82.3,
+    "goals": {
+     "water_saving": 65.4,
+     "soil_health": 85.0,
+     "risk_reduction": 77.7,
+     "income": 72.1,
+     "fallow_use": 65.8,
+     "food_security": 56.3
+    }
+   },
+   "benefits": [
+    {
+     "goal": "soil_health",
+     "title": "Nitrogen and yield carry-over from legumes",
+     "text": "Legume-to-next-crop sequences in this plan (groundnut then sweet potato) are the pattern that rotation studies link to higher yield in the following crop: 23% on average for legume pre-crops versus 16% for non-legumes in 3,663 field comparisons worldwide.",
+     "evidence_level": "meta-analysis (peer-reviewed)",
+     "conditions": [
+      "Average of many trials, not a forecast for your field; roughly one trial in four showed no gain or a loss.",
+      "The gain shrinks where nitrogen fertiliser use is high - you reported high input use, so expect less."
+     ],
+     "sources": [
+      {
+       "id": "S1",
+       "cite": "Mudare S., Jing J., Makowski D., et al. (2025). Crop rotations synergize yield, nutrition, and revenue: a meta-analysis. Nature Communications 16, 9552.",
+       "url": "https://doi.org/10.1038/s41467-025-64567-9"
+      },
+      {
+       "id": "S8",
+       "cite": "Global systematic review with meta-analysis reveals yield advantage of legume-based rotations and its drivers. Nature Communications 13 (2022).",
+       "url": "https://pmc.ncbi.nlm.nih.gov/articles/9395539"
+      }
+     ]
+    },
+    {
+     "goal": "fallow_use",
+     "title": "Land in use for most of each season",
+     "text": "Crop durations fill about 66% of the available season length.",
+     "evidence_level": "calculation from typical crop durations (starter values)",
+     "conditions": [
+      "Duration values are general starter figures; local varieties differ."
+     ],
+     "sources": []
+    },
+    {
+     "goal": "income",
+     "title": "Higher-value crops matched to good suitability",
+     "text": "Income is indicative only: it combines how suitable the land is with a rough market class (high, medium, low) for each crop. No local prices are included.",
+     "evidence_level": "heuristic (no price data)",
+     "conditions": [
+      "Check local prices before deciding."
+     ],
+     "sources": []
+    }
+   ],
+   "trade_offs": [
+    "Season 1 (Groundnut): clay soil is a poorer match for this crop.",
+    "Season 2 (Sweet potato): clay soil is a poorer match for this crop.",
+    "Season 3 (Groundnut): clay soil is a poorer match for this crop.",
+    "No cereal in this plan; check it fits your household's staple food needs."
+   ],
+   "vs_current_practice": {
+    "current_practice_sequence": [
+     "wetland_rice",
+     "wetland_rice",
+     "wetland_rice"
+    ],
+    "composite_change": 22.5,
+    "goal_changes": {
+     "water_saving": 55.4,
+     "soil_health": 85.0,
+     "risk_reduction": 20.6,
+     "income": 16.8,
+     "fallow_use": -4.1,
+     "food_security": -14.9
+    },
+    "note": "Compared with repeating your current crop for three seasons (scored with the same method)."
+   },
+   "rule_events": [
+    {
+     "rule": "legume_credit",
+     "season": 2,
+     "detail": "groundnut->sweet_potato",
+     "points": 5.8
+    },
+    {
+     "rule": "same_family_2back",
+     "season": 3,
+     "detail": "groundnut",
+     "points": -2
+    }
+   ]
+  },
+  {
+   "option": 3,
+   "label": "Highest indicative income",
+   "sequence": [
+    {
+     "season": 1,
+     "plant_month": "Apr",
+     "crop": "soybean",
+     "crop_name": "Soybean",
+     "suitability_score": 100.0,
+     "suitability_range": [
+      100.0,
+      100.0
+     ],
+     "approx_duration_days": 110,
+     "rain_fit": {
+      "ratio": 0.48,
+      "status": "poor"
+     },
+     "gaez_classes_at_site": {
+      "HRLM": 1,
+      "HILM": 1,
+      "LRLM": 4,
+      "LILM": 4
+     },
+     "notes": []
+    },
+    {
+     "season": 2,
+     "plant_month": "Oct",
+     "crop": "wetland_rice",
+     "crop_name": "Wetland rice",
+     "suitability_score": 85.0,
+     "suitability_range": [
+      85.0,
+      85.0
+     ],
+     "approx_duration_days": 127,
+     "rain_fit": {
+      "ratio": 0.97,
+      "status": "good"
+     },
+     "gaez_classes_at_site": {
+      "HRLM": 4,
+      "HILM": 2,
+      "LRLM": 5,
+      "LILM": 3
+     },
+     "notes": []
+    },
+    {
+     "season": 3,
+     "plant_month": "Apr",
+     "crop": "soybean",
+     "crop_name": "Soybean",
+     "suitability_score": 100.0,
+     "suitability_range": [
+      100.0,
+      100.0
+     ],
+     "approx_duration_days": 110,
+     "rain_fit": {
+      "ratio": 0.48,
+      "status": "poor"
+     },
+     "gaez_classes_at_site": {
+      "HRLM": 1,
+      "HILM": 1,
+      "LRLM": 4,
+      "LILM": 4
+     },
+     "notes": []
+    }
+   ],
+   "scores": {
+    "agronomic_fit": 96.1,
+    "composite": 82.0,
+    "goals": {
+     "water_saving": 36.7,
+     "soil_health": 85.0,
+     "risk_reduction": 71.2,
+     "income": 85.1,
+     "fallow_use": 63.5,
+     "food_security": 82.1
+    }
+   },
+   "benefits": [
+    {
+     "goal": "soil_health",
+     "title": "Nitrogen and yield carry-over from legumes",
+     "text": "Legume-to-next-crop sequences in this plan (soybean then wetland rice) are the pattern that rotation studies link to higher yield in the following crop: 23% on average for legume pre-crops versus 16% for non-legumes in 3,663 field comparisons worldwide.",
+     "evidence_level": "meta-analysis (peer-reviewed)",
+     "conditions": [
+      "Average of many trials, not a forecast for your field; roughly one trial in four showed no gain or a loss.",
+      "The gain shrinks where nitrogen fertiliser use is high - you reported high input use, so expect less."
+     ],
+     "sources": [
+      {
+       "id": "S1",
+       "cite": "Mudare S., Jing J., Makowski D., et al. (2025). Crop rotations synergize yield, nutrition, and revenue: a meta-analysis. Nature Communications 16, 9552.",
+       "url": "https://doi.org/10.1038/s41467-025-64567-9"
+      },
+      {
+       "id": "S8",
+       "cite": "Global systematic review with meta-analysis reveals yield advantage of legume-based rotations and its drivers. Nature Communications 13 (2022).",
+       "url": "https://pmc.ncbi.nlm.nih.gov/articles/9395539"
+      }
+     ]
+    },
+    {
+     "goal": "food_security",
+     "title": "Staple grain plus protein-rich legume",
+     "text": "Combining cereals and legumes supports both energy and protein from your own fields; rotation systems in the global analysis produced about 24% more dietary energy and 14% more protein.",
+     "evidence_level": "meta-analysis (peer-reviewed)",
+     "conditions": [
+      "Experimental averages; depends on how much of the harvest your household eats."
+     ],
+     "sources": [
+      {
+       "id": "S1",
+       "cite": "Mudare S., Jing J., Makowski D., et al. (2025). Crop rotations synergize yield, nutrition, and revenue: a meta-analysis. Nature Communications 16, 9552.",
+       "url": "https://doi.org/10.1038/s41467-025-64567-9"
+      }
+     ]
+    },
+    {
+     "goal": "income",
+     "title": "Higher-value crops matched to good suitability",
+     "text": "Income is indicative only: it combines how suitable the land is with a rough market class (high, medium, low) for each crop. No local prices are included.",
+     "evidence_level": "heuristic (no price data)",
+     "conditions": [
+      "Check local prices before deciding."
+     ],
+     "sources": []
+    }
+   ],
+   "trade_offs": [],
+   "vs_current_practice": {
+    "current_practice_sequence": [
+     "wetland_rice",
+     "wetland_rice",
+     "wetland_rice"
+    ],
+    "composite_change": 22.3,
+    "goal_changes": {
+     "water_saving": 26.7,
+     "soil_health": 85.0,
+     "risk_reduction": 14.2,
+     "income": 29.8,
+     "fallow_use": -6.4,
+     "food_security": 10.8
+    },
+    "note": "Compared with repeating your current crop for three seasons (scored with the same method)."
+   },
+   "rule_events": [
+    {
+     "rule": "same_family_2back",
+     "season": 2,
+     "detail": "wetland_rice",
+     "points": -2
+    },
+    {
+     "rule": "legume_credit",
+     "season": 2,
+     "detail": "soybean->wetland_rice",
+     "points": 7.2
+    },
+    {
+     "rule": "same_family_2back",
+     "season": 3,
+     "detail": "soybean",
+     "points": -2
+    }
+   ]
+  },
+  {
+   "option": 4,
+   "label": "Most water-efficient",
+   "sequence": [
+    {
+     "season": 1,
+     "plant_month": "Apr",
+     "crop": "cowpea",
+     "crop_name": "Cowpea",
+     "suitability_score": 92.0,
+     "suitability_range": [
+      100.0,
+      100.0
+     ],
+     "approx_duration_days": 80,
+     "rain_fit": {
+      "ratio": 0.61,
+      "status": "marginal"
+     },
+     "gaez_classes_at_site": {
+      "HRLM": 1,
+      "HILM": 1,
+      "LRLM": 4,
+      "LILM": 3
+     },
+     "notes": [
+      "clay soil is a poorer match for this crop"
+     ]
+    },
+    {
+     "season": 2,
+     "plant_month": "Oct",
+     "crop": "sorghum",
+     "crop_name": "Sorghum",
+     "suitability_score": 100.0,
+     "suitability_range": [
+      100.0,
+      100.0
+     ],
+     "approx_duration_days": 110,
+     "rain_fit": {
+      "ratio": 0.96,
+      "status": "good"
+     },
+     "gaez_classes_at_site": {
+      "HRLM": 2,
+      "HILM": 1,
+      "LRLM": 3,
+      "LILM": 3
+     },
+     "notes": []
+    },
+    {
+     "season": 3,
+     "plant_month": "Apr",
+     "crop": "sesame",
+     "crop_name": "Sesame",
+     "suitability_score": 77.0,
+     "suitability_range": [
+      85.0,
+      85.0
+     ],
+     "approx_duration_days": 100,
+     "rain_fit": {
+      "ratio": 0.66,
+      "status": "marginal"
+     },
+     "gaez_classes_at_site": {
+      "HRLM": 2,
+      "HILM": 2,
+      "LRLM": 4,
+      "LILM": 4
+     },
+     "notes": [
+      "clay soil is a poorer match for this crop"
+     ]
+    }
+   ],
+   "scores": {
+    "agronomic_fit": 90.4,
+    "composite": 77.2,
+    "goals": {
+     "water_saving": 82.4,
+     "soil_health": 100.0,
+     "risk_reduction": 88.5,
+     "income": 39.1,
+     "fallow_use": 53.0,
+     "food_security": 80.8
+    }
+   },
+   "benefits": [
+    {
+     "goal": "soil_health",
+     "title": "Nitrogen and yield carry-over from legumes",
+     "text": "Legume-to-next-crop sequences in this plan (cowpea then sorghum) are the pattern that rotation studies link to higher yield in the following crop: 23% on average for legume pre-crops versus 16% for non-legumes in 3,663 field comparisons worldwide.",
+     "evidence_level": "meta-analysis (peer-reviewed)",
+     "conditions": [
+      "Average of many trials, not a forecast for your field; roughly one trial in four showed no gain or a loss.",
+      "The gain shrinks where nitrogen fertiliser use is high - you reported high input use, so expect less."
+     ],
+     "sources": [
+      {
+       "id": "S1",
+       "cite": "Mudare S., Jing J., Makowski D., et al. (2025). Crop rotations synergize yield, nutrition, and revenue: a meta-analysis. Nature Communications 16, 9552.",
+       "url": "https://doi.org/10.1038/s41467-025-64567-9"
+      },
+      {
+       "id": "S8",
+       "cite": "Global systematic review with meta-analysis reveals yield advantage of legume-based rotations and its drivers. Nature Communications 13 (2022).",
+       "url": "https://pmc.ncbi.nlm.nih.gov/articles/9395539"
+      }
+     ]
+    },
+    {
+     "goal": "risk_reduction",
+     "title": "Three different crops over three seasons",
+     "text": "Rotating instead of repeating one crop was linked in a global analysis to 14-27% more yield, energy, protein and revenue over whole sequences, and to less year-to-year yield variation.",
+     "evidence_level": "meta-analysis (peer-reviewed)",
+     "conditions": [
+      "Averages from experiments; local results depend on soil, rainfall and management."
+     ],
+     "sources": [
+      {
+       "id": "S1",
+       "cite": "Mudare S., Jing J., Makowski D., et al. (2025). Crop rotations synergize yield, nutrition, and revenue: a meta-analysis. Nature Communications 16, 9552.",
+       "url": "https://doi.org/10.1038/s41467-025-64567-9"
+      }
+     ]
+    },
+    {
+     "goal": "water_saving",
+     "title": "Lower seasonal water demand",
+     "text": "This plan is in the top quarter of the options for your field on water use; Cowpea is its least water-demanding crop (about 300-500 mm per season, FAO 1986 ranges).",
+     "evidence_level": "FAO guideline values (the score itself is a heuristic)",
+     "conditions": [
+      "Seasonal need varies with climate; values are approximate ranges."
+     ],
+     "sources": [
+      {
+       "id": "S4",
+       "cite": "FAO (1986) seasonal crop water needs, as tabulated by SSWM (Crop Selection factsheet).",
+       "url": "https://sswm.info/water-nutrient-cycle/water-use/hardwares/conservation-soil-moisture/crop-selection"
+      }
+     ]
+    },
+    {
+     "goal": "food_security",
+     "title": "Staple grain plus protein-rich legume",
+     "text": "Combining cereals and legumes supports both energy and protein from your own fields; rotation systems in the global analysis produced about 24% more dietary energy and 14% more protein.",
+     "evidence_level": "meta-analysis (peer-reviewed)",
+     "conditions": [
+      "Experimental averages; depends on how much of the harvest your household eats."
+     ],
+     "sources": [
+      {
+       "id": "S1",
+       "cite": "Mudare S., Jing J., Makowski D., et al. (2025). Crop rotations synergize yield, nutrition, and revenue: a meta-analysis. Nature Communications 16, 9552.",
+       "url": "https://doi.org/10.1038/s41467-025-64567-9"
+      }
+     ]
+    }
+   ],
+   "trade_offs": [
+    "Season 1 (Cowpea): clay soil is a poorer match for this crop.",
+    "Season 3 (Sesame): clay soil is a poorer match for this crop."
+   ],
+   "vs_current_practice": {
+    "current_practice_sequence": [
+     "wetland_rice",
+     "wetland_rice",
+     "wetland_rice"
+    ],
+    "composite_change": 17.5,
+    "goal_changes": {
+     "water_saving": 72.4,
+     "soil_health": 100.0,
+     "risk_reduction": 31.4,
+     "income": -16.2,
+     "fallow_use": -16.9,
+     "food_security": 9.5
+    },
+    "note": "Compared with repeating your current crop for three seasons (scored with the same method)."
+   },
+   "rule_events": [
+    {
+     "rule": "same_family_2back",
+     "season": 2,
+     "detail": "sorghum",
+     "points": -2
+    },
+    {
+     "rule": "legume_credit",
+     "season": 2,
+     "detail": "cowpea->sorghum",
+     "points": 4.3
+    }
+   ]
+  }
+ ],
+ "current_practice_reference": {
+  "sequence": [
+   "wetland_rice",
+   "wetland_rice",
+   "wetland_rice"
+  ],
+  "composite": 59.8,
+  "goals": {
+   "water_saving": 10.0,
+   "soil_health": 0.0,
+   "risk_reduction": 57.1,
+   "income": 55.2,
+   "fallow_use": 69.9,
+   "food_security": 71.2
+  }
+ },
+ "disclaimer": "These recommendations are decision-support guidance based on regional data. They do not replace advice from a local agricultural extension officer.",
+ "sources": {
+  "S1": {
+   "cite": "Mudare S., Jing J., Makowski D., et al. (2025). Crop rotations synergize yield, nutrition, and revenue: a meta-analysis. Nature Communications 16, 9552.",
+   "url": "https://doi.org/10.1038/s41467-025-64567-9"
+  },
+  "S2": {
+   "cite": "Franke A.C., van den Brand G.J., Vanlauwe B., Giller K.E. (2018). Systematic review of grain-legume rotations with cereals in sub-Saharan Africa (44 publications, 199 observations).",
+   "url": "https://thehive.icipe.org/all-prp/490"
+  },
+  "S3": {
+   "cite": "Bagayoko M., Buerkert A., Lung G., Bationo A., Roemheld V. (2000). Cereal/legume rotation effects on cereal growth in Sudano-Sahelian West Africa. Plant and Soil 218:103-116.",
+   "url": "https://doi.org/10.1023/A:1014957605852"
+  },
+  "S4": {
+   "cite": "FAO (1986) seasonal crop water needs, as tabulated by SSWM (Crop Selection factsheet).",
+   "url": "https://sswm.info/water-nutrient-cycle/water-use/hardwares/conservation-soil-moisture/crop-selection"
+  },
+  "S5": {
+   "cite": "University of Nebraska CropWatch (2020), summarising Gentry et al. (2013) and Seifert et al.: Yield penalties for continuous corn and soybean in the Midwest, US.",
+   "url": "https://cropwatch.unl.edu/2020/yield-penalties-continuous-corn-and-soybean-midwest-us"
+  },
+  "S6": {
+   "cite": "China crop-rotation meta-analysis (45 studies, 214 comparisons), record 19654813 on peeref.",
+   "url": "https://peeref.com/works/19654813"
+  },
+  "S7": {
+   "cite": "FAO and IIASA (2025). Global Agro-ecological Zoning v5 (GAEZ v5) model documentation.",
+   "url": "https://www.fao.org/gaez/en"
+  },
+  "S8": {
+   "cite": "Global systematic review with meta-analysis reveals yield advantage of legume-based rotations and its drivers. Nature Communications 13 (2022).",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/9395539"
+  },
+  "S9": {
+   "cite": "Yao et al. (2025). Legume-rice rotations. One Earth.",
+   "url": "https://agritrop.cirad.fr/611529/1/Yao%20et%20al.%2C%202025.pdf"
+  }
+ }
+}

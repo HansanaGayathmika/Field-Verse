@@ -1,0 +1,38 @@
+{
+  "name": "@fieldverse/api",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch --clear-screen=false src/server.ts",
+    "build": "tsup",
+    "start": "node dist/server.js",
+    "db:memory": "tsx src/scripts/memory-db.ts",
+    "seed": "tsx src/seeds/seed.ts",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "verify:ml": "tsx src/scripts/verify-ml-service.ts",
+    "examples": "tsx src/scripts/export-examples.ts",
+    "make-moderator": "tsx src/scripts/make-moderator.ts"
+  },
+  "dependencies": {
+    "@fieldverse/contracts": "*",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "express-rate-limit": "^7.5.0",
+    "helmet": "^8.1.0",
+    "mongoose": "^8.15.0",
+    "zod": "^3.25.0"
+  },
+  "devDependencies": {
+    "@types/cookie-parser": "^1.4.8",
+    "@types/cors": "^2.8.18",
+    "@types/express": "^5.0.2",
+    "@types/supertest": "^6.0.3",
+    "mongodb-memory-server": "^10.1.4",
+    "supertest": "^7.1.1",
+    "tsup": "^8.5.0"
+  }
+}

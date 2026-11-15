@@ -1,0 +1,46 @@
+{
+  "schemaVersion": "1.0",
+  "fixtureType": "illustrative_demo",
+  "note": "ILLUSTRATIVE DEMO FIXTURE. Prepared descriptions of how demo strategies might be affected by hypothetical changes. NOT climate projections or model outputs.",
+  "presets": [
+    { "id": "baseline", "label": "Today's climate (baseline)", "rainfallChangePercent": 0, "temperatureChangeCelsius": 0, "description": "Observed 2001–2025 average conditions." },
+    { "id": "drier", "label": "20% less rain", "rainfallChangePercent": -20, "temperatureChangeCelsius": 0, "description": "What if every month had a fifth less rain?" },
+    { "id": "wetter", "label": "20% more rain", "rainfallChangePercent": 20, "temperatureChangeCelsius": 0, "description": "What if every month had a fifth more rain?" },
+    { "id": "hotter", "label": "2 °C warmer", "rainfallChangePercent": 0, "temperatureChangeCelsius": 2, "description": "What if every month were 2 °C warmer?" },
+    { "id": "hot-dry", "label": "Hotter and drier", "rainfallChangePercent": -20, "temperatureChangeCelsius": 2, "description": "20% less rain and 2 °C warmer together." }
+  ],
+  "effects": {
+    "drier": {
+      "explanation": ["Less rain would make the short rains less reliable, which matters most for a second crop.", "The long rains would still usually support maize, but with more stress."],
+      "strategies": {
+        "current-maize-only": { "indicatorDeltas": { "climate_risk": 1 }, "addRisk": { "text": "Maize could suffer from dry spells during the long rains.", "severity": "medium" }, "direction": "worsens", "summary": "More dry-spell stress on the single maize crop." },
+        "alt-maize-bean": { "feasibility": "needs_review", "feasibilityReason": "The short-rains bean crop becomes less reliable with less rain.", "indicatorDeltas": { "climate_risk": 1 }, "addRisk": { "text": "Beans in the short rains may fail in a dry year.", "severity": "high" }, "direction": "worsens", "summary": "The bean crop becomes the weak point." },
+        "alt-maize-lablab": { "direction": "unchanged", "summary": "Lablab is generally drought tolerant; little change in this illustrative view." }
+      }
+    },
+    "wetter": {
+      "explanation": ["More rain could help the short-rains crop, but very wet conditions can increase some plant diseases."],
+      "strategies": {
+        "current-maize-only": { "direction": "unchanged", "summary": "Little change for a long-rains maize crop in this illustrative view." },
+        "alt-maize-bean": { "indicatorDeltas": { "climate_risk": -1 }, "addRisk": { "text": "Wet conditions can increase bean leaf diseases.", "severity": "medium" }, "direction": "improves", "summary": "Short rains become more reliable for beans, with some disease risk." },
+        "alt-maize-lablab": { "direction": "improves", "summary": "More rain may help lablab establish." }
+      }
+    },
+    "hotter": {
+      "explanation": ["At this cool altitude, warmer temperatures could speed up crop growth.", "Warmer conditions can also bring new pests and increase water loss."],
+      "strategies": {
+        "current-maize-only": { "addRisk": { "text": "Warmer highlands may see more maize pests.", "severity": "medium" }, "direction": "unknown", "summary": "Faster growth, but possibly more pests — direction unclear." },
+        "alt-maize-bean": { "addRisk": { "text": "Heat at flowering can reduce bean pod setting.", "severity": "low" }, "direction": "unknown", "summary": "Mixed effects; needs local judgement." },
+        "alt-maize-lablab": { "feasibility": "feasible", "feasibilityReason": "Warmer temperatures may suit lablab better at this altitude.", "direction": "improves", "summary": "The cool-temperature concern for lablab is reduced." }
+      }
+    },
+    "hot-dry": {
+      "explanation": ["Hotter and drier conditions together would put the most pressure on rain-fed crops.", "Drought-tolerant options are generally less exposed in this illustrative view."],
+      "strategies": {
+        "current-maize-only": { "feasibility": "needs_review", "feasibilityReason": "Maize may face both heat and water stress.", "indicatorDeltas": { "climate_risk": 1 }, "addRisk": { "text": "Higher chance of maize yield loss.", "severity": "high" }, "direction": "worsens", "summary": "Maize becomes considerably riskier." },
+        "alt-maize-bean": { "feasibility": "needs_review", "feasibilityReason": "Both crops face more stress; beans are sensitive to drought.", "indicatorDeltas": { "climate_risk": 1 }, "addRisk": { "text": "The bean crop may fail in the short rains.", "severity": "high" }, "direction": "worsens", "summary": "Both seasons become riskier." },
+        "alt-maize-lablab": { "feasibility": "feasible", "feasibilityReason": "Lablab is drought tolerant and suits warmer conditions.", "direction": "improves", "summary": "Lablab may cope best of the three." }
+      }
+    }
+  }
+}

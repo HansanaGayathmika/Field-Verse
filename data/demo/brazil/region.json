@@ -1,0 +1,80 @@
+{
+  "id": "brazil-mato-grosso",
+  "name": "Sorriso, Mato Grosso, Brazil",
+  "shortName": "Mato Grosso",
+  "country": "Brazil",
+  "countryCode": "BR",
+  "latitude": -12.5425,
+  "longitude": -55.7211,
+  "elevationNote": "Cerrado plateau, roughly 350–400 m above sea level",
+  "agroEcologicalZone": "Cerrado (tropical savanna)",
+  "tagline": "Large grain farms with a sharp wet and dry season",
+  "description": "Sorriso is in the Cerrado of Mato Grosso, one of the world's largest soybean-producing areas. A long wet season is followed by months with almost no rain.",
+  "farmingContext": [
+    "Many farms plant soybean at the start of the wet season and a second crop (often maize) straight after the soybean harvest.",
+    "The second crop must finish before the dry season, so planting dates are critical.",
+    "Cover crops are also used to protect soil during the dry months."
+  ],
+  "seasons": [
+    {
+      "name": "Wet season",
+      "months": [
+        10,
+        11,
+        12,
+        1,
+        2,
+        3,
+        4
+      ],
+      "description": "Main rains, roughly October to April."
+    },
+    {
+      "name": "Dry season",
+      "months": [
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "description": "Very little rain, roughly May to September."
+    }
+  ],
+  "supportedCrops": [
+    "soybean",
+    "maize",
+    "sorghum",
+    "sunn-hemp"
+  ],
+  "commonCrops": [
+    "soybean",
+    "maize",
+    "sorghum"
+  ],
+  "demoFarm": {
+    "farmName": "Demo grain farm — Sorriso",
+    "currentCrop": "soybean",
+    "cropHistory": [
+      "soybean",
+      "maize"
+    ],
+    "soilType": "unknown",
+    "irrigation": "none",
+    "harvestMonth": 1,
+    "nextPlantingMonth": 2,
+    "seasonsPerYear": 2
+  },
+  "dataStatus": {
+    "climate": "observed",
+    "soil": "estimated",
+    "vegetation": "observed",
+    "rotations": "demo",
+    "scenarios": "demo"
+  },
+  "contentSource": {
+    "sourceType": "estimated",
+    "note": "Regional farming context is general background compiled by the Field Verse team for the demo. Verify details with local technical assistance services."
+  },
+  "supportRadiusKm": 80
+}

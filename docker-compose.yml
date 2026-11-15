@@ -1,0 +1,19 @@
+# Local MongoDB Community Server for development.
+#   docker compose up -d mongo
+services:
+  mongo:
+    image: mongo:7.0
+    container_name: fieldverse-mongo
+    restart: unless-stopped
+    ports:
+      - '127.0.0.1:27017:27017'
+    volumes:
+      - fieldverse-mongo:/data/db
+    healthcheck:
+      test: ['CMD', 'mongosh', '--quiet', '--eval', "db.adminCommand('ping')"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+volumes:
+  fieldverse-mongo:

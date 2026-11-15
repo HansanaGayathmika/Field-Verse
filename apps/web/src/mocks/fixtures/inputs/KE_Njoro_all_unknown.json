@@ -1,0 +1,26 @@
+{
+ "location": {
+  "lat": -0.33143,
+  "lon": 35.94196
+ },
+ "current_crop": "unknown",
+ "harvest_month": null,
+ "previous_crop": "unknown",
+ "previous_crop_2": "unknown",
+ "next_planting_month": null,
+ "seasons_per_year": null,
+ "water_access": "unknown",
+ "waterlogging": "unknown",
+ "input_level": "unknown",
+ "soil_texture": "unknown",
+ "soil_ph": null,
+ "excluded_crops": [],
+ "priorities": {
+  "water_saving": "important",
+  "soil_health": "important",
+  "risk_reduction": "important",
+  "income": "important",
+  "fallow_use": "important",
+  "food_security": "important"
+ }
+}

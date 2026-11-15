@@ -1,0 +1,136 @@
+{
+  "schemaVersion": "1.0",
+  "fixtureType": "illustrative_demo",
+  "note": "ILLUSTRATIVE DEMO FIXTURE prepared by the Field Verse SE team. NOT ML predictions or agronomic recommendations. Indicator ratings are illustrative 1–5 values chosen by people from general crop knowledge.",
+  "appliesTo": { "currentCrops": ["maize"] },
+  "limitations": [
+    "Demo strategies were prepared by hand for a typical rain-fed maize field near Njoro; they are not calculated for your exact field.",
+    "No market prices, seed availability or labour data were used.",
+    "Soil values (when shown) come from a global estimate (SoilGrids), not a soil test of your field."
+  ],
+  "strategies": [
+    {
+      "id": "current-maize-only",
+      "name": "Maize each long rains (current)",
+      "kind": "current",
+      "summary": "One maize crop in the long rains every year, with the land mostly unused for the rest of the year.",
+      "steps": [
+        { "cropId": "maize", "role": "main", "season": { "name": "Long rains", "startMonth": 3, "endMonth": 8 }, "plantingWindow": { "startMonth": 3, "endMonth": 4 } },
+        { "cropId": "fallow", "role": "fallow", "season": { "name": "After harvest", "startMonth": 9, "endMonth": 2 }, "notes": "Field left after harvest; crop residues may remain." }
+      ],
+      "feasibility": { "status": "feasible", "reasons": ["This is a common pattern in the area."] },
+      "suitability": { "level": "medium", "score": null, "scoreType": "none", "sourceType": "demo" },
+      "indicators": [
+        { "id": "water_demand", "label": "Water needed", "rating": 3, "direction": "lower_is_better", "ratingType": "illustrative", "sourceType": "demo", "explanation": "One rain-fed crop timed with the main rains." },
+        { "id": "soil_cover", "label": "Soil cover through the year", "rating": 2, "direction": "higher_is_better", "ratingType": "illustrative", "sourceType": "demo", "explanation": "The field is uncovered for about half the year." },
+        { "id": "nitrogen_contribution", "label": "Natural nitrogen added", "rating": 1, "direction": "higher_is_better", "ratingType": "illustrative", "sourceType": "demo", "explanation": "Maize does not add nitrogen." },
+        { "id": "climate_risk", "label": "Exposure to dry spells", "rating": 3, "direction": "lower_is_better", "ratingType": "illustrative", "sourceType": "demo", "explanation": "A poor long-rains season affects the only crop of the year." },
+        { "id": "income_opportunity", "label": "Range of products to sell", "rating": 2, "direction": "higher_is_better", "ratingType": "illustrative", "sourceType": "demo", "explanation": "One product. No price data was used." }
+      ],
+      "water": { "relativeDemand": "similar", "notes": ["NASA POWER shows the long rains peak around April, supporting a main-season crop."], "sourceType": "observed" },
+      "soilCover": { "monthsCovered": 6, "notes": ["Uncovered from about September to February."], "sourceType": "demo" },
+      "benefits": [
+        { "text": "Familiar crop with known markets and methods.", "sourceType": "demo" },
+        { "text": "Maize is a staple food for many households.", "sourceType": "estimated" }
+      ],
+      "risks": [
+        { "text": "Growing maize after maize can build up pests and diseases and use up soil nitrogen.", "severity": "medium", "sourceType": "estimated" },
+        { "text": "All income depends on one crop in one season.", "severity": "medium", "sourceType": "demo" }
+      ],
+      "explanation": {
+        "summary": "This is your current pattern, shown as the starting point for comparison.",
+        "details": ["Rainfall data shows a second, smaller rainy period in October–November that this pattern does not use."],
+        "technical": "Baseline strategy. Indicator ratings are illustrative demo values."
+      },
+      "dataGaps": [
+        { "id": "field-soil-test", "text": "No soil test of your field is available.", "impact": "medium" },
+        { "id": "pest-history", "text": "Local pest and disease history is unknown.", "impact": "medium" }
+      ],
+      "localChecks": ["Ask your extension officer about maize disease pressure in your area."],
+      "uncertainty": { "level": "high", "notes": "Illustrative demo content; no model has evaluated this field." }
+    },
+    {
+      "id": "alt-maize-bean",
+      "name": "Maize – Common bean",
+      "kind": "alternative",
+      "summary": "Maize in the long rains, then common beans in the short rains.",
+      "steps": [
+        { "cropId": "maize", "role": "main", "season": { "name": "Long rains", "startMonth": 3, "endMonth": 8 }, "plantingWindow": { "startMonth": 3, "endMonth": 4 } },
+        { "cropId": "common-bean", "role": "short_season", "season": { "name": "Short rains", "startMonth": 10, "endMonth": 12 }, "plantingWindow": { "startMonth": 10, "endMonth": 10 } },
+        { "cropId": "fallow", "role": "fallow", "season": { "name": "Dry period", "startMonth": 1, "endMonth": 2 } }
+      ],
+      "feasibility": { "status": "feasible", "reasons": ["The short rains (October–December) can support a short bean crop."] },
+      "suitability": { "level": "medium", "score": null, "scoreType": "none", "sourceType": "demo" },
+      "indicators": [
+        { "id": "water_demand", "label": "Water needed", "rating": 3, "direction": "lower_is_better", "ratingType": "illustrative", "sourceType": "demo", "explanation": "Both crops are rain-fed and timed with the rainy seasons." },
+        { "id": "soil_cover", "label": "Soil cover through the year", "rating": 4, "direction": "higher_is_better", "ratingType": "illustrative", "sourceType": "demo", "explanation": "Field is covered for most of the year." },
+        { "id": "nitrogen_contribution", "label": "Natural nitrogen added", "rating": 3, "direction": "higher_is_better", "ratingType": "illustrative", "sourceType": "demo", "explanation": "Beans are legumes and may add some nitrogen." },
+        { "id": "climate_risk", "label": "Exposure to dry spells", "rating": 3, "direction": "lower_is_better", "ratingType": "illustrative", "sourceType": "demo", "explanation": "Beans are sensitive to drought if the short rains fail." },
+        { "id": "income_opportunity", "label": "Range of products to sell", "rating": 4, "direction": "higher_is_better", "ratingType": "illustrative", "sourceType": "demo", "explanation": "Two products. No price data was used." }
+      ],
+      "water": { "relativeDemand": "similar", "notes": ["October–November average about 115–145 mm of rain per month (NASA POWER)."], "sourceType": "observed" },
+      "soilCover": { "monthsCovered": 10, "notes": ["Only January–February left uncovered."], "sourceType": "demo" },
+      "benefits": [
+        { "text": "Uses the short rains that the current pattern leaves unused.", "sourceType": "observed" },
+        { "text": "Beans may add nitrogen for the next maize crop.", "sourceType": "estimated" },
+        { "text": "Beans are a nutritious food crop and a second product to sell.", "sourceType": "estimated" }
+      ],
+      "risks": [
+        { "text": "Beans are sensitive to drought; a weak short-rains season can reduce yields.", "severity": "medium", "sourceType": "estimated" },
+        { "text": "Maize harvest must finish in time for bean planting in October.", "severity": "medium", "sourceType": "demo" }
+      ],
+      "explanation": {
+        "summary": "This option adds a bean crop in the second rainy season, making more use of the land and the rain.",
+        "details": ["NASA POWER shows a second rainy period in October–November.", "Bean varieties of about 70–110 days could fit into that window."],
+        "technical": "Illustrative demo strategy. Indicator ratings are hand-prepared, not model outputs."
+      },
+      "dataGaps": [
+        { "id": "maize-maturity", "text": "Your maize variety's harvest date (affects bean planting time).", "impact": "high" },
+        { "id": "market", "text": "Local bean prices and buyers.", "impact": "medium" }
+      ],
+      "localChecks": ["Ask which bean varieties are recommended for short rains at your altitude.", "Check your maize variety's maturity time."],
+      "uncertainty": { "level": "high", "notes": "Illustrative demo content; short-rains reliability varies between years." }
+    },
+    {
+      "id": "alt-maize-lablab",
+      "name": "Maize – Lablab cover",
+      "kind": "alternative",
+      "summary": "Maize in the long rains, followed by lablab to cover the soil and provide fodder.",
+      "steps": [
+        { "cropId": "maize", "role": "main", "season": { "name": "Long rains", "startMonth": 3, "endMonth": 8 }, "plantingWindow": { "startMonth": 3, "endMonth": 4 } },
+        { "cropId": "lablab", "role": "cover", "season": { "name": "Short rains into dry period", "startMonth": 9, "endMonth": 1 }, "notes": "Deep roots can keep it growing into the dry months." }
+      ],
+      "feasibility": { "status": "needs_review", "reasons": ["Cool temperatures at this altitude may slow lablab growth."] },
+      "suitability": { "level": "unknown", "score": null, "scoreType": "none", "sourceType": "demo" },
+      "indicators": [
+        { "id": "water_demand", "label": "Water needed", "rating": 2, "direction": "lower_is_better", "ratingType": "illustrative", "sourceType": "demo", "explanation": "Lablab is known for coping with dry periods." },
+        { "id": "soil_cover", "label": "Soil cover through the year", "rating": 5, "direction": "higher_is_better", "ratingType": "illustrative", "sourceType": "demo", "explanation": "Covered nearly all year." },
+        { "id": "nitrogen_contribution", "label": "Natural nitrogen added", "rating": 4, "direction": "higher_is_better", "ratingType": "illustrative", "sourceType": "demo", "explanation": "Lablab is a vigorous legume." },
+        { "id": "climate_risk", "label": "Exposure to dry spells", "rating": 2, "direction": "lower_is_better", "ratingType": "illustrative", "sourceType": "demo", "explanation": "Deep roots reduce dry-spell risk." },
+        { "id": "income_opportunity", "label": "Range of products to sell", "rating": 3, "direction": "higher_is_better", "ratingType": "illustrative", "sourceType": "demo", "explanation": "Fodder for livestock or beans for food. No price data used." }
+      ],
+      "water": { "relativeDemand": "lower", "notes": ["Can use September–November rain and continue into January."], "sourceType": "observed" },
+      "soilCover": { "monthsCovered": 11, "notes": ["Continuous cover can protect soil from erosion."], "sourceType": "demo" },
+      "benefits": [
+        { "text": "Protects soil for most of the year.", "sourceType": "estimated" },
+        { "text": "Provides fodder for livestock.", "sourceType": "estimated" },
+        { "text": "Legume roots may add nitrogen.", "sourceType": "estimated" }
+      ],
+      "risks": [
+        { "text": "Mean temperatures here are only about 14–17 °C (NASA POWER); lablab may grow slowly in the cool highlands.", "severity": "medium", "sourceType": "observed" },
+        { "text": "A vigorous vine can be hard to manage before the next maize planting.", "severity": "low", "sourceType": "estimated" }
+      ],
+      "explanation": {
+        "summary": "This option focuses on protecting and feeding the soil, with fodder as a bonus.",
+        "details": ["The cool highland climate is the main uncertainty, so this option is marked for review."],
+        "technical": "Illustrative demo strategy. Feasibility flagged because observed mean temperatures are low for a warm-season legume."
+      },
+      "dataGaps": [
+        { "id": "altitude-performance", "text": "How lablab performs at your exact altitude.", "impact": "high" },
+        { "id": "seed", "text": "Local availability of lablab seed.", "impact": "medium" }
+      ],
+      "localChecks": ["Ask farmers nearby or the extension office whether lablab grows well at your altitude."],
+      "uncertainty": { "level": "high", "notes": "Illustrative demo content; highland performance is uncertain." }
+    }
+  ]
+}

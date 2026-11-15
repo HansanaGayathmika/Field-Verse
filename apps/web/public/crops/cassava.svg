@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-labelledby="t"><title id="t">Cassava plant with hand-shaped leaves and brown starchy roots</title>
+<defs><clipPath id="c"><circle cx="60" cy="60" r="58"/></clipPath></defs>
+<circle cx="60" cy="60" r="58" fill="#E7F1EB"/>
+<g clip-path="url(#c)"><rect x="0" y="78" width="120" height="44" fill="#B78A63" opacity=".55"/></g>
+<path d="M14 78h92" stroke="#8A6142" stroke-width="3" stroke-linecap="round"/>
+<path d="M60 78V34M60 52l-14-10M60 44l14-10" stroke="#9C5B3C" stroke-width="3" stroke-linecap="round"/>
+<g fill="#4E8F3A">
+<g transform="translate(60 30)"><path d="M0 0l-3-16 3-4 3 4z"/><path d="M0 0l-12-11 0-5 4 1z"/><path d="M0 0l12-11 0-5-4 1z"/><path d="M0 0l-15-2-2-4 4-1z"/><path d="M0 0l15-2 2-4-4-1z"/></g>
+<g transform="translate(44 42) scale(.75)" fill="#5FA046"><path d="M0 0l-3-16 3-4 3 4z"/><path d="M0 0l-12-11 0-5 4 1z"/><path d="M0 0l12-11 0-5-4 1z"/><path d="M0 0l-15-2-2-4 4-1z"/><path d="M0 0l15-2 2-4-4-1z"/></g>
+<g transform="translate(76 34) scale(.75)" fill="#5FA046"><path d="M0 0l-3-16 3-4 3 4z"/><path d="M0 0l-12-11 0-5 4 1z"/><path d="M0 0l12-11 0-5-4 1z"/><path d="M0 0l-15-2-2-4 4-1z"/><path d="M0 0l15-2 2-4-4-1z"/></g></g>
+<g fill="#8B5A35" stroke="#5B3A22" stroke-width="1"><path d="M58 80c-10 6-18 16-22 28 4 1 8-2 10-6 4-8 8-14 14-19z"/><path d="M60 80c2 10 2 20-2 30 3 1 7-1 8-5 2-9 0-17-4-25z"/><path d="M62 80c10 5 17 13 20 24-3 2-7 0-9-4-3-8-7-14-11-18z"/></g>
+<g stroke="#C9A27A" stroke-width=".8" opacity=".8"><path d="M44 98l3 2M52 92l2 3M60 96l3 1M70 92l2 3M76 100l2 2"/></g></svg>

@@ -1,0 +1,720 @@
+{
+  "schemaVersion": "1.0",
+  "regionId": "sri-lanka-anuradhapura",
+  "location": {
+    "latitude": 8.3114,
+    "longitude": 80.4037
+  },
+  "preparedAt": "2026-11-14T06:22:58.992Z",
+  "preparedBy": "scripts/prepare-demo-data.mjs",
+  "climate": {
+    "monthly": [
+      {
+        "month": 1,
+        "rainfallMm": 89,
+        "rainfallMmPerDay": 2.88,
+        "temperatureMeanC": 24.2,
+        "temperatureMaxC": 33.5,
+        "temperatureMinC": 16
+      },
+      {
+        "month": 2,
+        "rainfallMm": 69,
+        "rainfallMmPerDay": 2.43,
+        "temperatureMeanC": 25.1,
+        "temperatureMaxC": 37,
+        "temperatureMinC": 15
+      },
+      {
+        "month": 3,
+        "rainfallMm": 68,
+        "rainfallMmPerDay": 2.18,
+        "temperatureMeanC": 27.2,
+        "temperatureMaxC": 40.2,
+        "temperatureMinC": 17.1
+      },
+      {
+        "month": 4,
+        "rainfallMm": 118,
+        "rainfallMmPerDay": 3.93,
+        "temperatureMeanC": 28.5,
+        "temperatureMaxC": 41.5,
+        "temperatureMinC": 19.3
+      },
+      {
+        "month": 5,
+        "rainfallMm": 98,
+        "rainfallMmPerDay": 3.17,
+        "temperatureMeanC": 28.1,
+        "temperatureMaxC": 39.1,
+        "temperatureMinC": 22.4
+      },
+      {
+        "month": 6,
+        "rainfallMm": 24,
+        "rainfallMmPerDay": 0.8,
+        "temperatureMeanC": 28,
+        "temperatureMaxC": 37.6,
+        "temperatureMinC": 23.2
+      },
+      {
+        "month": 7,
+        "rainfallMm": 29,
+        "rainfallMmPerDay": 0.93,
+        "temperatureMeanC": 28,
+        "temperatureMaxC": 38.1,
+        "temperatureMinC": 22.5
+      },
+      {
+        "month": 8,
+        "rainfallMm": 52,
+        "rainfallMmPerDay": 1.67,
+        "temperatureMeanC": 28.1,
+        "temperatureMaxC": 37.8,
+        "temperatureMinC": 22.8
+      },
+      {
+        "month": 9,
+        "rainfallMm": 74,
+        "rainfallMmPerDay": 2.47,
+        "temperatureMeanC": 28,
+        "temperatureMaxC": 39.1,
+        "temperatureMinC": 21.7
+      },
+      {
+        "month": 10,
+        "rainfallMm": 220,
+        "rainfallMmPerDay": 7.11,
+        "temperatureMeanC": 27,
+        "temperatureMaxC": 38.1,
+        "temperatureMinC": 19.1
+      },
+      {
+        "month": 11,
+        "rainfallMm": 279,
+        "rainfallMmPerDay": 9.3,
+        "temperatureMeanC": 25.5,
+        "temperatureMaxC": 34.3,
+        "temperatureMinC": 18.2
+      },
+      {
+        "month": 12,
+        "rainfallMm": 244,
+        "rainfallMmPerDay": 7.88,
+        "temperatureMeanC": 24.7,
+        "temperatureMaxC": 31.2,
+        "temperatureMinC": 17
+      }
+    ],
+    "period": "25-year Meteorological and Solar Monthly & Annual Climatologies (January 2001 - December 2025)",
+    "source": {
+      "id": "nasa-power-climatology",
+      "name": "NASA POWER — Climatology API",
+      "provider": "NASA Langley Research Center (LaRC) POWER Project",
+      "sourceType": "observed",
+      "datasetVersion": "POWER API v2.10.1 (MERRA2, POWER)",
+      "spatialResolution": "0.5° × 0.625° (MERRA-2 grid)",
+      "temporalCoverage": "25-year Meteorological and Solar Monthly & Annual Climatologies (January 2001 - December 2025)",
+      "url": "https://power.larc.nasa.gov/api/temporal/climatology/point?parameters=PRECTOTCORR,T2M,T2M_MAX,T2M_MIN&community=AG&longitude=80.4037&latitude=8.3114&format=JSON",
+      "retrievedAt": "2026-11-14T06:22:58.992Z",
+      "license": "NASA open data — no restrictions; acknowledgement requested",
+      "notes": "Precipitation is PRECTOTCORR (bias-corrected, mm/day) converted to a monthly total by multiplying by days in the month. Values are reanalysis/satellite-derived estimates for a ~50 km grid cell, not a farm rain gauge."
+    }
+  },
+  "annual": {
+    "years": [
+      {
+        "year": 2015,
+        "rainfallTotalMm": 1980,
+        "temperatureMeanC": 26.3
+      },
+      {
+        "year": 2016,
+        "rainfallTotalMm": 1083,
+        "temperatureMeanC": 27.2
+      },
+      {
+        "year": 2017,
+        "rainfallTotalMm": 1117,
+        "temperatureMeanC": 27.2
+      },
+      {
+        "year": 2018,
+        "rainfallTotalMm": 1257,
+        "temperatureMeanC": 26.8
+      },
+      {
+        "year": 2019,
+        "rainfallTotalMm": 1467,
+        "temperatureMeanC": 27.7
+      },
+      {
+        "year": 2020,
+        "rainfallTotalMm": 1421,
+        "temperatureMeanC": 27.1
+      },
+      {
+        "year": 2021,
+        "rainfallTotalMm": 1818,
+        "temperatureMeanC": 26.5
+      },
+      {
+        "year": 2022,
+        "rainfallTotalMm": 1632,
+        "temperatureMeanC": 26.3
+      },
+      {
+        "year": 2023,
+        "rainfallTotalMm": 2062,
+        "temperatureMeanC": 26.9
+      },
+      {
+        "year": 2024,
+        "rainfallTotalMm": 1391,
+        "temperatureMeanC": 27.5
+      }
+    ],
+    "source": {
+      "id": "nasa-power-monthly",
+      "name": "NASA POWER — Monthly & Annual API",
+      "provider": "NASA Langley Research Center (LaRC) POWER Project",
+      "sourceType": "observed",
+      "datasetVersion": "POWER API v2.10.0 (MERRA2, POWER)",
+      "spatialResolution": "0.5° × 0.625° (MERRA-2 grid)",
+      "temporalCoverage": "2015–2024",
+      "url": "https://power.larc.nasa.gov/api/temporal/monthly/point?parameters=PRECTOTCORR_SUM,T2M&community=AG&longitude=80.4037&latitude=8.3114&start=2015&end=2024&format=JSON",
+      "retrievedAt": "2026-11-14T06:22:58.992Z",
+      "license": "NASA open data — no restrictions; acknowledgement requested",
+      "notes": "Annual totals are PRECTOTCORR_SUM; annual temperature is the T2M annual mean."
+    }
+  },
+  "soil": {
+    "layers": [
+      {
+        "depthLabel": "0-5cm",
+        "topCm": 0,
+        "bottomCm": 5,
+        "values": {
+          "bulkDensityGPerCm3": 1.36,
+          "cecCmolPerKg": 19.4,
+          "clayPercent": 26.8,
+          "nitrogenGPerKg": 3.91,
+          "phH2O": 5.8,
+          "sandPercent": 47,
+          "siltPercent": 26.2,
+          "organicCarbonGPerKg": 34.1
+        },
+        "intervals": {
+          "bulkDensityGPerCm3": {
+            "lower": 0.87,
+            "upper": 1.78,
+            "level": 0.9
+          },
+          "cecCmolPerKg": {
+            "lower": 2.2,
+            "upper": 50.9,
+            "level": 0.9
+          },
+          "clayPercent": {
+            "lower": 0.9,
+            "upper": 82.4,
+            "level": 0.9
+          },
+          "nitrogenGPerKg": {
+            "lower": 0.3,
+            "upper": 16.23,
+            "level": 0.9
+          },
+          "phH2O": {
+            "lower": 4.2,
+            "upper": 7.7,
+            "level": 0.9
+          },
+          "sandPercent": {
+            "lower": 6.2,
+            "upper": 88.5,
+            "level": 0.9
+          },
+          "siltPercent": {
+            "lower": 1.2,
+            "upper": 81,
+            "level": 0.9
+          },
+          "organicCarbonGPerKg": {
+            "lower": 3.4,
+            "upper": 114.8,
+            "level": 0.9
+          }
+        }
+      },
+      {
+        "depthLabel": "5-15cm",
+        "topCm": 5,
+        "bottomCm": 15,
+        "values": {
+          "bulkDensityGPerCm3": 1.36,
+          "cecCmolPerKg": 19.8,
+          "clayPercent": 27.5,
+          "nitrogenGPerKg": 2.26,
+          "phH2O": 5.8,
+          "sandPercent": 46.8,
+          "siltPercent": 25.7,
+          "organicCarbonGPerKg": 18
+        },
+        "intervals": {
+          "bulkDensityGPerCm3": {
+            "lower": 0.87,
+            "upper": 1.77,
+            "level": 0.9
+          },
+          "cecCmolPerKg": {
+            "lower": 2,
+            "upper": 51.2,
+            "level": 0.9
+          },
+          "clayPercent": {
+            "lower": 0.9,
+            "upper": 85.8,
+            "level": 0.9
+          },
+          "nitrogenGPerKg": {
+            "lower": 0.3,
+            "upper": 7.02,
+            "level": 0.9
+          },
+          "phH2O": {
+            "lower": 4.2,
+            "upper": 7.8,
+            "level": 0.9
+          },
+          "sandPercent": {
+            "lower": 5.3,
+            "upper": 88.6,
+            "level": 0.9
+          },
+          "siltPercent": {
+            "lower": 1.2,
+            "upper": 80.7,
+            "level": 0.9
+          },
+          "organicCarbonGPerKg": {
+            "lower": 3.6,
+            "upper": 60.4,
+            "level": 0.9
+          }
+        }
+      },
+      {
+        "depthLabel": "15-30cm",
+        "topCm": 15,
+        "bottomCm": 30,
+        "values": {
+          "bulkDensityGPerCm3": 1.38,
+          "cecCmolPerKg": 20.3,
+          "clayPercent": 29.3,
+          "nitrogenGPerKg": 1.58,
+          "phH2O": 5.8,
+          "sandPercent": 45.7,
+          "siltPercent": 25,
+          "organicCarbonGPerKg": 30.7
+        },
+        "intervals": {
+          "bulkDensityGPerCm3": {
+            "lower": 0.87,
+            "upper": 1.75,
+            "level": 0.9
+          },
+          "cecCmolPerKg": {
+            "lower": 2,
+            "upper": 49,
+            "level": 0.9
+          },
+          "clayPercent": {
+            "lower": 0.8,
+            "upper": 86.5,
+            "level": 0.9
+          },
+          "nitrogenGPerKg": {
+            "lower": 0.22,
+            "upper": 4.73,
+            "level": 0.9
+          },
+          "phH2O": {
+            "lower": 4.2,
+            "upper": 7.8,
+            "level": 0.9
+          },
+          "sandPercent": {
+            "lower": 5.2,
+            "upper": 87.5,
+            "level": 0.9
+          },
+          "siltPercent": {
+            "lower": 1.2,
+            "upper": 79.2,
+            "level": 0.9
+          },
+          "organicCarbonGPerKg": {
+            "lower": 2,
+            "upper": 81.2,
+            "level": 0.9
+          }
+        }
+      },
+      {
+        "depthLabel": "30-60cm",
+        "topCm": 30,
+        "bottomCm": 60,
+        "values": {
+          "bulkDensityGPerCm3": 1.41,
+          "cecCmolPerKg": 19.9,
+          "clayPercent": 35,
+          "nitrogenGPerKg": 0.96,
+          "phH2O": 5.9,
+          "sandPercent": 41.3,
+          "siltPercent": 23.6,
+          "organicCarbonGPerKg": 30.3
+        },
+        "intervals": {
+          "bulkDensityGPerCm3": {
+            "lower": 0.83,
+            "upper": 1.88,
+            "level": 0.9
+          },
+          "cecCmolPerKg": {
+            "lower": 2,
+            "upper": 50.2,
+            "level": 0.9
+          },
+          "clayPercent": {
+            "lower": 0.8,
+            "upper": 91.3,
+            "level": 0.9
+          },
+          "nitrogenGPerKg": {
+            "lower": 0.1,
+            "upper": 2,
+            "level": 0.9
+          },
+          "phH2O": {
+            "lower": 4.4,
+            "upper": 7.8,
+            "level": 0.9
+          },
+          "sandPercent": {
+            "lower": 3.8,
+            "upper": 83.4,
+            "level": 0.9
+          },
+          "siltPercent": {
+            "lower": 0.9,
+            "upper": 79.5,
+            "level": 0.9
+          },
+          "organicCarbonGPerKg": {
+            "lower": 1,
+            "upper": 121,
+            "level": 0.9
+          }
+        }
+      },
+      {
+        "depthLabel": "60-100cm",
+        "topCm": 60,
+        "bottomCm": 100,
+        "values": {
+          "bulkDensityGPerCm3": 1.45,
+          "cecCmolPerKg": 20.7,
+          "clayPercent": 35.5,
+          "nitrogenGPerKg": 0.65,
+          "phH2O": 5.9,
+          "sandPercent": 40.4,
+          "siltPercent": 24.2,
+          "organicCarbonGPerKg": 24.8
+        },
+        "intervals": {
+          "bulkDensityGPerCm3": {
+            "lower": 0.87,
+            "upper": 1.87,
+            "level": 0.9
+          },
+          "cecCmolPerKg": {
+            "lower": 2,
+            "upper": 53.3,
+            "level": 0.9
+          },
+          "clayPercent": {
+            "lower": 0.9,
+            "upper": 89.8,
+            "level": 0.9
+          },
+          "nitrogenGPerKg": {
+            "lower": 0.1,
+            "upper": 1.09,
+            "level": 0.9
+          },
+          "phH2O": {
+            "lower": 4.3,
+            "upper": 7.9,
+            "level": 0.9
+          },
+          "sandPercent": {
+            "lower": 3.5,
+            "upper": 80.3,
+            "level": 0.9
+          },
+          "siltPercent": {
+            "lower": 0.9,
+            "upper": 79.5,
+            "level": 0.9
+          },
+          "organicCarbonGPerKg": {
+            "lower": 1,
+            "upper": 41.3,
+            "level": 0.9
+          }
+        }
+      }
+    ],
+    "source": {
+      "id": "isric-soilgrids-2",
+      "name": "SoilGrids 2.0",
+      "provider": "ISRIC — World Soil Information",
+      "sourceType": "estimated",
+      "datasetVersion": "SoilGrids 2.0 (2020 release)",
+      "spatialResolution": "250 m",
+      "url": "https://rest.isric.org/soilgrids/v2.0/properties/query?lon=80.4037&lat=8.3114&property=phh2o&property=soc&property=clay&property=sand&property=silt&property=nitrogen&property=bdod&property=cec&depth=0-5cm&depth=5-15cm&depth=15-30cm&depth=30-60cm&depth=60-100cm&value=mean&value=Q0.05&value=Q0.95",
+      "retrievedAt": "2026-11-14T06:22:58.992Z",
+      "license": "CC-BY 4.0",
+      "notes": "SoilGrids values are predictions from a global machine-learning model, not field soil tests. Intervals are the 5th–95th percentile prediction range. A local soil test is required before decisions."
+    }
+  },
+  "vegetation": {
+    "ndvi": [
+      {
+        "date": "2023-01-01",
+        "ndvi": 0.65
+      },
+      {
+        "date": "2023-01-17",
+        "ndvi": 0.641
+      },
+      {
+        "date": "2023-02-02",
+        "ndvi": 0.631
+      },
+      {
+        "date": "2023-02-18",
+        "ndvi": 0.697
+      },
+      {
+        "date": "2023-03-06",
+        "ndvi": 0.536
+      },
+      {
+        "date": "2023-03-22",
+        "ndvi": 0.655
+      },
+      {
+        "date": "2023-04-07",
+        "ndvi": 0.625
+      },
+      {
+        "date": "2023-04-23",
+        "ndvi": 0.53
+      },
+      {
+        "date": "2023-05-09",
+        "ndvi": 0.638
+      },
+      {
+        "date": "2023-05-25",
+        "ndvi": 0.42
+      },
+      {
+        "date": "2023-06-10",
+        "ndvi": 0.623
+      },
+      {
+        "date": "2023-06-26",
+        "ndvi": 0.554
+      },
+      {
+        "date": "2023-07-12",
+        "ndvi": 0.62
+      },
+      {
+        "date": "2023-07-28",
+        "ndvi": 0.558
+      },
+      {
+        "date": "2023-08-13",
+        "ndvi": 0.554
+      },
+      {
+        "date": "2023-08-29",
+        "ndvi": 0.483
+      },
+      {
+        "date": "2023-09-14",
+        "ndvi": 0.653
+      },
+      {
+        "date": "2023-09-30",
+        "ndvi": 0.578
+      },
+      {
+        "date": "2023-10-16",
+        "ndvi": 0.673
+      },
+      {
+        "date": "2023-11-01",
+        "ndvi": 0.355
+      },
+      {
+        "date": "2023-11-17",
+        "ndvi": 0.686
+      },
+      {
+        "date": "2023-12-03",
+        "ndvi": 0.607
+      },
+      {
+        "date": "2023-12-19",
+        "ndvi": 0.555
+      },
+      {
+        "date": "2024-01-01",
+        "ndvi": 0.68
+      },
+      {
+        "date": "2024-01-17",
+        "ndvi": 0.664
+      },
+      {
+        "date": "2024-02-02",
+        "ndvi": 0.668
+      },
+      {
+        "date": "2024-02-18",
+        "ndvi": 0.64
+      },
+      {
+        "date": "2024-03-05",
+        "ndvi": 0.623
+      },
+      {
+        "date": "2024-03-21",
+        "ndvi": 0.596
+      },
+      {
+        "date": "2024-04-06",
+        "ndvi": 0.623
+      },
+      {
+        "date": "2024-04-22",
+        "ndvi": 0.621
+      },
+      {
+        "date": "2024-05-08",
+        "ndvi": 0.737
+      },
+      {
+        "date": "2024-05-24",
+        "ndvi": 0.777
+      },
+      {
+        "date": "2024-06-09",
+        "ndvi": 0.62
+      },
+      {
+        "date": "2024-06-25",
+        "ndvi": 0.329
+      },
+      {
+        "date": "2024-07-11",
+        "ndvi": 0.407
+      },
+      {
+        "date": "2024-07-27",
+        "ndvi": 0.613
+      },
+      {
+        "date": "2024-08-12",
+        "ndvi": 0.576
+      },
+      {
+        "date": "2024-08-28",
+        "ndvi": 0.646
+      },
+      {
+        "date": "2024-09-13",
+        "ndvi": 0.281
+      },
+      {
+        "date": "2024-09-29",
+        "ndvi": 0.18
+      },
+      {
+        "date": "2024-10-15",
+        "ndvi": 0.464
+      },
+      {
+        "date": "2024-10-31",
+        "ndvi": 0.643
+      },
+      {
+        "date": "2024-11-16",
+        "ndvi": 0.694
+      },
+      {
+        "date": "2024-12-02",
+        "ndvi": 0.639
+      },
+      {
+        "date": "2024-12-18",
+        "ndvi": 0.685
+      }
+    ],
+    "source": {
+      "id": "modis-mod13q1-ndvi",
+      "name": "MODIS Terra Vegetation Indices (MOD13Q1 v061) — NDVI",
+      "provider": "NASA LP DAAC, accessed via ORNL DAAC MODIS/VIIRS Web Service",
+      "sourceType": "observed",
+      "datasetVersion": "MOD13Q1 Collection 6.1",
+      "spatialResolution": "250 m, 16-day composites",
+      "temporalCoverage": "2023–2024",
+      "url": "https://modis.ornl.gov/rst/api/v1/MOD13Q1/subset?latitude=8.3114&longitude=80.4037&band=250m_16_days_NDVI&startDate=A2023001&endDate=A2023160&kmAboveBelow=0&kmLeftRight=0",
+      "retrievedAt": "2026-11-14T06:22:58.992Z",
+      "license": "NASA open data — no restrictions; acknowledgement requested",
+      "notes": "Single 250 m pixel at the demo point. Clouds and mixed land cover can lower values. Quality flags were not applied in this demo fixture."
+    }
+  },
+  "media": {
+    "ndviTimelapse": {
+      "webm": "/media/sri-lanka/ndvi-2024.webm",
+      "mp4": "/media/sri-lanka/ndvi-2024.mp4",
+      "poster": "/media/sri-lanka/ndvi-2024-poster.jpg",
+      "year": 2024,
+      "framesPerSecond": 1.25,
+      "boundingBox": {
+        "minLat": 7.561400000000001,
+        "minLon": 79.6537,
+        "maxLat": 9.0614,
+        "maxLon": 81.1537
+      },
+      "source": {
+        "id": "nasa-gibs-modis-ndvi-monthly",
+        "name": "NASA GIBS — MODIS Terra L3 NDVI Monthly",
+        "provider": "NASA Global Imagery Browse Services (GIBS), part of NASA's ESDIS",
+        "sourceType": "observed",
+        "datasetVersion": "MODIS_Terra_L3_NDVI_Monthly (WMS, best available)",
+        "spatialResolution": "~1 km imagery",
+        "temporalCoverage": "2024 (12 monthly frames)",
+        "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi?SERVICE=WMS&REQUEST=GetMap&VERSION=1.3.0&LAYERS=MODIS_Terra_L3_NDVI_Monthly&CRS=EPSG:4326&BBOX=7.561400000000001,79.6537,9.0614,81.1537&WIDTH=480&HEIGHT=480&FORMAT=image/jpeg&TIME=2024-01-01&STYLES=&BGCOLOR=0x0B1F18",
+        "retrievedAt": "2026-11-14T06:22:58.992Z",
+        "license": "NASA imagery — no restrictions; GIBS acknowledgement included"
+      }
+    }
+  }
+}

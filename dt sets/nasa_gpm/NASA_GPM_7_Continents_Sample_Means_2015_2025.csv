@@ -1,0 +1,925 @@
+continent,month,sample_mean_precipitation_mm,n_sites_requested,n_sites_available,coverage_fraction,status,aggregation,retrieved_date
+Asia,2015-01,17.763001,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Asia,2015-02,39.246003,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Asia,2015-03,58.218003,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Asia,2015-04,87.792003,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Asia,2015-05,100.347001,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Asia,2015-06,131.688007,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Asia,2015-07,148.056001,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Asia,2015-08,130.107009,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Asia,2015-09,168.051009,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Asia,2015-10,102.765004,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Asia,2015-11,96.441008,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Asia,2015-12,48.267004,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Asia,2016-01,27.900002,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Asia,2016-02,18.228001,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Asia,2016-03,41.664,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Asia,2016-04,41.757002,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Asia,2016-05,153.171007,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Asia,2016-06,134.850007,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Asia,2016-07,197.067008,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Asia,2016-08,108.624005,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Asia,2016-09,133.641006,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Asia,2016-10,115.227009,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Asia,2016-11,87.792003,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Asia,2016-12,30.132001,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Asia,2017-01,46.593002,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Asia,2017-02,24.459001,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Asia,2017-03,62.031005,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Asia,2017-04,59.334002,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Asia,2017-05,118.389006,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Asia,2017-06,112.902005,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Asia,2017-07,159.867005,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Asia,2017-08,157.542008,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Asia,2017-09,128.805005,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Asia,2017-10,133.269007,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Asia,2017-11,69.657004,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Asia,2017-12,38.595002,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Asia,2018-01,23.157001,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Asia,2018-02,19.623001,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Asia,2018-03,35.061002,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Asia,2018-04,86.397005,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Asia,2018-05,132.480008,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Asia,2018-06,113.850007,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Asia,2018-07,174.690013,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Asia,2018-08,118.710005,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Asia,2018-09,137.340009,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Asia,2018-10,92.970003,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Asia,2018-11,56.160003,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Asia,2018-12,42.300001,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Asia,2019-01,26.010001,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Asia,2019-02,50.220003,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Asia,2019-03,22.590001,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Asia,2019-04,64.080003,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Asia,2019-05,86.130003,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Asia,2019-06,111.600007,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Asia,2019-07,144.180004,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Asia,2019-08,185.310006,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Asia,2019-09,167.130009,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Asia,2019-10,136.530004,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Asia,2019-11,62.460003,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Asia,2019-12,48.780003,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Asia,2020-01,37.440002,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Asia,2020-02,21.690001,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Asia,2020-03,53.280001,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Asia,2020-04,57.510004,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Asia,2020-05,105.660004,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Asia,2020-06,138.240006,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Asia,2020-07,187.560008,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Asia,2020-08,163.530005,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Asia,2020-09,146.790006,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Asia,2020-10,128.250005,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Asia,2020-11,72.540005,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Asia,2020-12,48.546002,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Asia,2021-01,36.270003,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Asia,2021-02,26.505002,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Asia,2021-03,28.644002,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Asia,2021-04,85.467004,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Asia,2021-05,114.111007,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Asia,2021-06,102.672004,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Asia,2021-07,254.169008,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Asia,2021-08,143.22001,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Asia,2021-09,180.234008,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Asia,2021-10,137.082006,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Asia,2021-11,97.371006,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Asia,2021-12,24.459001,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Asia,2022-01,48.546002,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Asia,2022-02,38.874002,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Asia,2022-03,38.781002,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Asia,2022-04,77.004004,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Asia,2022-05,106.764004,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Asia,2022-06,93.558004,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Asia,2022-07,211.017004,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Asia,2022-08,139.686008,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Asia,2022-09,157.635008,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Asia,2022-10,112.251005,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Asia,2022-11,81.840004,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Asia,2022-12,40.176003,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Asia,2023-01,32.643001,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Asia,2023-02,25.203001,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Asia,2023-03,46.407002,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Asia,2023-04,62.868002,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Asia,2023-05,114.762005,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Asia,2023-06,109.710006,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Asia,2023-07,172.980008,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Asia,2023-08,144.810005,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Asia,2023-09,167.850007,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Asia,2023-10,148.050004,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Asia,2023-11,106.020005,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Asia,2023-12,64.980005,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Asia,2024-01,33.120002,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Asia,2024-02,16.920001,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Asia,2024-03,39.060001,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Asia,2024-04,30.510001,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Asia,2024-05,98.910002,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Asia,2024-06,91.620004,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Asia,2024-07,213.030003,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Asia,2024-08,185.400011,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Asia,2024-09,155.700007,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Asia,2024-10,117.630008,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Asia,2024-11,67.050001,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Asia,2024-12,33.390002,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Asia,2025-01,29.700002,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Asia,2025-02,33.570001,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Asia,2025-03,42.930003,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Asia,2025-04,56.070003,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Asia,2025-05,138.870009,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Asia,2025-06,118.530002,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Asia,2025-07,164.520003,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Asia,2025-08,188.640009,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Asia,2025-09,172.440008,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Asia,2025-10,,8,0,0.0,no_values_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Asia,2025-11,,8,0,0.0,no_values_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Asia,2025-12,,8,0,0.0,no_values_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Africa,2015-01,44.547003,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Africa,2015-02,38.874002,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Africa,2015-03,67.425004,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Africa,2015-04,72.912006,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Africa,2015-05,76.167002,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Africa,2015-06,81.282007,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Africa,2015-07,84.630004,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Africa,2015-08,96.069005,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Africa,2015-09,81.747003,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Africa,2015-10,60.543003,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Africa,2015-11,59.799002,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Africa,2015-12,46.500002,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Africa,2016-01,66.309003,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Africa,2016-02,57.567002,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Africa,2016-03,73.377004,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Africa,2016-04,133.827006,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Africa,2016-05,102.579005,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Africa,2016-06,88.164005,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Africa,2016-07,114.483004,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Africa,2016-08,101.463004,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Africa,2016-09,85.560003,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Africa,2016-10,49.476002,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Africa,2016-11,50.499002,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Africa,2016-12,43.338001,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Africa,2017-01,51.894003,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Africa,2017-02,80.259004,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Africa,2017-03,67.704004,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Africa,2017-04,75.981004,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Africa,2017-05,110.856003,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Africa,2017-06,98.301006,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Africa,2017-07,97.929006,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Africa,2017-08,109.833007,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Africa,2017-09,92.628005,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Africa,2017-10,67.890002,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Africa,2017-11,64.821004,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Africa,2017-12,37.014003,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Africa,2018-01,86.304002,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Africa,2018-02,45.570003,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Africa,2018-03,119.040004,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Africa,2018-04,137.175004,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Africa,2018-05,108.270004,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Africa,2018-06,102.240009,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Africa,2018-07,81.810002,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Africa,2018-08,111.600003,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Africa,2018-09,102.060004,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Africa,2018-10,69.480001,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Africa,2018-11,47.790002,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Africa,2018-12,39.690001,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Africa,2019-01,40.590002,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Africa,2019-02,49.050002,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Africa,2019-03,59.220003,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Africa,2019-04,105.840003,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Africa,2019-05,104.130004,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Africa,2019-06,104.670001,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Africa,2019-07,110.520007,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Africa,2019-08,116.370003,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Africa,2019-09,84.600005,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Africa,2019-10,112.680004,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Africa,2019-11,95.940006,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Africa,2019-12,94.410003,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Africa,2020-01,77.580004,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Africa,2020-02,54.360002,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Africa,2020-03,129.870007,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Africa,2020-04,139.320007,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Africa,2020-05,81.270004,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Africa,2020-06,101.610005,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Africa,2020-07,111.870006,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Africa,2020-08,121.14001,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Africa,2020-09,102.240006,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Africa,2020-10,65.250004,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Africa,2020-11,80.910004,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Africa,2020-12,57.381002,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Africa,2021-01,77.376004,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Africa,2021-02,65.193003,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Africa,2021-03,53.010003,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Africa,2021-04,88.629005,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Africa,2021-05,79.050005,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Africa,2021-06,62.403,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Africa,2021-07,99.696001,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Africa,2021-08,97.092006,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Africa,2021-09,80.259003,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Africa,2021-10,48.453002,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Africa,2021-11,42.129002,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Africa,2021-12,67.611002,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Africa,2022-01,63.705001,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Africa,2022-02,51.894002,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Africa,2022-03,60.729004,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Africa,2022-04,103.137005,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Africa,2022-05,46.779001,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Africa,2022-06,76.074003,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Africa,2022-07,94.116006,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Africa,2022-08,124.248007,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Africa,2022-09,103.416003,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Africa,2022-10,49.476001,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Africa,2022-11,60.729004,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Africa,2022-12,80.538004,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Africa,2023-01,43.059002,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Africa,2023-02,53.847002,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Africa,2023-03,59.799004,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Africa,2023-04,106.578007,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Africa,2023-05,89.094004,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Africa,2023-06,85.860005,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Africa,2023-07,92.610004,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Africa,2023-08,66.600003,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Africa,2023-09,104.580005,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Africa,2023-10,73.530002,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Africa,2023-11,90.540004,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Africa,2023-12,53.820001,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Africa,2024-01,114.030005,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Africa,2024-02,47.520004,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Africa,2024-03,78.030006,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Africa,2024-04,111.960006,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Africa,2024-05,71.190004,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Africa,2024-06,72.810004,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Africa,2024-07,101.070005,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Africa,2024-08,120.240005,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Africa,2024-09,92.970004,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Africa,2024-10,78.120004,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Africa,2024-11,62.820003,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Africa,2024-12,65.790004,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Africa,2025-01,61.83,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Africa,2025-02,42.210003,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Africa,2025-03,117.000003,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Africa,2025-04,111.150002,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Africa,2025-05,90.180005,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Africa,2025-06,87.120004,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Africa,2025-07,93.870004,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Africa,2025-08,91.170004,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Africa,2025-09,103.050008,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Africa,2025-10,,8,0,0.0,no_values_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Africa,2025-11,,8,0,0.0,no_values_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Africa,2025-12,,8,0,0.0,no_values_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Europe,2015-01,56.544003,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Europe,2015-02,53.196002,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Europe,2015-03,55.056002,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Europe,2015-04,38.502002,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Europe,2015-05,50.778001,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Europe,2015-06,42.222003,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Europe,2015-07,46.779002,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Europe,2015-08,59.706004,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Europe,2015-09,63.240002,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Europe,2015-10,62.310003,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Europe,2015-11,66.681004,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Europe,2015-12,28.644001,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Europe,2016-01,61.473003,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Europe,2016-02,83.328004,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Europe,2016-03,59.892001,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Europe,2016-04,50.964002,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Europe,2016-05,84.351002,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Europe,2016-06,100.440008,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Europe,2016-07,63.240004,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Europe,2016-08,44.733003,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Europe,2016-09,35.247002,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Europe,2016-10,72.726005,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Europe,2016-11,76.353004,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Europe,2016-12,41.850003,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Europe,2017-01,38.409001,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Europe,2017-02,52.266003,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Europe,2017-03,59.613002,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Europe,2017-04,43.245002,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Europe,2017-05,57.846004,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Europe,2017-06,78.120004,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Europe,2017-07,70.215002,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Europe,2017-08,63.891003,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Europe,2017-09,76.446003,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Europe,2017-10,43.059002,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Europe,2017-11,58.590002,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Europe,2017-12,72.354004,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Europe,2018-01,70.122006,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Europe,2018-02,46.686002,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Europe,2018-03,93.186004,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Europe,2018-04,56.730002,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Europe,2018-05,57.960004,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Europe,2018-06,71.100003,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Europe,2018-07,58.050001,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Europe,2018-08,43.470002,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Europe,2018-09,36.540002,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Europe,2018-10,51.480003,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Europe,2018-11,55.890001,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Europe,2018-12,61.560004,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Europe,2019-01,52.110003,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Europe,2019-02,31.230001,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Europe,2019-03,39.780001,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Europe,2019-04,62.370002,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Europe,2019-05,90.360003,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Europe,2019-06,62.460002,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Europe,2019-07,44.280003,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Europe,2019-08,43.200003,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Europe,2019-09,64.980002,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Europe,2019-10,66.690003,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Europe,2019-11,99.450003,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Europe,2019-12,64.170001,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Europe,2020-01,41.670002,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Europe,2020-02,77.580002,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Europe,2020-03,57.240002,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Europe,2020-04,27.810002,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Europe,2020-05,58.770003,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Europe,2020-06,83.790004,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Europe,2020-07,53.100002,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Europe,2020-08,60.300002,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Europe,2020-09,46.350002,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Europe,2020-10,85.770003,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Europe,2020-11,32.457001,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Europe,2020-12,86.769002,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Europe,2021-01,85.467003,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Europe,2021-02,58.032004,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Europe,2021-03,37.665002,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Europe,2021-04,45.756002,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Europe,2021-05,87.885005,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Europe,2021-06,61.008004,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Europe,2021-07,64.542002,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Europe,2021-08,58.683002,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Europe,2021-09,42.687002,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Europe,2021-10,47.616002,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Europe,2021-11,61.380002,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Europe,2021-12,69.564004,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Europe,2022-01,41.664002,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Europe,2022-02,52.266002,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Europe,2022-03,32.457001,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Europe,2022-04,54.963004,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Europe,2022-05,39.990002,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Europe,2022-06,47.337003,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Europe,2022-07,32.364001,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Europe,2022-08,55.242002,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Europe,2022-09,76.911003,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Europe,2022-10,43.896002,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Europe,2022-11,69.378002,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Europe,2022-12,66.960004,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Europe,2023-01,59.706004,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Europe,2023-02,38.502002,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Europe,2023-03,56.172002,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Europe,2023-04,61.008004,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Europe,2023-05,60.357002,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Europe,2023-06,66.780004,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Europe,2023-07,73.710002,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Europe,2023-08,70.020004,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Europe,2023-09,46.710001,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Europe,2023-10,86.850004,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Europe,2023-11,86.760006,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Europe,2023-12,74.700003,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Europe,2024-01,62.910003,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Europe,2024-02,89.550004,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Europe,2024-03,62.910003,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Europe,2024-04,59.580003,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Europe,2024-05,79.110004,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Europe,2024-06,74.160004,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Europe,2024-07,64.980003,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Europe,2024-08,33.750002,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Europe,2024-09,89.280005,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Europe,2024-10,82.710004,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Europe,2024-11,45.000003,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Europe,2024-12,46.890002,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Europe,2025-01,64.980002,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Europe,2025-02,35.730002,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Europe,2025-03,58.500001,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Europe,2025-04,39.240002,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Europe,2025-05,70.200002,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Europe,2025-06,35.820001,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Europe,2025-07,82.620003,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Europe,2025-08,49.680004,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Europe,2025-09,61.110004,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Europe,2025-10,,8,0,0.0,no_values_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Europe,2025-11,,8,0,0.0,no_values_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Europe,2025-12,,8,0,0.0,no_values_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+North America,2015-01,56.451003,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+North America,2015-02,54.219002,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+North America,2015-03,62.496003,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+North America,2015-04,76.260004,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+North America,2015-05,146.754009,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+North America,2015-06,172.236007,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+North America,2015-07,170.841007,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+North America,2015-08,172.236005,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+North America,2015-09,175.584006,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+North America,2015-10,150.288015,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+North America,2015-11,120.714007,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+North America,2015-12,89.838005,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+North America,2016-01,46.314002,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+North America,2016-02,51.894001,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+North America,2016-03,49.290003,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+North America,2016-04,91.977004,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+North America,2016-05,156.24001,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+North America,2016-06,176.235013,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+North America,2016-07,182.094007,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+North America,2016-08,184.419007,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+North America,2016-09,175.584009,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+North America,2016-10,123.504004,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+North America,2016-11,86.583002,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+North America,2016-12,49.011002,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+North America,2017-01,45.477003,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+North America,2017-02,35.433001,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+North America,2017-03,63.426001,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+North America,2017-04,87.327004,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+North America,2017-05,166.470009,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+North America,2017-06,164.145006,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+North America,2017-07,140.895008,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+North America,2017-08,166.28401,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+North America,2017-09,191.022015,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+North America,2017-10,149.730006,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+North America,2017-11,68.355006,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+North America,2017-12,46.965004,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+North America,2018-01,67.611003,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+North America,2018-02,38.595002,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+North America,2018-03,40.176002,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+North America,2018-04,71.982005,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+North America,2018-05,132.120003,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+North America,2018-06,160.110008,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+North America,2018-07,134.550006,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+North America,2018-08,164.880011,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+North America,2018-09,185.760009,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+North America,2018-10,165.150009,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+North America,2018-11,56.790003,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+North America,2018-12,58.590004,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+North America,2019-01,44.100003,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+North America,2019-02,43.740002,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+North America,2019-03,60.570003,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+North America,2019-04,65.970003,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+North America,2019-05,167.490006,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+North America,2019-06,162.54001,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+North America,2019-07,159.750011,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+North America,2019-08,201.060013,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+North America,2019-09,195.030009,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+North America,2019-10,147.060005,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+North America,2019-11,76.770002,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+North America,2019-12,40.770002,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+North America,2020-01,52.470003,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+North America,2020-02,40.410003,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+North America,2020-03,39.600001,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+North America,2020-04,53.730003,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+North America,2020-05,136.170004,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+North America,2020-06,173.070009,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+North America,2020-07,165.600009,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+North America,2020-08,136.440008,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+North America,2020-09,168.48001,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+North America,2020-10,128.520004,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+North America,2020-11,119.226005,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+North America,2020-12,67.053006,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+North America,2021-01,44.175001,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+North America,2021-02,37.944002,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+North America,2021-03,63.612004,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+North America,2021-04,94.302003,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+North America,2021-05,135.966006,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+North America,2021-06,141.825006,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+North America,2021-07,160.239007,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+North America,2021-08,169.818008,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+North America,2021-09,123.876008,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+North America,2021-10,139.500005,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+North America,2021-11,72.075003,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+North America,2021-12,38.874002,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+North America,2022-01,38.688001,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+North America,2022-02,37.758001,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+North America,2022-03,65.379004,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+North America,2022-04,90.117002,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+North America,2022-05,183.303009,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+North America,2022-06,222.549008,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+North America,2022-07,137.175007,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+North America,2022-08,168.33001,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+North America,2022-09,171.306007,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+North America,2022-10,89.745004,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+North America,2022-11,94.953004,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+North America,2022-12,51.150003,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+North America,2023-01,46.593003,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+North America,2023-02,40.362003,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+North America,2023-03,56.823004,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+North America,2023-04,73.470003,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+North America,2023-05,150.102008,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+North America,2023-06,165.330007,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+North America,2023-07,126.090006,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+North America,2023-08,136.260005,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+North America,2023-09,117.990004,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+North America,2023-10,151.470008,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+North America,2023-11,68.490003,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+North America,2023-12,63.000002,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+North America,2024-01,40.770001,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+North America,2024-02,35.010002,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+North America,2024-03,36.360002,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+North America,2024-04,73.980004,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+North America,2024-05,146.970005,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+North America,2024-06,217.08001,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+North America,2024-07,147.780004,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+North America,2024-08,132.210009,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+North America,2024-09,128.880008,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+North America,2024-10,99.630006,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+North America,2024-11,135.900007,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+North America,2024-12,51.030001,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+North America,2025-01,35.100002,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+North America,2025-02,38.970001,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+North America,2025-03,43.830001,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+North America,2025-04,57.240003,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+North America,2025-05,89.550003,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+North America,2025-06,159.210003,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+North America,2025-07,151.290009,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+North America,2025-08,144.990009,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+North America,2025-09,167.760007,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+North America,2025-10,,8,0,0.0,no_values_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+North America,2025-11,,8,0,0.0,no_values_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+North America,2025-12,,8,0,0.0,no_values_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+South America,2015-01,143.034008,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+South America,2015-02,127.410004,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+South America,2015-03,146.382004,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+South America,2015-04,96.162003,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+South America,2015-05,118.761005,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+South America,2015-06,63.147005,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+South America,2015-07,75.144002,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+South America,2015-08,109.647006,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+South America,2015-09,84.072003,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+South America,2015-10,100.533005,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+South America,2015-11,154.380011,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+South America,2015-12,149.730008,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+South America,2016-01,128.061003,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+South America,2016-02,179.676008,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+South America,2016-03,134.199007,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+South America,2016-04,168.609009,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+South America,2016-05,77.190004,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+South America,2016-06,36.921002,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+South America,2016-07,65.937003,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+South America,2016-08,43.431004,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+South America,2016-09,68.541004,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+South America,2016-10,148.521007,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+South America,2016-11,151.776006,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+South America,2016-12,189.906005,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+South America,2017-01,158.472006,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+South America,2017-02,182.83801,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+South America,2017-03,176.514012,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+South America,2017-04,185.349005,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+South America,2017-05,159.960008,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+South America,2017-06,71.331005,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+South America,2017-07,33.480001,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+South America,2017-08,120.156005,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+South America,2017-09,96.906008,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+South America,2017-10,152.334012,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+South America,2017-11,155.403012,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+South America,2017-12,119.226007,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+South America,2018-01,158.007008,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+South America,2018-02,109.461007,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+South America,2018-03,134.292007,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+South America,2018-04,108.159005,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+South America,2018-05,109.980004,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+South America,2018-06,37.530003,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+South America,2018-07,48.780002,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+South America,2018-08,51.210001,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+South America,2018-09,96.300006,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+South America,2018-10,142.290006,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+South America,2018-11,189.720013,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+South America,2018-12,131.490003,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+South America,2019-01,154.620004,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+South America,2019-02,169.650008,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+South America,2019-03,140.490006,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+South America,2019-04,120.690006,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+South America,2019-05,132.840002,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+South America,2019-06,66.240003,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+South America,2019-07,44.100001,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+South America,2019-08,36.990001,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+South America,2019-09,56.79,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+South America,2019-10,128.700007,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+South America,2019-11,136.710004,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+South America,2019-12,143.910004,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+South America,2020-01,126.810006,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+South America,2020-02,141.300006,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+South America,2020-03,91.350005,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+South America,2020-04,101.340003,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+South America,2020-05,63.540002,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+South America,2020-06,98.730006,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+South America,2020-07,63.720002,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+South America,2020-08,38.700002,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+South America,2020-09,47.250002,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+South America,2020-10,79.290003,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+South America,2020-11,74.865004,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+South America,2020-12,130.851004,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+South America,2021-01,165.261008,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+South America,2021-02,152.241005,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+South America,2021-03,155.217006,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+South America,2021-04,100.812005,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+South America,2021-05,82.119003,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+South America,2021-06,69.843003,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+South America,2021-07,39.246002,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+South America,2021-08,44.361002,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+South America,2021-09,76.074005,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+South America,2021-10,140.895007,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+South America,2021-11,138.942003,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+South America,2021-12,104.811003,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+South America,2022-01,129.270008,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+South America,2022-02,167.493003,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+South America,2022-03,180.048011,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+South America,2022-04,123.411005,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+South America,2022-05,68.634004,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+South America,2022-06,66.123002,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+South America,2022-07,49.011004,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+South America,2022-08,49.476004,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+South America,2022-09,65.751003,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+South America,2022-10,117.738005,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+South America,2022-11,91.326001,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+South America,2022-12,106.113008,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+South America,2023-01,146.382012,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+South America,2023-02,127.782007,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+South America,2023-03,139.31401,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+South America,2023-04,80.166005,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+South America,2023-05,92.535003,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+South America,2023-06,38.340002,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+South America,2023-07,52.380002,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+South America,2023-08,88.740003,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+South America,2023-09,117.54,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+South America,2023-10,142.830007,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+South America,2023-11,143.370009,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+South America,2023-12,135.900005,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+South America,2024-01,109.710005,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+South America,2024-02,127.440007,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+South America,2024-03,170.640006,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+South America,2024-04,162.630005,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+South America,2024-05,91.620007,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+South America,2024-06,87.750006,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+South America,2024-07,25.920002,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+South America,2024-08,53.370003,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+South America,2024-09,44.370002,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+South America,2024-10,121.500007,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+South America,2024-11,139.320003,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+South America,2024-12,130.050007,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+South America,2025-01,105.390005,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+South America,2025-02,178.200008,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+South America,2025-03,126.810006,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+South America,2025-04,99.360003,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+South America,2025-05,121.860008,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+South America,2025-06,79.650004,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+South America,2025-07,50.040001,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+South America,2025-08,78.120001,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+South America,2025-09,94.770005,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+South America,2025-10,,8,0,0.0,no_values_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+South America,2025-11,,8,0,0.0,no_values_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+South America,2025-12,,8,0,0.0,no_values_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Oceania,2015-01,119.226008,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Oceania,2015-02,145.545009,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Oceania,2015-03,102.486003,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Oceania,2015-04,125.457008,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Oceania,2015-05,77.562001,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Oceania,2015-06,81.840003,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Oceania,2015-07,69.750005,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Oceania,2015-08,87.978004,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Oceania,2015-09,67.797003,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Oceania,2015-10,52.452003,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Oceania,2015-11,76.725005,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Oceania,2015-12,93.093003,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Oceania,2016-01,114.297003,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Oceania,2016-02,135.594007,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Oceania,2016-03,119.133009,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Oceania,2016-04,160.704004,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Oceania,2016-05,93.186003,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Oceania,2016-06,106.578003,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Oceania,2016-07,96.720005,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Oceania,2016-08,123.132006,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Oceania,2016-09,130.758008,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Oceania,2016-10,123.876008,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Oceania,2016-11,110.949001,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Oceania,2016-12,128.526006,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Oceania,2017-01,146.568006,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Oceania,2017-02,160.425009,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Oceania,2017-03,184.791013,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Oceania,2017-04,115.320005,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Oceania,2017-05,82.770003,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Oceania,2017-06,60.078001,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Oceania,2017-07,105.462003,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Oceania,2017-08,92.721003,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Oceania,2017-09,83.328007,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Oceania,2017-10,98.394004,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Oceania,2017-11,95.604004,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Oceania,2017-12,125.457004,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Oceania,2018-01,131.688007,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Oceania,2018-02,180.606008,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Oceania,2018-03,135.501006,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Oceania,2018-04,117.552004,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Oceania,2018-05,88.740003,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Oceania,2018-06,110.610003,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Oceania,2018-07,76.410001,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Oceania,2018-08,77.040003,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Oceania,2018-09,64.350004,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Oceania,2018-10,110.070007,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Oceania,2018-11,100.890008,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Oceania,2018-12,121.680005,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Oceania,2019-01,120.420002,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Oceania,2019-02,67.050004,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Oceania,2019-03,142.02001,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Oceania,2019-04,127.800008,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Oceania,2019-05,69.210003,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Oceania,2019-06,84.960006,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Oceania,2019-07,85.410001,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Oceania,2019-08,75.600002,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Oceania,2019-09,75.150005,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Oceania,2019-10,99.720006,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Oceania,2019-11,74.520003,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Oceania,2019-12,81.450002,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Oceania,2020-01,68.670001,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Oceania,2020-02,95.220003,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Oceania,2020-03,193.050008,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Oceania,2020-04,116.910006,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Oceania,2020-05,80.370002,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Oceania,2020-06,83.790002,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Oceania,2020-07,65.16,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Oceania,2020-08,80.820003,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Oceania,2020-09,70.200005,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Oceania,2020-10,110.160008,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Oceania,2020-11,90.396007,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Oceania,2020-12,100.440005,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Oceania,2021-01,135.50101,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Oceania,2021-02,108.159002,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Oceania,2021-03,143.778006,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Oceania,2021-04,77.376002,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Oceania,2021-05,119.133004,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Oceania,2021-06,79.422005,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Oceania,2021-07,96.255005,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Oceania,2021-08,57.846001,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Oceania,2021-09,95.976003,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Oceania,2021-10,87.048005,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Oceania,2021-11,159.49501,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Oceania,2021-12,135.129005,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Oceania,2022-01,154.56601,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Oceania,2022-02,180.048006,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Oceania,2022-03,129.27001,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Oceania,2022-04,79.236002,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Oceania,2022-05,109.089004,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Oceania,2022-06,83.607005,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Oceania,2022-07,115.971002,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Oceania,2022-08,95.139006,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Oceania,2022-09,107.508005,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Oceania,2022-10,148.521007,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Oceania,2022-11,120.714006,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Oceania,2022-12,123.59701,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Oceania,2023-01,169.167005,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Oceania,2023-02,158.844009,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Oceania,2023-03,134.850006,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Oceania,2023-04,110.298005,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Oceania,2023-05,110.577006,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Oceania,2023-06,93.780003,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Oceania,2023-07,96.570005,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Oceania,2023-08,62.280003,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Oceania,2023-09,101.610006,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Oceania,2023-10,70.650002,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Oceania,2023-11,104.220003,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Oceania,2023-12,99.540006,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Oceania,2024-01,145.440006,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Oceania,2024-02,108.990003,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Oceania,2024-03,194.670008,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Oceania,2024-04,77.400006,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Oceania,2024-05,78.030005,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Oceania,2024-06,70.200004,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Oceania,2024-07,83.340004,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Oceania,2024-08,107.730004,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Oceania,2024-09,71.550002,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Oceania,2024-10,114.750005,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Oceania,2024-11,126.000005,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Oceania,2024-12,137.970009,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Oceania,2025-01,121.590002,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Oceania,2025-02,93.870002,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Oceania,2025-03,125.55,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Oceania,2025-04,164.430009,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Oceania,2025-05,91.980006,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Oceania,2025-06,97.560005,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Oceania,2025-07,104.040005,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Oceania,2025-08,86.400004,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Oceania,2025-09,76.230002,8,8,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Oceania,2025-10,,8,0,0.0,no_values_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Oceania,2025-11,,8,0,0.0,no_values_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Oceania,2025-12,,8,0,0.0,no_values_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Antarctica,2015-01,8.556,2,2,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Antarctica,2015-02,15.996,2,2,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Antarctica,2015-03,5.208,2,2,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Antarctica,2015-04,21.204,2,2,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Antarctica,2015-05,6.324001,2,2,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Antarctica,2015-06,15.996,2,2,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Antarctica,2015-07,8.928,2,2,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Antarctica,2015-08,3.72,2,2,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Antarctica,2015-09,2.976,2,2,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Antarctica,2015-10,0.744,2,2,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Antarctica,2015-11,3.72,2,2,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Antarctica,2015-12,2.604,2,2,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Antarctica,2016-01,4.464,2,2,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Antarctica,2016-02,13.392001,2,2,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Antarctica,2016-03,9.672,2,2,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Antarctica,2016-04,0.372,2,2,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Antarctica,2016-05,4.092001,2,2,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Antarctica,2016-06,1.488,2,2,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Antarctica,2016-07,4.092001,2,2,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Antarctica,2016-08,2.604,2,2,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Antarctica,2016-09,0.372,2,2,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Antarctica,2016-10,3.348,2,2,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Antarctica,2016-11,14.88,2,2,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Antarctica,2016-12,2.976,2,2,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Antarctica,2017-01,21.576001,2,2,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Antarctica,2017-02,18.228001,2,2,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Antarctica,2017-03,14.508,2,2,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Antarctica,2017-04,7.812001,2,2,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Antarctica,2017-05,8.556,2,2,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Antarctica,2017-06,8.556001,2,2,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Antarctica,2017-07,3.72,2,2,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Antarctica,2017-08,4.836,2,2,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Antarctica,2017-09,0.744,2,2,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Antarctica,2017-10,0.744,2,2,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Antarctica,2017-11,4.092001,2,2,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Antarctica,2017-12,0.372,2,2,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Antarctica,2018-01,3.348,2,2,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Antarctica,2018-02,38.316002,2,2,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Antarctica,2018-03,2.976,2,2,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Antarctica,2018-04,10.416001,2,2,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Antarctica,2018-05,1.8,2,2,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Antarctica,2018-06,2.88,2,2,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Antarctica,2018-07,11.160001,2,2,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Antarctica,2018-08,1.08,2,2,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Antarctica,2018-09,0.0,2,2,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Antarctica,2018-10,2.16,2,2,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Antarctica,2018-11,5.040001,2,2,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Antarctica,2018-12,6.48,2,2,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Antarctica,2019-01,5.76,2,2,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Antarctica,2019-02,9.36,2,2,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Antarctica,2019-03,2.52,2,2,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Antarctica,2019-04,2.52,2,2,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Antarctica,2019-05,1.44,2,2,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Antarctica,2019-06,0.0,2,2,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Antarctica,2019-07,27.360003,2,2,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Antarctica,2019-08,14.4,2,2,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Antarctica,2019-09,0.36,2,2,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Antarctica,2019-10,2.88,2,2,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Antarctica,2019-11,1.44,2,2,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Antarctica,2019-12,10.44,2,2,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Antarctica,2020-01,8.28,2,2,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Antarctica,2020-02,11.16,2,2,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Antarctica,2020-03,13.680001,2,2,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Antarctica,2020-04,32.400002,2,2,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Antarctica,2020-05,7.920001,2,2,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Antarctica,2020-06,11.52,2,2,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Antarctica,2020-07,1.8,2,2,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Antarctica,2020-08,11.88,2,2,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Antarctica,2020-09,11.520001,2,2,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Antarctica,2020-10,1.8,2,2,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Antarctica,2020-11,0.744,2,2,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Antarctica,2020-12,3.348,2,2,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Antarctica,2021-01,7.812,2,2,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Antarctica,2021-02,3.72,2,2,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Antarctica,2021-03,5.952,2,2,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Antarctica,2021-04,0.372,2,2,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Antarctica,2021-05,2.976,2,2,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Antarctica,2021-06,0.372,2,2,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Antarctica,2021-07,5.58,2,2,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Antarctica,2021-08,4.092001,2,2,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Antarctica,2021-09,9.3,2,2,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Antarctica,2021-10,11.904001,2,2,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Antarctica,2021-11,1.488,2,2,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Antarctica,2021-12,10.788,2,2,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Antarctica,2022-01,13.764,2,2,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Antarctica,2022-02,18.972001,2,2,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Antarctica,2022-03,24.180002,2,2,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Antarctica,2022-04,18.600001,2,2,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Antarctica,2022-05,10.788,2,2,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Antarctica,2022-06,8.556,2,2,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Antarctica,2022-07,6.324,2,2,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Antarctica,2022-08,0.744,2,2,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Antarctica,2022-09,26.412001,2,2,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Antarctica,2022-10,11.904001,2,2,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Antarctica,2022-11,1.116,2,2,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Antarctica,2022-12,10.788001,2,2,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Antarctica,2023-01,13.392001,2,2,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Antarctica,2023-02,32.364002,2,2,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Antarctica,2023-03,20.832,2,2,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Antarctica,2023-04,2.976,2,2,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Antarctica,2023-05,2.604,2,2,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Antarctica,2023-06,12.96,2,2,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Antarctica,2023-07,2.16,2,2,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Antarctica,2023-08,1.08,2,2,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Antarctica,2023-09,3.24,2,2,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Antarctica,2023-10,7.2,2,2,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Antarctica,2023-11,5.4,2,2,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Antarctica,2023-12,40.68,2,2,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Antarctica,2024-01,33.840002,2,2,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Antarctica,2024-02,13.319999,2,2,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Antarctica,2024-03,10.08,2,2,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Antarctica,2024-04,1.8,2,2,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Antarctica,2024-05,41.400001,2,2,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Antarctica,2024-06,1.8,2,2,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Antarctica,2024-07,3.24,2,2,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Antarctica,2024-08,21.960001,2,2,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Antarctica,2024-09,0.0,2,2,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Antarctica,2024-10,1.08,2,2,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Antarctica,2024-11,1.08,2,2,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Antarctica,2024-12,45.36,2,2,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Antarctica,2025-01,18.720001,2,2,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Antarctica,2025-02,18.0,2,2,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Antarctica,2025-03,16.560001,2,2,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Antarctica,2025-04,1.44,2,2,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Antarctica,2025-05,0.0,2,2,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Antarctica,2025-06,7.92,2,2,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Antarctica,2025-07,0.0,2,2,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Antarctica,2025-08,10.8,2,2,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Antarctica,2025-09,0.36,2,2,1.0,all_sites_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Antarctica,2025-10,,2,0,0.0,no_values_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Antarctica,2025-11,,2,0,0.0,no_values_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14
+Antarctica,2025-12,,2,0,0.0,no_values_available,unweighted_reference_site_mean_not_continent_area_mean,2026-11-14

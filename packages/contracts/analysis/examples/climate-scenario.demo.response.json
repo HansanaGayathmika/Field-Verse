@@ -1,0 +1,787 @@
+{
+  "schemaVersion": "1.0",
+  "requestId": "2f29a24f-923a-4e35-8e5c-0bc832441ad4",
+  "mode": "demo",
+  "modelVersion": null,
+  "region": {
+    "id": "sri-lanka-anuradhapura",
+    "name": "Anuradhapura, Sri Lanka",
+    "country": "Sri Lanka",
+    "countryCode": "LK",
+    "latitude": 8.3114,
+    "longitude": 80.4037,
+    "agroEcologicalZone": "Dry Zone (low country)"
+  },
+  "limitations": [
+    "DEMO MODE: no machine-learning model was used. Strategies and ratings are illustrative fixtures prepared by the FieldVerse team.",
+    "Demo strategies were prepared by hand for a typical rice field near Anuradhapura; they are not calculated for your exact field.",
+    "No market prices, seed availability or labour data were used.",
+    "Soil values come from a global estimate (SoilGrids), not a soil test of your field.",
+    "Scenario effects are prepared descriptions for a few preset combinations, not climate model outputs.",
+    "Your corrections were applied with simple documented rules (for example, comparing crop water needs with observed rainfall). Crop suitability was not recalculated."
+  ],
+  "dataSources": [
+    {
+      "id": "nasa-power-climatology",
+      "name": "NASA POWER — Climatology API",
+      "provider": "NASA Langley Research Center (LaRC) POWER Project",
+      "sourceType": "observed",
+      "datasetVersion": "POWER API v2.10.1 (MERRA2, POWER)",
+      "spatialResolution": "0.5° × 0.625° (MERRA-2 grid)",
+      "temporalCoverage": "25-year Meteorological and Solar Monthly & Annual Climatologies (January 2001 - December 2025)",
+      "url": "https://power.larc.nasa.gov/api/temporal/climatology/point?parameters=PRECTOTCORR,T2M,T2M_MAX,T2M_MIN&community=AG&longitude=80.4037&latitude=8.3114&format=JSON",
+      "retrievedAt": "2026-11-14T06:22:58.992Z",
+      "license": "NASA open data — no restrictions; acknowledgement requested",
+      "notes": "Precipitation is PRECTOTCORR (bias-corrected, mm/day) converted to a monthly total by multiplying by days in the month. Values are reanalysis/satellite-derived estimates for a ~50 km grid cell, not a farm rain gauge."
+    },
+    {
+      "id": "nasa-power-monthly",
+      "name": "NASA POWER — Monthly & Annual API",
+      "provider": "NASA Langley Research Center (LaRC) POWER Project",
+      "sourceType": "observed",
+      "datasetVersion": "POWER API v2.10.0 (MERRA2, POWER)",
+      "spatialResolution": "0.5° × 0.625° (MERRA-2 grid)",
+      "temporalCoverage": "2015–2024",
+      "url": "https://power.larc.nasa.gov/api/temporal/monthly/point?parameters=PRECTOTCORR_SUM,T2M&community=AG&longitude=80.4037&latitude=8.3114&start=2015&end=2024&format=JSON",
+      "retrievedAt": "2026-11-14T06:22:58.992Z",
+      "license": "NASA open data — no restrictions; acknowledgement requested",
+      "notes": "Annual totals are PRECTOTCORR_SUM; annual temperature is the T2M annual mean."
+    },
+    {
+      "id": "isric-soilgrids-2",
+      "name": "SoilGrids 2.0",
+      "provider": "ISRIC — World Soil Information",
+      "sourceType": "estimated",
+      "datasetVersion": "SoilGrids 2.0 (2020 release)",
+      "spatialResolution": "250 m",
+      "url": "https://rest.isric.org/soilgrids/v2.0/properties/query?lon=80.4037&lat=8.3114&property=phh2o&property=soc&property=clay&property=sand&property=silt&property=nitrogen&property=bdod&property=cec&depth=0-5cm&depth=5-15cm&depth=15-30cm&depth=30-60cm&depth=60-100cm&value=mean&value=Q0.05&value=Q0.95",
+      "retrievedAt": "2026-11-14T06:22:58.992Z",
+      "license": "CC-BY 4.0",
+      "notes": "SoilGrids values are predictions from a global machine-learning model, not field soil tests. Intervals are the 5th–95th percentile prediction range. A local soil test is required before decisions."
+    },
+    {
+      "id": "modis-mod13q1-ndvi",
+      "name": "MODIS Terra Vegetation Indices (MOD13Q1 v061) — NDVI",
+      "provider": "NASA LP DAAC, accessed via ORNL DAAC MODIS/VIIRS Web Service",
+      "sourceType": "observed",
+      "datasetVersion": "MOD13Q1 Collection 6.1",
+      "spatialResolution": "250 m, 16-day composites",
+      "temporalCoverage": "2023–2024",
+      "url": "https://modis.ornl.gov/rst/api/v1/MOD13Q1/subset?latitude=8.3114&longitude=80.4037&band=250m_16_days_NDVI&startDate=A2023001&endDate=A2023160&kmAboveBelow=0&kmLeftRight=0",
+      "retrievedAt": "2026-11-14T06:22:58.992Z",
+      "license": "NASA open data — no restrictions; acknowledgement requested",
+      "notes": "Single 250 m pixel at the demo point. Clouds and mixed land cover can lower values. Quality flags were not applied in this demo fixture."
+    },
+    {
+      "id": "nasa-gibs-modis-ndvi-monthly",
+      "name": "NASA GIBS — MODIS Terra L3 NDVI Monthly",
+      "provider": "NASA Global Imagery Browse Services (GIBS), part of NASA's ESDIS",
+      "sourceType": "observed",
+      "datasetVersion": "MODIS_Terra_L3_NDVI_Monthly (WMS, best available)",
+      "spatialResolution": "~1 km imagery",
+      "temporalCoverage": "2024 (12 monthly frames)",
+      "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi?SERVICE=WMS&REQUEST=GetMap&VERSION=1.3.0&LAYERS=MODIS_Terra_L3_NDVI_Monthly&CRS=EPSG:4326&BBOX=7.561400000000001,79.6537,9.0614,81.1537&WIDTH=480&HEIGHT=480&FORMAT=image/jpeg&TIME=2024-01-01&STYLES=&BGCOLOR=0x0B1F18",
+      "retrievedAt": "2026-11-14T06:22:58.992Z",
+      "license": "NASA imagery — no restrictions; GIBS acknowledgement included"
+    },
+    {
+      "id": "fieldverse-demo-fixtures",
+      "name": "FieldVerse illustrative demo fixtures",
+      "provider": "FieldVerse Software Engineering team",
+      "sourceType": "demo",
+      "datasetVersion": "demo-fixtures-1.0",
+      "notes": "Hand-prepared demonstration strategies, scenario descriptions and ratings. NOT machine-learning predictions. Will be replaced by the AI/ML team analysis service."
+    },
+    {
+      "id": "fieldverse-crop-reference",
+      "name": "General crop reference ranges",
+      "provider": "FieldVerse Software Engineering team",
+      "sourceType": "estimated",
+      "notes": "Broad typical crop durations and tolerances across varieties. Verify locally."
+    }
+  ],
+  "disclaimer": "Illustrative demo: these strategies were prepared by people to demonstrate FieldVerse. They are not machine-learning predictions or agronomic advice. Always check with a local agricultural expert.",
+  "generatedAt": "2026-11-14T09:59:31.457Z",
+  "analysisType": "climate_scenario",
+  "baseline": {
+    "rainfallChangePercent": 0,
+    "temperatureChangeCelsius": 0,
+    "presetId": "baseline",
+    "label": "Today's climate (baseline)"
+  },
+  "modified": {
+    "rainfallChangePercent": -20,
+    "temperatureChangeCelsius": 2,
+    "presetId": "hot-dry",
+    "label": "Hotter and drier"
+  },
+  "climateContext": {
+    "baselineAnnualRainfallMm": 1364,
+    "hypotheticalAnnualRainfallMm": 1091,
+    "baselineMeanTemperatureC": 26.9,
+    "hypotheticalMeanTemperatureC": 28.9,
+    "note": "Hypothetical values are simple arithmetic applied to the NASA POWER 2001–2025 average to describe your assumption. They are not a forecast or climate projection."
+  },
+  "strategies": [
+    {
+      "id": "current-rice-rice",
+      "name": "Rice – Rice (current)",
+      "kind": "current",
+      "summary": "Rice in both Maha and Yala seasons, which needs plenty of water in both seasons.",
+      "steps": [
+        {
+          "cropId": "rice",
+          "role": "main",
+          "season": {
+            "name": "Maha",
+            "startMonth": 10,
+            "endMonth": 2
+          },
+          "plantingWindow": {
+            "startMonth": 10,
+            "endMonth": 11
+          }
+        },
+        {
+          "cropId": "rice",
+          "role": "main",
+          "season": {
+            "name": "Yala",
+            "startMonth": 4,
+            "endMonth": 8
+          },
+          "plantingWindow": {
+            "startMonth": 4,
+            "endMonth": 5
+          }
+        }
+      ],
+      "feasibility": {
+        "status": "not_feasible",
+        "reasons": [
+          "Rice in Yala (Apr–Aug) usually needs irrigation here: average rain is about 51 mm/month (NASA POWER, adjusted -20%), below the 150 mm rule-of-thumb for a high-water crop.",
+          "Rice in Maha (Oct–Feb) usually needs irrigation here: average rain is about 144 mm/month (NASA POWER, adjusted -20%), below the 150 mm rule-of-thumb for a high-water crop.",
+          "In this illustrative case, Yala rice would likely lack water.",
+          "This is the pattern many farms already follow when tank water is available for Yala."
+        ]
+      },
+      "suitability": {
+        "level": "medium",
+        "score": null,
+        "scoreType": "none",
+        "sourceType": "demo"
+      },
+      "indicators": [
+        {
+          "id": "water_demand",
+          "label": "Water needed",
+          "rating": 5,
+          "direction": "lower_is_better",
+          "ratingType": "illustrative",
+          "sourceType": "demo",
+          "explanation": "Rice usually needs standing water, and the Yala crop grows through the driest months."
+        },
+        {
+          "id": "soil_cover",
+          "label": "Soil cover through the year",
+          "rating": 4,
+          "direction": "higher_is_better",
+          "ratingType": "illustrative",
+          "sourceType": "demo",
+          "explanation": "Two crops keep the field covered for most of the year."
+        },
+        {
+          "id": "nitrogen_contribution",
+          "label": "Natural nitrogen added",
+          "rating": 1,
+          "direction": "higher_is_better",
+          "ratingType": "illustrative",
+          "sourceType": "demo",
+          "explanation": "Rice does not add nitrogen; it depends on fertiliser and soil reserves."
+        },
+        {
+          "id": "climate_risk",
+          "label": "Exposure to dry spells",
+          "rating": 5,
+          "direction": "lower_is_better",
+          "ratingType": "illustrative",
+          "sourceType": "demo",
+          "explanation": "A Yala rice crop can fail if tank water runs short."
+        },
+        {
+          "id": "income_opportunity",
+          "label": "Range of products to sell",
+          "rating": 2,
+          "direction": "higher_is_better",
+          "ratingType": "illustrative",
+          "sourceType": "demo",
+          "explanation": "One crop type means one market. No price data was used."
+        }
+      ],
+      "water": {
+        "relativeDemand": "similar",
+        "notes": [
+          "NASA POWER shows June–August is the driest part of the year here, so Yala rice relies on stored water."
+        ],
+        "sourceType": "observed"
+      },
+      "soilCover": {
+        "monthsCovered": 10,
+        "notes": [
+          "Field is bare for short periods between seasons."
+        ],
+        "sourceType": "demo"
+      },
+      "benefits": [
+        {
+          "text": "Familiar crop with known methods, equipment and markets.",
+          "sourceType": "demo"
+        },
+        {
+          "text": "Rice tolerates waterlogged paddy soils well.",
+          "sourceType": "estimated"
+        }
+      ],
+      "risks": [
+        {
+          "text": "High chance of Yala rice failure under hotter, drier conditions.",
+          "severity": "high",
+          "sourceType": "demo"
+        },
+        {
+          "text": "Yala rice may be lost or reduced in years when tanks do not fill.",
+          "severity": "high",
+          "sourceType": "demo"
+        },
+        {
+          "text": "Growing the same crop repeatedly can build up pests, diseases and weeds.",
+          "severity": "medium",
+          "sourceType": "estimated"
+        }
+      ],
+      "explanation": {
+        "summary": "This is your current pattern. It is shown so you can compare the alternatives against what you already do.",
+        "details": [
+          "Rainfall data shows most rain falls October–December, which supports Maha rice.",
+          "Yala rice grows mostly in months with little rain, so stored water matters most."
+        ],
+        "technical": "Baseline strategy. Indicator ratings are illustrative demo values, not model outputs."
+      },
+      "dataGaps": [
+        {
+          "id": "tank-storage",
+          "text": "How much water your tank or canal can supply in Yala is unknown.",
+          "impact": "high"
+        },
+        {
+          "id": "field-soil-test",
+          "text": "No soil test of your field is available.",
+          "impact": "medium"
+        }
+      ],
+      "localChecks": [
+        "Ask your farmer organisation or irrigation officer about expected Yala water issues this year."
+      ],
+      "uncertainty": {
+        "level": "high",
+        "notes": "Illustrative demo content; no model has evaluated this field."
+      },
+      "constraintFlags": [
+        {
+          "constraintType": "no_irrigation",
+          "cropId": "rice",
+          "effect": "flagged",
+          "message": "Rice in Maha (Oct–Feb) usually needs irrigation here: average rain is about 144 mm/month (NASA POWER, adjusted -20%), below the 150 mm rule-of-thumb for a high-water crop."
+        },
+        {
+          "constraintType": "no_irrigation",
+          "cropId": "rice",
+          "effect": "flagged",
+          "message": "Rice in Yala (Apr–Aug) usually needs irrigation here: average rain is about 51 mm/month (NASA POWER, adjusted -20%), below the 150 mm rule-of-thumb for a high-water crop."
+        }
+      ],
+      "priorityFit": {
+        "rank": 3,
+        "method": "rule",
+        "explanation": "Ranked 3 of 3 for your priorities using a simple documented rule that weights the illustrative ratings. This is not a model prediction."
+      },
+      "sourceIds": [
+        "fieldverse-demo-fixtures",
+        "fieldverse-crop-reference",
+        "nasa-power-climatology",
+        "isric-soilgrids-2"
+      ]
+    },
+    {
+      "id": "alt-rice-mung-bean",
+      "name": "Rice – Mung bean",
+      "kind": "alternative",
+      "summary": "Keep rice in Maha, then grow quick mung bean in early Yala using less water.",
+      "steps": [
+        {
+          "cropId": "rice",
+          "role": "main",
+          "season": {
+            "name": "Maha",
+            "startMonth": 10,
+            "endMonth": 2
+          },
+          "plantingWindow": {
+            "startMonth": 10,
+            "endMonth": 11
+          }
+        },
+        {
+          "cropId": "mung-bean",
+          "role": "short_season",
+          "season": {
+            "name": "Yala",
+            "startMonth": 4,
+            "endMonth": 6
+          },
+          "plantingWindow": {
+            "startMonth": 4,
+            "endMonth": 4
+          }
+        },
+        {
+          "cropId": "fallow",
+          "role": "fallow",
+          "season": {
+            "name": "Dry months",
+            "startMonth": 7,
+            "endMonth": 9
+          },
+          "notes": "Rest period before Maha land preparation."
+        }
+      ],
+      "feasibility": {
+        "status": "needs_review",
+        "reasons": [
+          "Rice in Maha (Oct–Feb) usually needs irrigation here: average rain is about 144 mm/month (NASA POWER, adjusted -20%), below the 150 mm rule-of-thumb for a high-water crop.",
+          "Mung bean may still be possible if planted right after harvest to use early rains.",
+          "Mung bean is a short crop that can use April–May rains after the Maha harvest."
+        ]
+      },
+      "suitability": {
+        "level": "medium",
+        "score": null,
+        "scoreType": "none",
+        "sourceType": "demo"
+      },
+      "indicators": [
+        {
+          "id": "water_demand",
+          "label": "Water needed",
+          "rating": 2,
+          "direction": "lower_is_better",
+          "ratingType": "illustrative",
+          "sourceType": "demo",
+          "explanation": "Mung bean generally needs much less water than a second rice crop."
+        },
+        {
+          "id": "soil_cover",
+          "label": "Soil cover through the year",
+          "rating": 3,
+          "direction": "higher_is_better",
+          "ratingType": "illustrative",
+          "sourceType": "demo",
+          "explanation": "The field is bare from July to September."
+        },
+        {
+          "id": "nitrogen_contribution",
+          "label": "Natural nitrogen added",
+          "rating": 3,
+          "direction": "higher_is_better",
+          "ratingType": "illustrative",
+          "sourceType": "demo",
+          "explanation": "Legumes can work with soil bacteria to add some nitrogen."
+        },
+        {
+          "id": "climate_risk",
+          "label": "Exposure to dry spells",
+          "rating": 3,
+          "direction": "lower_is_better",
+          "ratingType": "illustrative",
+          "sourceType": "demo",
+          "explanation": "A short crop finishes before the driest months."
+        },
+        {
+          "id": "income_opportunity",
+          "label": "Range of products to sell",
+          "rating": 4,
+          "direction": "higher_is_better",
+          "ratingType": "illustrative",
+          "sourceType": "demo",
+          "explanation": "Adds a second product. No price data was used."
+        }
+      ],
+      "water": {
+        "relativeDemand": "lower",
+        "notes": [
+          "April–May average roughly 100–120 mm of rain per month (NASA POWER), which a short legume may use, but dry spells still happen."
+        ],
+        "sourceType": "observed"
+      },
+      "soilCover": {
+        "monthsCovered": 8,
+        "notes": [
+          "Bare from July to September unless a cover crop is added."
+        ],
+        "sourceType": "demo"
+      },
+      "benefits": [
+        {
+          "text": "Uses less water than Yala rice, which matters in years when tanks are low.",
+          "sourceType": "estimated"
+        },
+        {
+          "text": "As a legume, mung bean may add nitrogen for the next rice crop.",
+          "sourceType": "estimated"
+        },
+        {
+          "text": "Changing crops can interrupt rice pest and weed cycles.",
+          "sourceType": "estimated"
+        }
+      ],
+      "risks": [
+        {
+          "text": "Heat and dry spells could reduce mung bean yields.",
+          "severity": "medium",
+          "sourceType": "demo"
+        },
+        {
+          "text": "Mung bean is damaged by waterlogging; paddy fields need good drainage.",
+          "severity": "high",
+          "sourceType": "estimated"
+        },
+        {
+          "text": "Heavy rain at harvest can spoil pods.",
+          "severity": "medium",
+          "sourceType": "estimated"
+        },
+        {
+          "text": "Market price and seed availability were not checked.",
+          "severity": "medium",
+          "sourceType": "demo"
+        }
+      ],
+      "explanation": {
+        "summary": "This option lowers water needs in Yala by swapping the second rice crop for a fast legume.",
+        "details": [
+          "NASA POWER rainfall shows a smaller rainy period in April–May before the dry months.",
+          "A crop of about 60–90 days could fit in that window, depending on the variety."
+        ],
+        "technical": "Illustrative demo strategy. Indicator ratings are hand-prepared, not model outputs."
+      },
+      "dataGaps": [
+        {
+          "id": "drainage",
+          "text": "Whether your paddy field drains well enough for a dry-land crop.",
+          "impact": "high"
+        },
+        {
+          "id": "market",
+          "text": "Local buyers and prices for mung bean.",
+          "impact": "medium"
+        },
+        {
+          "id": "seed",
+          "text": "Availability of a suitable short-duration variety.",
+          "impact": "medium"
+        }
+      ],
+      "localChecks": [
+        "Ask the agricultural extension officer which mung bean varieties are recommended locally.",
+        "Check whether your field can be drained after Maha harvest.",
+        "Ask local buyers about demand before planting."
+      ],
+      "uncertainty": {
+        "level": "high",
+        "notes": "Illustrative demo content; actual suitability depends on drainage, variety and the season's rainfall."
+      },
+      "constraintFlags": [
+        {
+          "constraintType": "no_irrigation",
+          "cropId": "rice",
+          "effect": "flagged",
+          "message": "Rice in Maha (Oct–Feb) usually needs irrigation here: average rain is about 144 mm/month (NASA POWER, adjusted -20%), below the 150 mm rule-of-thumb for a high-water crop."
+        }
+      ],
+      "priorityFit": {
+        "rank": 1,
+        "method": "rule",
+        "explanation": "Ranked 1 of 3 for your priorities using a simple documented rule that weights the illustrative ratings. This is not a model prediction."
+      },
+      "sourceIds": [
+        "fieldverse-demo-fixtures",
+        "fieldverse-crop-reference",
+        "nasa-power-climatology",
+        "isric-soilgrids-2"
+      ]
+    },
+    {
+      "id": "alt-rice-cowpea-sunn-hemp",
+      "name": "Rice – Cowpea – Sunn hemp cover",
+      "kind": "alternative",
+      "summary": "Rice in Maha, hardy cowpea in Yala, then a sunn hemp cover crop to protect and feed the soil.",
+      "steps": [
+        {
+          "cropId": "rice",
+          "role": "main",
+          "season": {
+            "name": "Maha",
+            "startMonth": 11,
+            "endMonth": 3
+          },
+          "plantingWindow": {
+            "startMonth": 11,
+            "endMonth": 11
+          }
+        },
+        {
+          "cropId": "cowpea",
+          "role": "short_season",
+          "season": {
+            "name": "Yala",
+            "startMonth": 4,
+            "endMonth": 6
+          },
+          "plantingWindow": {
+            "startMonth": 4,
+            "endMonth": 4
+          }
+        },
+        {
+          "cropId": "sunn-hemp",
+          "role": "cover",
+          "season": {
+            "name": "Cover period",
+            "startMonth": 7,
+            "endMonth": 9
+          },
+          "notes": "Turned into the soil before Maha land preparation."
+        }
+      ],
+      "feasibility": {
+        "status": "not_feasible",
+        "reasons": [
+          "You told us Sunn hemp (cover crop) seed is not available.",
+          "Rice in Maha (Nov–Mar) usually needs irrigation here: average rain is about 120 mm/month (NASA POWER, adjusted -20%), below the 150 mm rule-of-thumb for a high-water crop.",
+          "Cowpea is hardy, but the cover crop is unlikely without water.",
+          "The sunn hemp cover crop grows in the driest months and may establish poorly without some water."
+        ]
+      },
+      "suitability": {
+        "level": "unknown",
+        "score": null,
+        "scoreType": "none",
+        "sourceType": "demo"
+      },
+      "indicators": [
+        {
+          "id": "water_demand",
+          "label": "Water needed",
+          "rating": 2,
+          "direction": "lower_is_better",
+          "ratingType": "illustrative",
+          "sourceType": "demo",
+          "explanation": "Cowpea and sunn hemp generally cope with dry conditions."
+        },
+        {
+          "id": "soil_cover",
+          "label": "Soil cover through the year",
+          "rating": 5,
+          "direction": "higher_is_better",
+          "ratingType": "illustrative",
+          "sourceType": "demo",
+          "explanation": "The field stays covered nearly all year."
+        },
+        {
+          "id": "nitrogen_contribution",
+          "label": "Natural nitrogen added",
+          "rating": 4,
+          "direction": "higher_is_better",
+          "ratingType": "illustrative",
+          "sourceType": "demo",
+          "explanation": "Two legumes in the rotation."
+        },
+        {
+          "id": "climate_risk",
+          "label": "Exposure to dry spells",
+          "rating": 4,
+          "direction": "lower_is_better",
+          "ratingType": "illustrative",
+          "sourceType": "demo",
+          "explanation": "Cowpea is hardy, but the cover crop depends on scarce rain."
+        },
+        {
+          "id": "income_opportunity",
+          "label": "Range of products to sell",
+          "rating": 3,
+          "direction": "higher_is_better",
+          "ratingType": "illustrative",
+          "sourceType": "demo",
+          "explanation": "Cowpea adds a product; sunn hemp is for the soil, not for sale."
+        }
+      ],
+      "water": {
+        "relativeDemand": "lower",
+        "notes": [
+          "July–September rainfall is low (NASA POWER), so the cover crop may need supplementary water to establish."
+        ],
+        "sourceType": "observed"
+      },
+      "soilCover": {
+        "monthsCovered": 12,
+        "notes": [
+          "Continuous cover can reduce erosion and weed growth."
+        ],
+        "sourceType": "demo"
+      },
+      "benefits": [
+        {
+          "text": "Keeps the soil covered all year, which can reduce erosion and weeds.",
+          "sourceType": "estimated"
+        },
+        {
+          "text": "Cowpea tolerates heat and dry spells better than many crops.",
+          "sourceType": "estimated"
+        },
+        {
+          "text": "Turning in sunn hemp adds organic matter to the soil.",
+          "sourceType": "estimated"
+        }
+      ],
+      "risks": [
+        {
+          "text": "The cover crop would probably need to be dropped.",
+          "severity": "medium",
+          "sourceType": "demo"
+        },
+        {
+          "text": "The cover crop may fail in a very dry July–September.",
+          "severity": "medium",
+          "sourceType": "observed"
+        },
+        {
+          "text": "Extra work and seed cost for a crop that is not sold.",
+          "severity": "medium",
+          "sourceType": "demo"
+        },
+        {
+          "text": "Cowpea, like mung bean, does not tolerate waterlogging.",
+          "severity": "high",
+          "sourceType": "estimated"
+        }
+      ],
+      "explanation": {
+        "summary": "This option focuses on soil health by adding two legumes and keeping the ground covered.",
+        "details": [
+          "Rainfall data shows a dry gap from June to September; the cover crop is placed in that gap, which is why it needs review.",
+          "Benefits to soil build up over several seasons, not immediately."
+        ],
+        "technical": "Illustrative demo strategy with feasibility flagged for review because cover-crop months coincide with the lowest observed rainfall."
+      },
+      "dataGaps": [
+        {
+          "id": "cover-water",
+          "text": "Whether any water is available to establish a cover crop in July.",
+          "impact": "high"
+        },
+        {
+          "id": "seed",
+          "text": "Local availability of sunn hemp seed.",
+          "impact": "medium"
+        },
+        {
+          "id": "field-soil-test",
+          "text": "No soil test of your field is available.",
+          "impact": "medium"
+        }
+      ],
+      "localChecks": [
+        "Ask whether sunn hemp seed is sold locally or through farmer organisations.",
+        "Discuss with an extension officer whether a green-manure crop fits your land preparation timing."
+      ],
+      "uncertainty": {
+        "level": "high",
+        "notes": "Illustrative demo content; cover-crop establishment in the dry season is especially uncertain."
+      },
+      "constraintFlags": [
+        {
+          "constraintType": "no_irrigation",
+          "cropId": "rice",
+          "effect": "flagged",
+          "message": "Rice in Maha (Nov–Mar) usually needs irrigation here: average rain is about 120 mm/month (NASA POWER, adjusted -20%), below the 150 mm rule-of-thumb for a high-water crop."
+        },
+        {
+          "constraintType": "seeds_unavailable",
+          "cropId": "sunn-hemp",
+          "effect": "excluded",
+          "message": "You told us Sunn hemp (cover crop) seed is not available."
+        }
+      ],
+      "priorityFit": {
+        "rank": 2,
+        "method": "rule",
+        "explanation": "Ranked 2 of 3 for your priorities using a simple documented rule that weights the illustrative ratings. This is not a model prediction."
+      },
+      "sourceIds": [
+        "fieldverse-demo-fixtures",
+        "fieldverse-crop-reference",
+        "nasa-power-climatology",
+        "isric-soilgrids-2"
+      ]
+    }
+  ],
+  "changes": [
+    {
+      "strategyId": "current-rice-rice",
+      "direction": "worsens",
+      "feasibilityBefore": "feasible",
+      "feasibilityAfter": "not_feasible",
+      "summary": "Yala rice is unlikely to be possible."
+    },
+    {
+      "strategyId": "alt-rice-mung-bean",
+      "direction": "worsens",
+      "feasibilityBefore": "feasible",
+      "feasibilityAfter": "needs_review",
+      "summary": "Possible but riskier; timing becomes critical."
+    },
+    {
+      "strategyId": "alt-rice-cowpea-sunn-hemp",
+      "direction": "worsens",
+      "feasibilityBefore": "needs_review",
+      "feasibilityAfter": "not_feasible",
+      "summary": "Cowpea may cope best; the cover crop likely fails."
+    }
+  ],
+  "explanation": [
+    "Hotter and drier conditions together are the toughest case for the Yala season.",
+    "Strategies that avoid a second rice crop are generally less exposed in this illustrative view."
+  ],
+  "constraintsApplied": [
+    {
+      "constraint": {
+        "type": "no_irrigation",
+        "cropId": null,
+        "note": "Tank is often empty in Yala"
+      },
+      "handled": true,
+      "handling": "rule",
+      "message": "Flagged 4 crop step(s) that rely on more water than the observed rainfall usually provides. This is a simple documented rule, not a recalculated suitability."
+    },
+    {
+      "constraint": {
+        "type": "seeds_unavailable",
+        "cropId": "sunn-hemp",
+        "note": null
+      },
+      "handled": true,
+      "handling": "rule",
+      "message": "1 strategy(ies) using Sunn hemp (cover crop) were marked not feasible."
+    }
+  ]
+}

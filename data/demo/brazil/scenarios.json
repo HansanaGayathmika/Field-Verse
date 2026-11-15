@@ -1,0 +1,46 @@
+{
+  "schemaVersion": "1.0",
+  "fixtureType": "illustrative_demo",
+  "note": "ILLUSTRATIVE DEMO FIXTURE. Prepared descriptions of how demo strategies might be affected by hypothetical changes. NOT climate projections or model outputs.",
+  "presets": [
+    { "id": "baseline", "label": "Today's climate (baseline)", "rainfallChangePercent": 0, "temperatureChangeCelsius": 0, "description": "Observed 2001–2025 average conditions." },
+    { "id": "drier", "label": "20% less rain", "rainfallChangePercent": -20, "temperatureChangeCelsius": 0, "description": "What if every month had a fifth less rain?" },
+    { "id": "wetter", "label": "20% more rain", "rainfallChangePercent": 20, "temperatureChangeCelsius": 0, "description": "What if every month had a fifth more rain?" },
+    { "id": "hotter", "label": "2 °C warmer", "rainfallChangePercent": 0, "temperatureChangeCelsius": 2, "description": "What if every month were 2 °C warmer?" },
+    { "id": "hot-dry", "label": "Hotter and drier", "rainfallChangePercent": -20, "temperatureChangeCelsius": 2, "description": "20% less rain and 2 °C warmer together." }
+  ],
+  "effects": {
+    "drier": {
+      "explanation": ["Less rain shortens the useful wet season, which matters most for the second crop.", "Soybean in the main season is usually less affected than the second crop."],
+      "strategies": {
+        "current-soybean-maize": { "feasibility": "needs_review", "feasibilityReason": "Second-crop maize may run out of water before grain filling.", "indicatorDeltas": { "climate_risk": 1 }, "addRisk": { "text": "Higher chance of second-crop maize yield loss.", "severity": "high" }, "direction": "worsens", "summary": "The maize second crop becomes much riskier." },
+        "alt-soybean-sorghum": { "indicatorDeltas": { "climate_risk": 1 }, "addRisk": { "text": "Sorghum may still be stressed late in the season.", "severity": "medium" }, "direction": "worsens", "summary": "Somewhat riskier, but sorghum copes better than maize." },
+        "alt-soybean-sunn-hemp": { "direction": "unchanged", "summary": "Little cash crop exposure in the second half of the season." }
+      }
+    },
+    "wetter": {
+      "explanation": ["More rain could extend the second-crop window, but very wet harvests can cause quality problems."],
+      "strategies": {
+        "current-soybean-maize": { "indicatorDeltas": { "climate_risk": -1 }, "addRisk": { "text": "Wet weather at soybean harvest can delay maize planting.", "severity": "medium" }, "direction": "improves", "summary": "A longer wet season could help second-crop maize." },
+        "alt-soybean-sorghum": { "direction": "unchanged", "summary": "Little change in this illustrative view." },
+        "alt-soybean-sunn-hemp": { "direction": "improves", "summary": "More growth of the cover crop." }
+      }
+    },
+    "hotter": {
+      "explanation": ["Higher temperatures increase water loss from soil and plants and can stress crops at flowering."],
+      "strategies": {
+        "current-soybean-maize": { "indicatorDeltas": { "climate_risk": 1 }, "addRisk": { "text": "Heat during maize flowering in the second crop.", "severity": "medium" }, "direction": "worsens", "summary": "More heat stress on second-crop maize." },
+        "alt-soybean-sorghum": { "direction": "unchanged", "summary": "Sorghum is generally heat tolerant; little change in this illustrative view." },
+        "alt-soybean-sunn-hemp": { "direction": "unchanged", "summary": "Sunn hemp is generally heat tolerant." }
+      }
+    },
+    "hot-dry": {
+      "explanation": ["Hotter and drier conditions together would make any second cash crop risky.", "Options that do not rely on a second harvest are less exposed in this illustrative view."],
+      "strategies": {
+        "current-soybean-maize": { "feasibility": "not_feasible", "feasibilityReason": "In this illustrative case, second-crop maize would likely fail in most years.", "indicatorDeltas": { "climate_risk": 1 }, "addRisk": { "text": "Very high risk for second-crop maize.", "severity": "high" }, "direction": "worsens", "summary": "Second-crop maize becomes unlikely to succeed." },
+        "alt-soybean-sorghum": { "feasibility": "needs_review", "feasibilityReason": "Sorghum may be possible only with early planting.", "indicatorDeltas": { "climate_risk": 1 }, "addRisk": { "text": "Sorghum yields may fall in hot, dry years.", "severity": "medium" }, "direction": "worsens", "summary": "Riskier, but more likely than maize to produce a harvest." },
+        "alt-soybean-sunn-hemp": { "direction": "unchanged", "summary": "Least exposed of the three in this illustrative view." }
+      }
+    }
+  }
+}

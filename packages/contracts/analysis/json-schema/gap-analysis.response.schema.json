@@ -1,0 +1,480 @@
+{
+  "$ref": "#/definitions/gap-analysis.response",
+  "definitions": {
+    "gap-analysis.response": {
+      "type": "object",
+      "properties": {
+        "schemaVersion": {
+          "type": "string",
+          "const": "1.0"
+        },
+        "requestId": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 100
+        },
+        "mode": {
+          "type": "string",
+          "enum": [
+            "demo",
+            "remote"
+          ]
+        },
+        "modelVersion": {
+          "anyOf": [
+            {
+              "type": "string",
+              "maxLength": 100
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "region": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string",
+              "minLength": 2,
+              "maxLength": 64,
+              "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+            },
+            "name": {
+              "type": "string"
+            },
+            "country": {
+              "type": "string"
+            },
+            "countryCode": {
+              "type": "string",
+              "minLength": 2,
+              "maxLength": 2
+            },
+            "latitude": {
+              "type": "number"
+            },
+            "longitude": {
+              "type": "number"
+            },
+            "agroEcologicalZone": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          },
+          "required": [
+            "id",
+            "name",
+            "country",
+            "countryCode",
+            "latitude",
+            "longitude"
+          ],
+          "additionalProperties": false
+        },
+        "limitations": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "maxLength": 800
+          }
+        },
+        "dataSources": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 100
+              },
+              "name": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 200
+              },
+              "provider": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "maxLength": 200
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "sourceType": {
+                "type": "string",
+                "enum": [
+                  "observed",
+                  "estimated",
+                  "farmer_provided",
+                  "modelled",
+                  "demo",
+                  "unavailable"
+                ]
+              },
+              "datasetVersion": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "maxLength": 200
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "spatialResolution": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "maxLength": 100
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "temporalCoverage": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "maxLength": 200
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "url": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "format": "uri"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "retrievedAt": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "license": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "maxLength": 200
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "notes": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "maxLength": 2000
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              }
+            },
+            "required": [
+              "id",
+              "name",
+              "sourceType"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "disclaimer": {
+          "type": "string",
+          "maxLength": 800
+        },
+        "generatedAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "analysisType": {
+          "type": "string",
+          "const": "gap_analysis"
+        },
+        "currentCalendar": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "cropId": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "minLength": 2,
+                    "maxLength": 64,
+                    "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+                  },
+                  {
+                    "type": "string",
+                    "const": "fallow"
+                  }
+                ]
+              },
+              "label": {
+                "type": "string",
+                "maxLength": 120
+              },
+              "months": {
+                "type": "array",
+                "items": {
+                  "type": "integer",
+                  "minimum": 1,
+                  "maximum": 12
+                },
+                "minItems": 1
+              },
+              "plantingMonths": {
+                "type": "array",
+                "items": {
+                  "type": "integer",
+                  "minimum": 1,
+                  "maximum": 12
+                },
+                "default": []
+              },
+              "harvestMonths": {
+                "type": "array",
+                "items": {
+                  "type": "integer",
+                  "minimum": 1,
+                  "maximum": 12
+                },
+                "default": []
+              },
+              "sourceType": {
+                "type": "string",
+                "enum": [
+                  "observed",
+                  "estimated",
+                  "farmer_provided",
+                  "modelled",
+                  "demo",
+                  "unavailable"
+                ]
+              }
+            },
+            "required": [
+              "cropId",
+              "label",
+              "months",
+              "sourceType"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "idleWindows": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "startMonth": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 12
+              },
+              "endMonth": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 12
+              },
+              "months": {
+                "type": "array",
+                "items": {
+                  "type": "integer",
+                  "minimum": 1,
+                  "maximum": 12
+                },
+                "minItems": 1
+              },
+              "rainfallMm": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "rainfallSourceId": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            },
+            "required": [
+              "startMonth",
+              "endMonth",
+              "months",
+              "rainfallMm"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "candidates": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "cropId": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "minLength": 2,
+                    "maxLength": 64,
+                    "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+                  },
+                  {
+                    "type": "string",
+                    "const": "fallow"
+                  }
+                ]
+              },
+              "role": {
+                "type": "string",
+                "enum": [
+                  "short_season",
+                  "cover",
+                  "fallow"
+                ]
+              },
+              "windowIndex": {
+                "type": "integer",
+                "minimum": 0
+              },
+              "durationDays": {
+                "anyOf": [
+                  {
+                    "type": "object",
+                    "properties": {
+                      "min": {
+                        "type": "integer",
+                        "exclusiveMinimum": 0
+                      },
+                      "max": {
+                        "type": "integer",
+                        "exclusiveMinimum": 0
+                      }
+                    },
+                    "required": [
+                      "min",
+                      "max"
+                    ],
+                    "additionalProperties": false
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "fit": {
+                "type": "string",
+                "enum": [
+                  "fits",
+                  "tight",
+                  "does_not_fit",
+                  "unknown"
+                ]
+              },
+              "fitMethod": {
+                "type": "string",
+                "enum": [
+                  "rule",
+                  "model",
+                  "demo"
+                ]
+              },
+              "benefits": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "maxLength": 400
+                }
+              },
+              "risks": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "maxLength": 400
+                }
+              },
+              "waterNote": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "maxLength": 400
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "explanation": {
+                "type": "string",
+                "maxLength": 800
+              },
+              "sourceType": {
+                "type": "string",
+                "enum": [
+                  "observed",
+                  "estimated",
+                  "farmer_provided",
+                  "modelled",
+                  "demo",
+                  "unavailable"
+                ]
+              }
+            },
+            "required": [
+              "cropId",
+              "role",
+              "windowIndex",
+              "durationDays",
+              "fit",
+              "fitMethod",
+              "benefits",
+              "risks",
+              "explanation",
+              "sourceType"
+            ],
+            "additionalProperties": false
+          }
+        }
+      },
+      "required": [
+        "schemaVersion",
+        "requestId",
+        "mode",
+        "modelVersion",
+        "region",
+        "limitations",
+        "dataSources",
+        "disclaimer",
+        "generatedAt",
+        "analysisType",
+        "currentCalendar",
+        "idleWindows",
+        "candidates"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}

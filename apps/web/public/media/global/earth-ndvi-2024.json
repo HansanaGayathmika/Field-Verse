@@ -1,0 +1,26 @@
+{
+  "year": 2024,
+  "frameUrls": [
+    "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi?SERVICE=WMS&REQUEST=GetMap&VERSION=1.3.0&LAYERS=MODIS_Terra_L3_NDVI_Monthly&CRS=EPSG:4326&BBOX=-60,-180,80,180&WIDTH=1280&HEIGHT=498&FORMAT=image/jpeg&TIME=2024-01-01&STYLES=&BGCOLOR=0x0B1F18",
+    "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi?SERVICE=WMS&REQUEST=GetMap&VERSION=1.3.0&LAYERS=MODIS_Terra_L3_NDVI_Monthly&CRS=EPSG:4326&BBOX=-60,-180,80,180&WIDTH=1280&HEIGHT=498&FORMAT=image/jpeg&TIME=2024-02-01&STYLES=&BGCOLOR=0x0B1F18",
+    "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi?SERVICE=WMS&REQUEST=GetMap&VERSION=1.3.0&LAYERS=MODIS_Terra_L3_NDVI_Monthly&CRS=EPSG:4326&BBOX=-60,-180,80,180&WIDTH=1280&HEIGHT=498&FORMAT=image/jpeg&TIME=2024-03-01&STYLES=&BGCOLOR=0x0B1F18",
+    "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi?SERVICE=WMS&REQUEST=GetMap&VERSION=1.3.0&LAYERS=MODIS_Terra_L3_NDVI_Monthly&CRS=EPSG:4326&BBOX=-60,-180,80,180&WIDTH=1280&HEIGHT=498&FORMAT=image/jpeg&TIME=2024-04-01&STYLES=&BGCOLOR=0x0B1F18",
+    "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi?SERVICE=WMS&REQUEST=GetMap&VERSION=1.3.0&LAYERS=MODIS_Terra_L3_NDVI_Monthly&CRS=EPSG:4326&BBOX=-60,-180,80,180&WIDTH=1280&HEIGHT=498&FORMAT=image/jpeg&TIME=2024-05-01&STYLES=&BGCOLOR=0x0B1F18",
+    "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi?SERVICE=WMS&REQUEST=GetMap&VERSION=1.3.0&LAYERS=MODIS_Terra_L3_NDVI_Monthly&CRS=EPSG:4326&BBOX=-60,-180,80,180&WIDTH=1280&HEIGHT=498&FORMAT=image/jpeg&TIME=2024-06-01&STYLES=&BGCOLOR=0x0B1F18",
+    "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi?SERVICE=WMS&REQUEST=GetMap&VERSION=1.3.0&LAYERS=MODIS_Terra_L3_NDVI_Monthly&CRS=EPSG:4326&BBOX=-60,-180,80,180&WIDTH=1280&HEIGHT=498&FORMAT=image/jpeg&TIME=2024-07-01&STYLES=&BGCOLOR=0x0B1F18",
+    "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi?SERVICE=WMS&REQUEST=GetMap&VERSION=1.3.0&LAYERS=MODIS_Terra_L3_NDVI_Monthly&CRS=EPSG:4326&BBOX=-60,-180,80,180&WIDTH=1280&HEIGHT=498&FORMAT=image/jpeg&TIME=2024-08-01&STYLES=&BGCOLOR=0x0B1F18",
+    "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi?SERVICE=WMS&REQUEST=GetMap&VERSION=1.3.0&LAYERS=MODIS_Terra_L3_NDVI_Monthly&CRS=EPSG:4326&BBOX=-60,-180,80,180&WIDTH=1280&HEIGHT=498&FORMAT=image/jpeg&TIME=2024-09-01&STYLES=&BGCOLOR=0x0B1F18",
+    "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi?SERVICE=WMS&REQUEST=GetMap&VERSION=1.3.0&LAYERS=MODIS_Terra_L3_NDVI_Monthly&CRS=EPSG:4326&BBOX=-60,-180,80,180&WIDTH=1280&HEIGHT=498&FORMAT=image/jpeg&TIME=2024-10-01&STYLES=&BGCOLOR=0x0B1F18",
+    "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi?SERVICE=WMS&REQUEST=GetMap&VERSION=1.3.0&LAYERS=MODIS_Terra_L3_NDVI_Monthly&CRS=EPSG:4326&BBOX=-60,-180,80,180&WIDTH=1280&HEIGHT=498&FORMAT=image/jpeg&TIME=2024-11-01&STYLES=&BGCOLOR=0x0B1F18",
+    "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi?SERVICE=WMS&REQUEST=GetMap&VERSION=1.3.0&LAYERS=MODIS_Terra_L3_NDVI_Monthly&CRS=EPSG:4326&BBOX=-60,-180,80,180&WIDTH=1280&HEIGHT=498&FORMAT=image/jpeg&TIME=2024-12-01&STYLES=&BGCOLOR=0x0B1F18"
+  ],
+  "framesPerSecond": 1.25,
+  "files": [
+    "earth-ndvi-2024.webm",
+    "earth-ndvi-2024.mp4",
+    "earth-ndvi-2024-poster.jpg"
+  ],
+  "layer": "MODIS_Terra_L3_NDVI_Monthly",
+  "retrievedAt": "2026-11-14T06:22:58.992Z",
+  "credit": "Imagery: NASA GIBS / MODIS Terra NDVI (monthly), part of NASA's ESDIS."
+}

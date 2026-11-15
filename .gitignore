@@ -1,0 +1,32 @@
+node_modules/
+dist/
+coverage/
+.env
+.env.*
+!.env.example
+.mongo-data/
+playwright-report/
+test-results/
+*.log
+.DS_Store
+.vite/
+apps/web/public/media/**/_frames/
+
+# Python (ml-service)
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Build caches
+*.tsbuildinfo
+.cache/
+blob-report/
+playwright/.cache/
+
+# Editors and OS
+.vscode/
+.idea/
+Thumbs.db
+desktop.ini
+*.swp

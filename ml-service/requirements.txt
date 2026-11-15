@@ -1,0 +1,7 @@
+# Python 3.13 (scikit-learn 1.6.x is required to load roots_suitability_model_v2.joblib; it has no Python 3.14 build)
+scikit-learn==1.6.1
+numpy
+pandas
+joblib
+fastapi
+uvicorn[standard]

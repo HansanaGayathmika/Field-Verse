@@ -1,0 +1,173 @@
+{
+  "schemaVersion": "1.0",
+  "requestId": "09fe1b4b-e29e-48b6-9b0b-a0be61c792ec",
+  "mode": "demo",
+  "modelVersion": null,
+  "region": {
+    "id": "kenya-nakuru",
+    "name": "Nakuru County (near Njoro), Kenya",
+    "country": "Kenya",
+    "countryCode": "KE",
+    "latitude": -0.33,
+    "longitude": 35.94,
+    "agroEcologicalZone": "Rift Valley highlands"
+  },
+  "limitations": [
+    "DEMO MODE: gap candidates are a hand-picked illustrative list. \"Fit\" compares typical crop duration with the length of your idle months — a documented rule, not a model prediction.",
+    "Crop durations are broad typical ranges; local varieties may differ."
+  ],
+  "dataSources": [
+    {
+      "id": "nasa-power-climatology",
+      "name": "NASA POWER — Climatology API",
+      "provider": "NASA Langley Research Center (LaRC) POWER Project",
+      "sourceType": "observed",
+      "datasetVersion": "POWER API v2.10.1 (MERRA2, POWER)",
+      "spatialResolution": "0.5° × 0.625° (MERRA-2 grid)",
+      "temporalCoverage": "25-year Meteorological and Solar Monthly & Annual Climatologies (January 2001 - December 2025)",
+      "url": "https://power.larc.nasa.gov/api/temporal/climatology/point?parameters=PRECTOTCORR,T2M,T2M_MAX,T2M_MIN&community=AG&longitude=35.94&latitude=-0.33&format=JSON",
+      "retrievedAt": "2026-11-14T07:56:13.790Z",
+      "license": "NASA open data — no restrictions; acknowledgement requested",
+      "notes": "Precipitation is PRECTOTCORR (bias-corrected, mm/day) converted to a monthly total by multiplying by days in the month. Values are reanalysis/satellite-derived estimates for a ~50 km grid cell, not a farm rain gauge."
+    },
+    {
+      "id": "fieldverse-demo-fixtures",
+      "name": "FieldVerse illustrative demo fixtures",
+      "provider": "FieldVerse Software Engineering team",
+      "sourceType": "demo",
+      "datasetVersion": "demo-fixtures-1.0",
+      "notes": "Hand-prepared demonstration strategies, scenario descriptions and ratings. NOT machine-learning predictions. Will be replaced by the AI/ML team analysis service."
+    },
+    {
+      "id": "fieldverse-crop-reference",
+      "name": "General crop reference ranges",
+      "provider": "FieldVerse Software Engineering team",
+      "sourceType": "estimated",
+      "notes": "Broad typical crop durations and tolerances across varieties. Verify locally."
+    }
+  ],
+  "disclaimer": "Illustrative demo: these strategies were prepared by people to demonstrate FieldVerse. They are not machine-learning predictions or agronomic advice. Always check with a local agricultural expert.",
+  "generatedAt": "2026-11-14T09:59:31.461Z",
+  "analysisType": "gap_analysis",
+  "currentCalendar": [
+    {
+      "cropId": "maize",
+      "label": "Long-rains maize",
+      "months": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "plantingMonths": [
+        3,
+        4
+      ],
+      "harvestMonths": [
+        8
+      ],
+      "sourceType": "demo"
+    }
+  ],
+  "idleWindows": [
+    {
+      "startMonth": 9,
+      "endMonth": 2,
+      "months": [
+        9,
+        10,
+        11,
+        12,
+        1,
+        2
+      ],
+      "rainfallMm": 534,
+      "rainfallSourceId": "nasa-power-climatology"
+    }
+  ],
+  "candidates": [
+    {
+      "cropId": "common-bean",
+      "role": "short_season",
+      "windowIndex": 0,
+      "durationDays": {
+        "min": 70,
+        "max": 110
+      },
+      "fit": "fits",
+      "fitMethod": "rule",
+      "benefits": [
+        "Uses the short rains.",
+        "Legume that may add nitrogen."
+      ],
+      "risks": [
+        "Sensitive to drought.",
+        "Leaf diseases in wet weather."
+      ],
+      "waterNote": "About 534 mm of rain usually falls in these 6 month(s) (NASA POWER average). Common bean has a medium water need (general reference).",
+      "explanation": "A familiar short-rains crop in the highlands. Typical duration (70–110 days) fits inside this 182-day gap.",
+      "sourceType": "demo"
+    },
+    {
+      "cropId": "lablab",
+      "role": "cover",
+      "windowIndex": 0,
+      "durationDays": {
+        "min": 90,
+        "max": 150
+      },
+      "fit": "fits",
+      "fitMethod": "rule",
+      "benefits": [
+        "Protects soil into the dry season.",
+        "Fodder for livestock."
+      ],
+      "risks": [
+        "May grow slowly in cool highland temperatures."
+      ],
+      "waterNote": "About 534 mm of rain usually falls in these 6 month(s) (NASA POWER average). Lablab (dolichos bean) has a low water need (general reference).",
+      "explanation": "A deep-rooted legume cover. Typical duration (90–150 days) fits inside this 182-day gap.",
+      "sourceType": "demo"
+    },
+    {
+      "cropId": "cowpea",
+      "role": "short_season",
+      "windowIndex": 0,
+      "durationDays": {
+        "min": 60,
+        "max": 100
+      },
+      "fit": "fits",
+      "fitMethod": "rule",
+      "benefits": [
+        "Hardy in dry spells."
+      ],
+      "risks": [
+        "Prefers warmer conditions than the 14–17 °C mean temperatures observed here (NASA POWER)."
+      ],
+      "waterNote": "About 534 mm of rain usually falls in these 6 month(s) (NASA POWER average). Cowpea has a low water need (general reference).",
+      "explanation": "Included to show a crop that may not suit cool highlands. Typical duration (60–100 days) fits inside this 182-day gap.",
+      "sourceType": "demo"
+    },
+    {
+      "cropId": "fallow",
+      "role": "fallow",
+      "windowIndex": 0,
+      "durationDays": null,
+      "fit": "fits",
+      "fitMethod": "rule",
+      "benefits": [
+        "No seed or labour cost.",
+        "Gives time for land preparation."
+      ],
+      "risks": [
+        "Bare soil can erode and weeds can grow."
+      ],
+      "waterNote": null,
+      "explanation": "Leaving land fallow is always a valid choice.",
+      "sourceType": "demo"
+    }
+  ]
+}

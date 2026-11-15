@@ -1,0 +1,312 @@
+{
+  "$ref": "#/definitions/rotation-comparison.request",
+  "definitions": {
+    "rotation-comparison.request": {
+      "type": "object",
+      "properties": {
+        "schemaVersion": {
+          "type": "string",
+          "const": "1.0"
+        },
+        "regionId": {
+          "type": "string",
+          "minLength": 2,
+          "maxLength": 64,
+          "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+        },
+        "field": {
+          "type": "object",
+          "properties": {
+            "latitude": {
+              "type": "number",
+              "minimum": -90,
+              "maximum": 90
+            },
+            "longitude": {
+              "type": "number",
+              "minimum": -180,
+              "maximum": 180
+            },
+            "currentCrop": {
+              "type": "string",
+              "minLength": 2,
+              "maxLength": 64,
+              "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+            },
+            "cropHistory": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 2,
+                "maxLength": 64,
+                "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+              },
+              "maxItems": 12,
+              "default": []
+            },
+            "harvestMonth": {
+              "anyOf": [
+                {
+                  "anyOf": [
+                    {
+                      "type": "integer",
+                      "minimum": 1,
+                      "maximum": 12
+                    },
+                    {
+                      "type": "string",
+                      "const": "harvested"
+                    }
+                  ]
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "nextPlantingMonth": {
+              "anyOf": [
+                {
+                  "type": "integer",
+                  "minimum": 1,
+                  "maximum": 12
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "seasonsPerYear": {
+              "anyOf": [
+                {
+                  "type": "number",
+                  "enum": [
+                    1,
+                    2,
+                    3
+                  ]
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "soilType": {
+              "type": "string",
+              "enum": [
+                "clay",
+                "loam",
+                "sandy",
+                "silt",
+                "unknown"
+              ],
+              "default": "unknown"
+            },
+            "soilPh": {
+              "anyOf": [
+                {
+                  "type": "number",
+                  "minimum": 3,
+                  "maximum": 10
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "irrigation": {
+              "type": "string",
+              "enum": [
+                "none",
+                "limited",
+                "full",
+                "unknown"
+              ],
+              "default": "unknown"
+            },
+            "waterlogging": {
+              "type": "string",
+              "enum": [
+                "several_weeks",
+                "few_days",
+                "drains_well",
+                "unknown"
+              ],
+              "default": "unknown"
+            },
+            "inputLevel": {
+              "type": "string",
+              "enum": [
+                "minimal",
+                "moderate",
+                "high",
+                "unknown"
+              ],
+              "default": "unknown"
+            },
+            "excludedCrops": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 2,
+                "maxLength": 64,
+                "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+              },
+              "maxItems": 30,
+              "default": []
+            },
+            "areaHectares": {
+              "anyOf": [
+                {
+                  "type": "number",
+                  "exclusiveMinimum": 0,
+                  "maximum": 100000
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            }
+          },
+          "required": [
+            "latitude",
+            "longitude",
+            "currentCrop"
+          ],
+          "additionalProperties": false
+        },
+        "priorities": {
+          "type": "object",
+          "properties": {
+            "water": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            },
+            "soilHealth": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            },
+            "risk": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            },
+            "income": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            },
+            "idleLand": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1,
+              "default": 0
+            },
+            "foodSecurity": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1,
+              "default": 0
+            }
+          },
+          "required": [
+            "water",
+            "soilHealth",
+            "risk",
+            "income"
+          ],
+          "additionalProperties": false
+        },
+        "scenario": {
+          "type": "object",
+          "properties": {
+            "rainfallChangePercent": {
+              "type": "number",
+              "minimum": -50,
+              "maximum": 50
+            },
+            "temperatureChangeCelsius": {
+              "type": "number",
+              "minimum": -2,
+              "maximum": 5
+            }
+          },
+          "required": [
+            "rainfallChangePercent",
+            "temperatureChangeCelsius"
+          ],
+          "additionalProperties": false,
+          "default": {
+            "rainfallChangePercent": 0,
+            "temperatureChangeCelsius": 0
+          }
+        },
+        "constraints": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "type": {
+                "type": "string",
+                "enum": [
+                  "no_irrigation",
+                  "seeds_unavailable",
+                  "soil_floods",
+                  "cannot_sell",
+                  "lacks_equipment",
+                  "crop_failed_before",
+                  "excluded_crop"
+                ]
+              },
+              "cropId": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "minLength": 2,
+                    "maxLength": 64,
+                    "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "note": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "maxLength": 280
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              }
+            },
+            "required": [
+              "type"
+            ],
+            "additionalProperties": false
+          },
+          "maxItems": 12,
+          "default": []
+        },
+        "locale": {
+          "type": "string",
+          "maxLength": 10,
+          "default": "en"
+        }
+      },
+      "required": [
+        "schemaVersion",
+        "regionId",
+        "field",
+        "priorities"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}

@@ -1,0 +1,26 @@
+{
+  "schemaVersion": "1.0",
+  "regionId": "sri-lanka-anuradhapura",
+  "field": {
+    "latitude": 8.3114,
+    "longitude": 80.4037,
+    "currentCrop": "rice",
+    "cropHistory": ["rice", "rice"],
+    "soilType": "unknown",
+    "soilPh": null,
+    "irrigation": "limited"
+  },
+  "priorities": {
+    "water": 0.4,
+    "soilHealth": 0.3,
+    "risk": 0.2,
+    "income": 0.1,
+    "idleLand": 0
+  },
+  "scenario": {
+    "rainfallChangePercent": 0,
+    "temperatureChangeCelsius": 0
+  },
+  "constraints": [],
+  "locale": "en"
+}

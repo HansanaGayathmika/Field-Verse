@@ -1,0 +1,14 @@
+{
+  "schemaVersion": "1.0",
+  "fixtureType": "illustrative_demo",
+  "note": "Demo crop calendar for a typical soybean farm near Sorriso, and hand-picked gap candidates. Fit is a documented rule (crop duration vs. idle window length), not a model prediction.",
+  "calendar": [
+    { "cropId": "soybean", "label": "Main-season soybean", "months": [10, 11, 12, 1], "plantingMonths": [10], "harvestMonths": [1], "sourceType": "demo" }
+  ],
+  "defaultIdleMonths": [2, 3, 4, 5, 6, 7, 8, 9],
+  "candidates": [
+    { "cropId": "maize", "role": "short_season", "benefits": ["Widely grown second crop with established markets."], "risks": ["Exposed to the early end of the rains."], "explanation": "The usual second crop in the region." },
+    { "cropId": "sorghum", "role": "short_season", "benefits": ["Copes better with late dry spells."], "risks": ["Smaller markets in some areas."], "explanation": "A more drought-tolerant second crop." },
+    { "cropId": "sunn-hemp", "role": "cover", "benefits": ["Protects and builds soil.", "Fast growing."], "risks": ["No harvest to sell."], "explanation": "A cover crop for soil health." }
+  ]
+}

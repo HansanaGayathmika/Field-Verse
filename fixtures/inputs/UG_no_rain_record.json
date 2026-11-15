@@ -1,0 +1,26 @@
+{
+ "location": {
+  "lat": 1.37,
+  "lon": 32.3
+ },
+ "current_crop": "maize",
+ "harvest_month": 7,
+ "previous_crop": "phaseolus_bean",
+ "previous_crop_2": "maize",
+ "next_planting_month": 9,
+ "seasons_per_year": 2,
+ "water_access": "rainfall_only",
+ "waterlogging": "days",
+ "input_level": "minimal",
+ "soil_texture": "loam",
+ "soil_ph": 5.2,
+ "excluded_crops": [],
+ "priorities": {
+  "water_saving": "important",
+  "soil_health": "very_important",
+  "risk_reduction": "important",
+  "income": "important",
+  "fallow_use": "important",
+  "food_security": "very_important"
+ }
+}

@@ -1,0 +1,2485 @@
+{
+  "$ref": "#/definitions/rotation-comparison.response",
+  "definitions": {
+    "rotation-comparison.response": {
+      "type": "object",
+      "properties": {
+        "schemaVersion": {
+          "type": "string",
+          "const": "1.0"
+        },
+        "requestId": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 100
+        },
+        "mode": {
+          "type": "string",
+          "enum": [
+            "demo",
+            "remote"
+          ]
+        },
+        "modelVersion": {
+          "anyOf": [
+            {
+              "type": "string",
+              "maxLength": 100
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "region": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string",
+              "minLength": 2,
+              "maxLength": 64,
+              "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+            },
+            "name": {
+              "type": "string"
+            },
+            "country": {
+              "type": "string"
+            },
+            "countryCode": {
+              "type": "string",
+              "minLength": 2,
+              "maxLength": 2
+            },
+            "latitude": {
+              "type": "number"
+            },
+            "longitude": {
+              "type": "number"
+            },
+            "agroEcologicalZone": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          },
+          "required": [
+            "id",
+            "name",
+            "country",
+            "countryCode",
+            "latitude",
+            "longitude"
+          ],
+          "additionalProperties": false
+        },
+        "limitations": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "maxLength": 800
+          }
+        },
+        "dataSources": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 100
+              },
+              "name": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 200
+              },
+              "provider": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "maxLength": 200
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "sourceType": {
+                "type": "string",
+                "enum": [
+                  "observed",
+                  "estimated",
+                  "farmer_provided",
+                  "modelled",
+                  "demo",
+                  "unavailable"
+                ]
+              },
+              "datasetVersion": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "maxLength": 200
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "spatialResolution": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "maxLength": 100
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "temporalCoverage": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "maxLength": 200
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "url": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "format": "uri"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "retrievedAt": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "license": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "maxLength": 200
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "notes": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "maxLength": 2000
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              }
+            },
+            "required": [
+              "id",
+              "name",
+              "sourceType"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "disclaimer": {
+          "type": "string",
+          "maxLength": 800
+        },
+        "generatedAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "analysisType": {
+          "type": "string",
+          "const": "rotation_comparison"
+        },
+        "environment": {
+          "anyOf": [
+            {
+              "type": "object",
+              "properties": {
+                "location": {
+                  "type": "object",
+                  "properties": {
+                    "latitude": {
+                      "type": "number",
+                      "minimum": -90,
+                      "maximum": 90
+                    },
+                    "longitude": {
+                      "type": "number",
+                      "minimum": -180,
+                      "maximum": 180
+                    }
+                  },
+                  "required": [
+                    "latitude",
+                    "longitude"
+                  ],
+                  "additionalProperties": false
+                },
+                "climate": {
+                  "anyOf": [
+                    {
+                      "type": "object",
+                      "properties": {
+                        "monthly": {
+                          "type": "array",
+                          "items": {
+                            "type": "object",
+                            "properties": {
+                              "month": {
+                                "type": "integer",
+                                "minimum": 1,
+                                "maximum": 12
+                              },
+                              "rainfallMm": {
+                                "anyOf": [
+                                  {
+                                    "type": "number",
+                                    "minimum": 0
+                                  },
+                                  {
+                                    "type": "null"
+                                  }
+                                ]
+                              },
+                              "rainfallMmPerDay": {
+                                "anyOf": [
+                                  {
+                                    "type": "number",
+                                    "minimum": 0
+                                  },
+                                  {
+                                    "type": "null"
+                                  }
+                                ]
+                              },
+                              "temperatureMeanC": {
+                                "type": [
+                                  "number",
+                                  "null"
+                                ]
+                              },
+                              "temperatureMaxC": {
+                                "type": [
+                                  "number",
+                                  "null"
+                                ]
+                              },
+                              "temperatureMinC": {
+                                "type": [
+                                  "number",
+                                  "null"
+                                ]
+                              }
+                            },
+                            "required": [
+                              "month",
+                              "rainfallMm",
+                              "temperatureMeanC"
+                            ],
+                            "additionalProperties": false
+                          },
+                          "minItems": 12,
+                          "maxItems": 12
+                        },
+                        "period": {
+                          "type": "string",
+                          "maxLength": 200
+                        },
+                        "sourceId": {
+                          "type": "string"
+                        },
+                        "sourceType": {
+                          "type": "string",
+                          "enum": [
+                            "observed",
+                            "estimated",
+                            "farmer_provided",
+                            "modelled",
+                            "demo",
+                            "unavailable"
+                          ]
+                        }
+                      },
+                      "required": [
+                        "monthly",
+                        "period",
+                        "sourceId",
+                        "sourceType"
+                      ],
+                      "additionalProperties": false
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                },
+                "annual": {
+                  "anyOf": [
+                    {
+                      "type": "object",
+                      "properties": {
+                        "years": {
+                          "type": "array",
+                          "items": {
+                            "type": "object",
+                            "properties": {
+                              "year": {
+                                "type": "integer",
+                                "minimum": 1900,
+                                "maximum": 2200
+                              },
+                              "rainfallTotalMm": {
+                                "anyOf": [
+                                  {
+                                    "type": "number",
+                                    "minimum": 0
+                                  },
+                                  {
+                                    "type": "null"
+                                  }
+                                ]
+                              },
+                              "temperatureMeanC": {
+                                "type": [
+                                  "number",
+                                  "null"
+                                ]
+                              }
+                            },
+                            "required": [
+                              "year",
+                              "rainfallTotalMm",
+                              "temperatureMeanC"
+                            ],
+                            "additionalProperties": false
+                          }
+                        },
+                        "sourceId": {
+                          "type": "string"
+                        },
+                        "sourceType": {
+                          "type": "string",
+                          "enum": [
+                            "observed",
+                            "estimated",
+                            "farmer_provided",
+                            "modelled",
+                            "demo",
+                            "unavailable"
+                          ]
+                        }
+                      },
+                      "required": [
+                        "years",
+                        "sourceId",
+                        "sourceType"
+                      ],
+                      "additionalProperties": false
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                },
+                "soil": {
+                  "anyOf": [
+                    {
+                      "type": "object",
+                      "properties": {
+                        "layers": {
+                          "type": "array",
+                          "items": {
+                            "type": "object",
+                            "properties": {
+                              "depthLabel": {
+                                "type": "string",
+                                "maxLength": 20
+                              },
+                              "topCm": {
+                                "type": "number",
+                                "minimum": 0
+                              },
+                              "bottomCm": {
+                                "type": "number",
+                                "minimum": 0
+                              },
+                              "values": {
+                                "type": "object",
+                                "properties": {
+                                  "phH2O": {
+                                    "type": [
+                                      "number",
+                                      "null"
+                                    ]
+                                  },
+                                  "organicCarbonGPerKg": {
+                                    "type": [
+                                      "number",
+                                      "null"
+                                    ]
+                                  },
+                                  "clayPercent": {
+                                    "type": [
+                                      "number",
+                                      "null"
+                                    ]
+                                  },
+                                  "sandPercent": {
+                                    "type": [
+                                      "number",
+                                      "null"
+                                    ]
+                                  },
+                                  "siltPercent": {
+                                    "type": [
+                                      "number",
+                                      "null"
+                                    ]
+                                  },
+                                  "nitrogenGPerKg": {
+                                    "type": [
+                                      "number",
+                                      "null"
+                                    ]
+                                  },
+                                  "bulkDensityGPerCm3": {
+                                    "type": [
+                                      "number",
+                                      "null"
+                                    ]
+                                  },
+                                  "cecCmolPerKg": {
+                                    "type": [
+                                      "number",
+                                      "null"
+                                    ]
+                                  }
+                                },
+                                "additionalProperties": false
+                              },
+                              "intervals": {
+                                "anyOf": [
+                                  {
+                                    "type": "object",
+                                    "properties": {
+                                      "phH2O": {
+                                        "anyOf": [
+                                          {
+                                            "type": "object",
+                                            "properties": {
+                                              "lower": {
+                                                "type": "number"
+                                              },
+                                              "upper": {
+                                                "type": "number"
+                                              },
+                                              "level": {
+                                                "anyOf": [
+                                                  {
+                                                    "type": "number",
+                                                    "exclusiveMinimum": 0,
+                                                    "exclusiveMaximum": 1
+                                                  },
+                                                  {
+                                                    "type": "null"
+                                                  }
+                                                ]
+                                              },
+                                              "method": {
+                                                "anyOf": [
+                                                  {
+                                                    "type": "string",
+                                                    "maxLength": 200
+                                                  },
+                                                  {
+                                                    "type": "null"
+                                                  }
+                                                ]
+                                              }
+                                            },
+                                            "required": [
+                                              "lower",
+                                              "upper"
+                                            ],
+                                            "additionalProperties": false
+                                          },
+                                          {
+                                            "type": "null"
+                                          }
+                                        ]
+                                      },
+                                      "organicCarbonGPerKg": {
+                                        "anyOf": [
+                                          {
+                                            "type": "object",
+                                            "properties": {
+                                              "lower": {
+                                                "type": "number"
+                                              },
+                                              "upper": {
+                                                "type": "number"
+                                              },
+                                              "level": {
+                                                "anyOf": [
+                                                  {
+                                                    "type": "number",
+                                                    "exclusiveMinimum": 0,
+                                                    "exclusiveMaximum": 1
+                                                  },
+                                                  {
+                                                    "type": "null"
+                                                  }
+                                                ]
+                                              },
+                                              "method": {
+                                                "anyOf": [
+                                                  {
+                                                    "type": "string",
+                                                    "maxLength": 200
+                                                  },
+                                                  {
+                                                    "type": "null"
+                                                  }
+                                                ]
+                                              }
+                                            },
+                                            "required": [
+                                              "lower",
+                                              "upper"
+                                            ],
+                                            "additionalProperties": false
+                                          },
+                                          {
+                                            "type": "null"
+                                          }
+                                        ]
+                                      },
+                                      "clayPercent": {
+                                        "anyOf": [
+                                          {
+                                            "type": "object",
+                                            "properties": {
+                                              "lower": {
+                                                "type": "number"
+                                              },
+                                              "upper": {
+                                                "type": "number"
+                                              },
+                                              "level": {
+                                                "anyOf": [
+                                                  {
+                                                    "type": "number",
+                                                    "exclusiveMinimum": 0,
+                                                    "exclusiveMaximum": 1
+                                                  },
+                                                  {
+                                                    "type": "null"
+                                                  }
+                                                ]
+                                              },
+                                              "method": {
+                                                "anyOf": [
+                                                  {
+                                                    "type": "string",
+                                                    "maxLength": 200
+                                                  },
+                                                  {
+                                                    "type": "null"
+                                                  }
+                                                ]
+                                              }
+                                            },
+                                            "required": [
+                                              "lower",
+                                              "upper"
+                                            ],
+                                            "additionalProperties": false
+                                          },
+                                          {
+                                            "type": "null"
+                                          }
+                                        ]
+                                      },
+                                      "sandPercent": {
+                                        "anyOf": [
+                                          {
+                                            "type": "object",
+                                            "properties": {
+                                              "lower": {
+                                                "type": "number"
+                                              },
+                                              "upper": {
+                                                "type": "number"
+                                              },
+                                              "level": {
+                                                "anyOf": [
+                                                  {
+                                                    "type": "number",
+                                                    "exclusiveMinimum": 0,
+                                                    "exclusiveMaximum": 1
+                                                  },
+                                                  {
+                                                    "type": "null"
+                                                  }
+                                                ]
+                                              },
+                                              "method": {
+                                                "anyOf": [
+                                                  {
+                                                    "type": "string",
+                                                    "maxLength": 200
+                                                  },
+                                                  {
+                                                    "type": "null"
+                                                  }
+                                                ]
+                                              }
+                                            },
+                                            "required": [
+                                              "lower",
+                                              "upper"
+                                            ],
+                                            "additionalProperties": false
+                                          },
+                                          {
+                                            "type": "null"
+                                          }
+                                        ]
+                                      },
+                                      "siltPercent": {
+                                        "anyOf": [
+                                          {
+                                            "type": "object",
+                                            "properties": {
+                                              "lower": {
+                                                "type": "number"
+                                              },
+                                              "upper": {
+                                                "type": "number"
+                                              },
+                                              "level": {
+                                                "anyOf": [
+                                                  {
+                                                    "type": "number",
+                                                    "exclusiveMinimum": 0,
+                                                    "exclusiveMaximum": 1
+                                                  },
+                                                  {
+                                                    "type": "null"
+                                                  }
+                                                ]
+                                              },
+                                              "method": {
+                                                "anyOf": [
+                                                  {
+                                                    "type": "string",
+                                                    "maxLength": 200
+                                                  },
+                                                  {
+                                                    "type": "null"
+                                                  }
+                                                ]
+                                              }
+                                            },
+                                            "required": [
+                                              "lower",
+                                              "upper"
+                                            ],
+                                            "additionalProperties": false
+                                          },
+                                          {
+                                            "type": "null"
+                                          }
+                                        ]
+                                      },
+                                      "nitrogenGPerKg": {
+                                        "anyOf": [
+                                          {
+                                            "type": "object",
+                                            "properties": {
+                                              "lower": {
+                                                "type": "number"
+                                              },
+                                              "upper": {
+                                                "type": "number"
+                                              },
+                                              "level": {
+                                                "anyOf": [
+                                                  {
+                                                    "type": "number",
+                                                    "exclusiveMinimum": 0,
+                                                    "exclusiveMaximum": 1
+                                                  },
+                                                  {
+                                                    "type": "null"
+                                                  }
+                                                ]
+                                              },
+                                              "method": {
+                                                "anyOf": [
+                                                  {
+                                                    "type": "string",
+                                                    "maxLength": 200
+                                                  },
+                                                  {
+                                                    "type": "null"
+                                                  }
+                                                ]
+                                              }
+                                            },
+                                            "required": [
+                                              "lower",
+                                              "upper"
+                                            ],
+                                            "additionalProperties": false
+                                          },
+                                          {
+                                            "type": "null"
+                                          }
+                                        ]
+                                      },
+                                      "bulkDensityGPerCm3": {
+                                        "anyOf": [
+                                          {
+                                            "type": "object",
+                                            "properties": {
+                                              "lower": {
+                                                "type": "number"
+                                              },
+                                              "upper": {
+                                                "type": "number"
+                                              },
+                                              "level": {
+                                                "anyOf": [
+                                                  {
+                                                    "type": "number",
+                                                    "exclusiveMinimum": 0,
+                                                    "exclusiveMaximum": 1
+                                                  },
+                                                  {
+                                                    "type": "null"
+                                                  }
+                                                ]
+                                              },
+                                              "method": {
+                                                "anyOf": [
+                                                  {
+                                                    "type": "string",
+                                                    "maxLength": 200
+                                                  },
+                                                  {
+                                                    "type": "null"
+                                                  }
+                                                ]
+                                              }
+                                            },
+                                            "required": [
+                                              "lower",
+                                              "upper"
+                                            ],
+                                            "additionalProperties": false
+                                          },
+                                          {
+                                            "type": "null"
+                                          }
+                                        ]
+                                      },
+                                      "cecCmolPerKg": {
+                                        "anyOf": [
+                                          {
+                                            "type": "object",
+                                            "properties": {
+                                              "lower": {
+                                                "type": "number"
+                                              },
+                                              "upper": {
+                                                "type": "number"
+                                              },
+                                              "level": {
+                                                "anyOf": [
+                                                  {
+                                                    "type": "number",
+                                                    "exclusiveMinimum": 0,
+                                                    "exclusiveMaximum": 1
+                                                  },
+                                                  {
+                                                    "type": "null"
+                                                  }
+                                                ]
+                                              },
+                                              "method": {
+                                                "anyOf": [
+                                                  {
+                                                    "type": "string",
+                                                    "maxLength": 200
+                                                  },
+                                                  {
+                                                    "type": "null"
+                                                  }
+                                                ]
+                                              }
+                                            },
+                                            "required": [
+                                              "lower",
+                                              "upper"
+                                            ],
+                                            "additionalProperties": false
+                                          },
+                                          {
+                                            "type": "null"
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    "additionalProperties": false
+                                  },
+                                  {
+                                    "type": "null"
+                                  }
+                                ]
+                              }
+                            },
+                            "required": [
+                              "depthLabel",
+                              "topCm",
+                              "bottomCm",
+                              "values"
+                            ],
+                            "additionalProperties": false
+                          },
+                          "minItems": 1
+                        },
+                        "sourceId": {
+                          "type": "string"
+                        },
+                        "sourceType": {
+                          "type": "string",
+                          "enum": [
+                            "observed",
+                            "estimated",
+                            "farmer_provided",
+                            "modelled",
+                            "demo",
+                            "unavailable"
+                          ]
+                        }
+                      },
+                      "required": [
+                        "layers",
+                        "sourceId",
+                        "sourceType"
+                      ],
+                      "additionalProperties": false
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                },
+                "vegetation": {
+                  "anyOf": [
+                    {
+                      "type": "object",
+                      "properties": {
+                        "ndvi": {
+                          "type": "array",
+                          "items": {
+                            "type": "object",
+                            "properties": {
+                              "date": {
+                                "type": "string",
+                                "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+                              },
+                              "ndvi": {
+                                "anyOf": [
+                                  {
+                                    "type": "number",
+                                    "minimum": -1,
+                                    "maximum": 1
+                                  },
+                                  {
+                                    "type": "null"
+                                  }
+                                ]
+                              }
+                            },
+                            "required": [
+                              "date",
+                              "ndvi"
+                            ],
+                            "additionalProperties": false
+                          }
+                        },
+                        "sourceId": {
+                          "type": "string"
+                        },
+                        "sourceType": {
+                          "type": "string",
+                          "enum": [
+                            "observed",
+                            "estimated",
+                            "farmer_provided",
+                            "modelled",
+                            "demo",
+                            "unavailable"
+                          ]
+                        }
+                      },
+                      "required": [
+                        "ndvi",
+                        "sourceId",
+                        "sourceType"
+                      ],
+                      "additionalProperties": false
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                },
+                "media": {
+                  "anyOf": [
+                    {
+                      "type": "object",
+                      "properties": {
+                        "ndviTimelapse": {
+                          "anyOf": [
+                            {
+                              "type": "object",
+                              "properties": {
+                                "webm": {
+                                  "type": [
+                                    "string",
+                                    "null"
+                                  ]
+                                },
+                                "mp4": {
+                                  "type": [
+                                    "string",
+                                    "null"
+                                  ]
+                                },
+                                "poster": {
+                                  "type": [
+                                    "string",
+                                    "null"
+                                  ]
+                                },
+                                "year": {
+                                  "type": "integer"
+                                },
+                                "framesPerSecond": {
+                                  "type": "number",
+                                  "exclusiveMinimum": 0
+                                },
+                                "boundingBox": {
+                                  "anyOf": [
+                                    {
+                                      "type": "object",
+                                      "properties": {
+                                        "minLat": {
+                                          "type": "number"
+                                        },
+                                        "minLon": {
+                                          "type": "number"
+                                        },
+                                        "maxLat": {
+                                          "type": "number"
+                                        },
+                                        "maxLon": {
+                                          "type": "number"
+                                        }
+                                      },
+                                      "required": [
+                                        "minLat",
+                                        "minLon",
+                                        "maxLat",
+                                        "maxLon"
+                                      ],
+                                      "additionalProperties": false
+                                    },
+                                    {
+                                      "type": "null"
+                                    }
+                                  ]
+                                },
+                                "sourceId": {
+                                  "type": "string"
+                                }
+                              },
+                              "required": [
+                                "year",
+                                "framesPerSecond",
+                                "sourceId"
+                              ],
+                              "additionalProperties": false
+                            },
+                            {
+                              "type": "null"
+                            }
+                          ]
+                        }
+                      },
+                      "additionalProperties": false
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                },
+                "highlights": {
+                  "anyOf": [
+                    {
+                      "type": "object",
+                      "properties": {
+                        "annualRainfallMm": {
+                          "anyOf": [
+                            {
+                              "type": "object",
+                              "properties": {
+                                "value": {
+                                  "type": [
+                                    "number",
+                                    "null"
+                                  ]
+                                },
+                                "unit": {
+                                  "type": "string",
+                                  "maxLength": 40
+                                },
+                                "sourceType": {
+                                  "type": "string",
+                                  "enum": [
+                                    "observed",
+                                    "estimated",
+                                    "farmer_provided",
+                                    "modelled",
+                                    "demo",
+                                    "unavailable"
+                                  ]
+                                },
+                                "sourceId": {
+                                  "type": [
+                                    "string",
+                                    "null"
+                                  ]
+                                },
+                                "period": {
+                                  "anyOf": [
+                                    {
+                                      "type": "string",
+                                      "maxLength": 100
+                                    },
+                                    {
+                                      "type": "null"
+                                    }
+                                  ]
+                                },
+                                "interval": {
+                                  "anyOf": [
+                                    {
+                                      "type": "object",
+                                      "properties": {
+                                        "lower": {
+                                          "type": "number"
+                                        },
+                                        "upper": {
+                                          "type": "number"
+                                        },
+                                        "level": {
+                                          "anyOf": [
+                                            {
+                                              "type": "number",
+                                              "exclusiveMinimum": 0,
+                                              "exclusiveMaximum": 1
+                                            },
+                                            {
+                                              "type": "null"
+                                            }
+                                          ]
+                                        },
+                                        "method": {
+                                          "anyOf": [
+                                            {
+                                              "type": "string",
+                                              "maxLength": 200
+                                            },
+                                            {
+                                              "type": "null"
+                                            }
+                                          ]
+                                        }
+                                      },
+                                      "required": [
+                                        "lower",
+                                        "upper"
+                                      ],
+                                      "additionalProperties": false
+                                    },
+                                    {
+                                      "type": "null"
+                                    }
+                                  ]
+                                }
+                              },
+                              "required": [
+                                "value",
+                                "unit",
+                                "sourceType"
+                              ],
+                              "additionalProperties": false
+                            },
+                            {
+                              "type": "null"
+                            }
+                          ]
+                        },
+                        "meanTemperatureC": {
+                          "anyOf": [
+                            {
+                              "type": "object",
+                              "properties": {
+                                "value": {
+                                  "type": [
+                                    "number",
+                                    "null"
+                                  ]
+                                },
+                                "unit": {
+                                  "type": "string",
+                                  "maxLength": 40
+                                },
+                                "sourceType": {
+                                  "type": "string",
+                                  "enum": [
+                                    "observed",
+                                    "estimated",
+                                    "farmer_provided",
+                                    "modelled",
+                                    "demo",
+                                    "unavailable"
+                                  ]
+                                },
+                                "sourceId": {
+                                  "type": [
+                                    "string",
+                                    "null"
+                                  ]
+                                },
+                                "period": {
+                                  "anyOf": [
+                                    {
+                                      "type": "string",
+                                      "maxLength": 100
+                                    },
+                                    {
+                                      "type": "null"
+                                    }
+                                  ]
+                                },
+                                "interval": {
+                                  "anyOf": [
+                                    {
+                                      "type": "object",
+                                      "properties": {
+                                        "lower": {
+                                          "type": "number"
+                                        },
+                                        "upper": {
+                                          "type": "number"
+                                        },
+                                        "level": {
+                                          "anyOf": [
+                                            {
+                                              "type": "number",
+                                              "exclusiveMinimum": 0,
+                                              "exclusiveMaximum": 1
+                                            },
+                                            {
+                                              "type": "null"
+                                            }
+                                          ]
+                                        },
+                                        "method": {
+                                          "anyOf": [
+                                            {
+                                              "type": "string",
+                                              "maxLength": 200
+                                            },
+                                            {
+                                              "type": "null"
+                                            }
+                                          ]
+                                        }
+                                      },
+                                      "required": [
+                                        "lower",
+                                        "upper"
+                                      ],
+                                      "additionalProperties": false
+                                    },
+                                    {
+                                      "type": "null"
+                                    }
+                                  ]
+                                }
+                              },
+                              "required": [
+                                "value",
+                                "unit",
+                                "sourceType"
+                              ],
+                              "additionalProperties": false
+                            },
+                            {
+                              "type": "null"
+                            }
+                          ]
+                        },
+                        "topsoilPh": {
+                          "anyOf": [
+                            {
+                              "type": "object",
+                              "properties": {
+                                "value": {
+                                  "type": [
+                                    "number",
+                                    "null"
+                                  ]
+                                },
+                                "unit": {
+                                  "type": "string",
+                                  "maxLength": 40
+                                },
+                                "sourceType": {
+                                  "type": "string",
+                                  "enum": [
+                                    "observed",
+                                    "estimated",
+                                    "farmer_provided",
+                                    "modelled",
+                                    "demo",
+                                    "unavailable"
+                                  ]
+                                },
+                                "sourceId": {
+                                  "type": [
+                                    "string",
+                                    "null"
+                                  ]
+                                },
+                                "period": {
+                                  "anyOf": [
+                                    {
+                                      "type": "string",
+                                      "maxLength": 100
+                                    },
+                                    {
+                                      "type": "null"
+                                    }
+                                  ]
+                                },
+                                "interval": {
+                                  "anyOf": [
+                                    {
+                                      "type": "object",
+                                      "properties": {
+                                        "lower": {
+                                          "type": "number"
+                                        },
+                                        "upper": {
+                                          "type": "number"
+                                        },
+                                        "level": {
+                                          "anyOf": [
+                                            {
+                                              "type": "number",
+                                              "exclusiveMinimum": 0,
+                                              "exclusiveMaximum": 1
+                                            },
+                                            {
+                                              "type": "null"
+                                            }
+                                          ]
+                                        },
+                                        "method": {
+                                          "anyOf": [
+                                            {
+                                              "type": "string",
+                                              "maxLength": 200
+                                            },
+                                            {
+                                              "type": "null"
+                                            }
+                                          ]
+                                        }
+                                      },
+                                      "required": [
+                                        "lower",
+                                        "upper"
+                                      ],
+                                      "additionalProperties": false
+                                    },
+                                    {
+                                      "type": "null"
+                                    }
+                                  ]
+                                }
+                              },
+                              "required": [
+                                "value",
+                                "unit",
+                                "sourceType"
+                              ],
+                              "additionalProperties": false
+                            },
+                            {
+                              "type": "null"
+                            }
+                          ]
+                        },
+                        "topsoilOrganicCarbonGPerKg": {
+                          "anyOf": [
+                            {
+                              "type": "object",
+                              "properties": {
+                                "value": {
+                                  "type": [
+                                    "number",
+                                    "null"
+                                  ]
+                                },
+                                "unit": {
+                                  "type": "string",
+                                  "maxLength": 40
+                                },
+                                "sourceType": {
+                                  "type": "string",
+                                  "enum": [
+                                    "observed",
+                                    "estimated",
+                                    "farmer_provided",
+                                    "modelled",
+                                    "demo",
+                                    "unavailable"
+                                  ]
+                                },
+                                "sourceId": {
+                                  "type": [
+                                    "string",
+                                    "null"
+                                  ]
+                                },
+                                "period": {
+                                  "anyOf": [
+                                    {
+                                      "type": "string",
+                                      "maxLength": 100
+                                    },
+                                    {
+                                      "type": "null"
+                                    }
+                                  ]
+                                },
+                                "interval": {
+                                  "anyOf": [
+                                    {
+                                      "type": "object",
+                                      "properties": {
+                                        "lower": {
+                                          "type": "number"
+                                        },
+                                        "upper": {
+                                          "type": "number"
+                                        },
+                                        "level": {
+                                          "anyOf": [
+                                            {
+                                              "type": "number",
+                                              "exclusiveMinimum": 0,
+                                              "exclusiveMaximum": 1
+                                            },
+                                            {
+                                              "type": "null"
+                                            }
+                                          ]
+                                        },
+                                        "method": {
+                                          "anyOf": [
+                                            {
+                                              "type": "string",
+                                              "maxLength": 200
+                                            },
+                                            {
+                                              "type": "null"
+                                            }
+                                          ]
+                                        }
+                                      },
+                                      "required": [
+                                        "lower",
+                                        "upper"
+                                      ],
+                                      "additionalProperties": false
+                                    },
+                                    {
+                                      "type": "null"
+                                    }
+                                  ]
+                                }
+                              },
+                              "required": [
+                                "value",
+                                "unit",
+                                "sourceType"
+                              ],
+                              "additionalProperties": false
+                            },
+                            {
+                              "type": "null"
+                            }
+                          ]
+                        },
+                        "meanNdvi": {
+                          "anyOf": [
+                            {
+                              "type": "object",
+                              "properties": {
+                                "value": {
+                                  "type": [
+                                    "number",
+                                    "null"
+                                  ]
+                                },
+                                "unit": {
+                                  "type": "string",
+                                  "maxLength": 40
+                                },
+                                "sourceType": {
+                                  "type": "string",
+                                  "enum": [
+                                    "observed",
+                                    "estimated",
+                                    "farmer_provided",
+                                    "modelled",
+                                    "demo",
+                                    "unavailable"
+                                  ]
+                                },
+                                "sourceId": {
+                                  "type": [
+                                    "string",
+                                    "null"
+                                  ]
+                                },
+                                "period": {
+                                  "anyOf": [
+                                    {
+                                      "type": "string",
+                                      "maxLength": 100
+                                    },
+                                    {
+                                      "type": "null"
+                                    }
+                                  ]
+                                },
+                                "interval": {
+                                  "anyOf": [
+                                    {
+                                      "type": "object",
+                                      "properties": {
+                                        "lower": {
+                                          "type": "number"
+                                        },
+                                        "upper": {
+                                          "type": "number"
+                                        },
+                                        "level": {
+                                          "anyOf": [
+                                            {
+                                              "type": "number",
+                                              "exclusiveMinimum": 0,
+                                              "exclusiveMaximum": 1
+                                            },
+                                            {
+                                              "type": "null"
+                                            }
+                                          ]
+                                        },
+                                        "method": {
+                                          "anyOf": [
+                                            {
+                                              "type": "string",
+                                              "maxLength": 200
+                                            },
+                                            {
+                                              "type": "null"
+                                            }
+                                          ]
+                                        }
+                                      },
+                                      "required": [
+                                        "lower",
+                                        "upper"
+                                      ],
+                                      "additionalProperties": false
+                                    },
+                                    {
+                                      "type": "null"
+                                    }
+                                  ]
+                                }
+                              },
+                              "required": [
+                                "value",
+                                "unit",
+                                "sourceType"
+                              ],
+                              "additionalProperties": false
+                            },
+                            {
+                              "type": "null"
+                            }
+                          ]
+                        }
+                      },
+                      "additionalProperties": false
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                }
+              },
+              "required": [
+                "location",
+                "climate",
+                "annual",
+                "soil",
+                "vegetation"
+              ],
+              "additionalProperties": false
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "scenario": {
+          "type": "object",
+          "properties": {
+            "rainfallChangePercent": {
+              "type": "number",
+              "minimum": -50,
+              "maximum": 50
+            },
+            "temperatureChangeCelsius": {
+              "type": "number",
+              "minimum": -2,
+              "maximum": 5
+            },
+            "presetId": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "maxLength": 60
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "label": {
+              "type": "string",
+              "maxLength": 120
+            }
+          },
+          "required": [
+            "rainfallChangePercent",
+            "temperatureChangeCelsius",
+            "label"
+          ],
+          "additionalProperties": false
+        },
+        "strategies": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "minLength": 2,
+                "maxLength": 64,
+                "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+              },
+              "name": {
+                "type": "string",
+                "maxLength": 120
+              },
+              "kind": {
+                "type": "string",
+                "enum": [
+                  "current",
+                  "alternative"
+                ]
+              },
+              "summary": {
+                "type": "string",
+                "maxLength": 400
+              },
+              "steps": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "cropId": {
+                      "anyOf": [
+                        {
+                          "type": "string",
+                          "minLength": 2,
+                          "maxLength": 64,
+                          "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+                        },
+                        {
+                          "type": "string",
+                          "const": "fallow"
+                        }
+                      ]
+                    },
+                    "role": {
+                      "type": "string",
+                      "enum": [
+                        "main",
+                        "short_season",
+                        "cover",
+                        "fallow"
+                      ]
+                    },
+                    "season": {
+                      "type": "object",
+                      "properties": {
+                        "name": {
+                          "type": "string",
+                          "maxLength": 80
+                        },
+                        "startMonth": {
+                          "type": "integer",
+                          "minimum": 1,
+                          "maximum": 12
+                        },
+                        "endMonth": {
+                          "type": "integer",
+                          "minimum": 1,
+                          "maximum": 12
+                        }
+                      },
+                      "required": [
+                        "name",
+                        "startMonth",
+                        "endMonth"
+                      ],
+                      "additionalProperties": false
+                    },
+                    "plantingWindow": {
+                      "anyOf": [
+                        {
+                          "type": "object",
+                          "properties": {
+                            "startMonth": {
+                              "type": "integer",
+                              "minimum": 1,
+                              "maximum": 12
+                            },
+                            "endMonth": {
+                              "type": "integer",
+                              "minimum": 1,
+                              "maximum": 12
+                            }
+                          },
+                          "required": [
+                            "startMonth",
+                            "endMonth"
+                          ],
+                          "additionalProperties": false
+                        },
+                        {
+                          "type": "null"
+                        }
+                      ]
+                    },
+                    "notes": {
+                      "anyOf": [
+                        {
+                          "type": "string",
+                          "maxLength": 500
+                        },
+                        {
+                          "type": "null"
+                        }
+                      ]
+                    }
+                  },
+                  "required": [
+                    "cropId",
+                    "role",
+                    "season"
+                  ],
+                  "additionalProperties": false
+                },
+                "minItems": 1,
+                "maxItems": 8
+              },
+              "feasibility": {
+                "type": "object",
+                "properties": {
+                  "status": {
+                    "type": "string",
+                    "enum": [
+                      "feasible",
+                      "needs_review",
+                      "not_feasible",
+                      "unknown"
+                    ]
+                  },
+                  "reasons": {
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "maxLength": 400
+                    },
+                    "default": []
+                  }
+                },
+                "required": [
+                  "status"
+                ],
+                "additionalProperties": false
+              },
+              "suitability": {
+                "type": "object",
+                "properties": {
+                  "level": {
+                    "type": "string",
+                    "enum": [
+                      "low",
+                      "medium",
+                      "high",
+                      "unknown"
+                    ]
+                  },
+                  "score": {
+                    "anyOf": [
+                      {
+                        "type": "number",
+                        "minimum": 0,
+                        "maximum": 100
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "scoreType": {
+                    "type": "string",
+                    "enum": [
+                      "illustrative",
+                      "model",
+                      "none"
+                    ]
+                  },
+                  "interval": {
+                    "anyOf": [
+                      {
+                        "type": "object",
+                        "properties": {
+                          "lower": {
+                            "type": "number"
+                          },
+                          "upper": {
+                            "type": "number"
+                          },
+                          "level": {
+                            "anyOf": [
+                              {
+                                "type": "number",
+                                "exclusiveMinimum": 0,
+                                "exclusiveMaximum": 1
+                              },
+                              {
+                                "type": "null"
+                              }
+                            ]
+                          },
+                          "method": {
+                            "anyOf": [
+                              {
+                                "type": "string",
+                                "maxLength": 200
+                              },
+                              {
+                                "type": "null"
+                              }
+                            ]
+                          }
+                        },
+                        "required": [
+                          "lower",
+                          "upper"
+                        ],
+                        "additionalProperties": false
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "sourceType": {
+                    "type": "string",
+                    "enum": [
+                      "observed",
+                      "estimated",
+                      "farmer_provided",
+                      "modelled",
+                      "demo",
+                      "unavailable"
+                    ]
+                  }
+                },
+                "required": [
+                  "level",
+                  "score",
+                  "scoreType",
+                  "sourceType"
+                ],
+                "additionalProperties": false
+              },
+              "indicators": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "string",
+                      "maxLength": 60
+                    },
+                    "label": {
+                      "type": "string",
+                      "maxLength": 120
+                    },
+                    "rating": {
+                      "anyOf": [
+                        {
+                          "type": "number",
+                          "minimum": 1,
+                          "maximum": 5
+                        },
+                        {
+                          "type": "null"
+                        }
+                      ]
+                    },
+                    "direction": {
+                      "type": "string",
+                      "enum": [
+                        "higher_is_better",
+                        "lower_is_better"
+                      ]
+                    },
+                    "ratingType": {
+                      "type": "string",
+                      "enum": [
+                        "illustrative",
+                        "model",
+                        "rule"
+                      ]
+                    },
+                    "sourceType": {
+                      "type": "string",
+                      "enum": [
+                        "observed",
+                        "estimated",
+                        "farmer_provided",
+                        "modelled",
+                        "demo",
+                        "unavailable"
+                      ]
+                    },
+                    "explanation": {
+                      "type": "string",
+                      "maxLength": 600
+                    },
+                    "interval": {
+                      "anyOf": [
+                        {
+                          "type": "object",
+                          "properties": {
+                            "lower": {
+                              "type": "number"
+                            },
+                            "upper": {
+                              "type": "number"
+                            },
+                            "level": {
+                              "anyOf": [
+                                {
+                                  "type": "number",
+                                  "exclusiveMinimum": 0,
+                                  "exclusiveMaximum": 1
+                                },
+                                {
+                                  "type": "null"
+                                }
+                              ]
+                            },
+                            "method": {
+                              "anyOf": [
+                                {
+                                  "type": "string",
+                                  "maxLength": 200
+                                },
+                                {
+                                  "type": "null"
+                                }
+                              ]
+                            }
+                          },
+                          "required": [
+                            "lower",
+                            "upper"
+                          ],
+                          "additionalProperties": false
+                        },
+                        {
+                          "type": "null"
+                        }
+                      ]
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "label",
+                    "rating",
+                    "direction",
+                    "ratingType",
+                    "sourceType",
+                    "explanation"
+                  ],
+                  "additionalProperties": false
+                },
+                "default": []
+              },
+              "water": {
+                "type": "object",
+                "properties": {
+                  "relativeDemand": {
+                    "type": "string",
+                    "enum": [
+                      "lower",
+                      "similar",
+                      "higher",
+                      "unknown"
+                    ]
+                  },
+                  "notes": {
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "maxLength": 400
+                    },
+                    "default": []
+                  },
+                  "sourceType": {
+                    "type": "string",
+                    "enum": [
+                      "observed",
+                      "estimated",
+                      "farmer_provided",
+                      "modelled",
+                      "demo",
+                      "unavailable"
+                    ]
+                  }
+                },
+                "required": [
+                  "relativeDemand",
+                  "sourceType"
+                ],
+                "additionalProperties": false
+              },
+              "soilCover": {
+                "type": "object",
+                "properties": {
+                  "monthsCovered": {
+                    "anyOf": [
+                      {
+                        "type": "number",
+                        "minimum": 0,
+                        "maximum": 12
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "notes": {
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "maxLength": 400
+                    },
+                    "default": []
+                  },
+                  "sourceType": {
+                    "type": "string",
+                    "enum": [
+                      "observed",
+                      "estimated",
+                      "farmer_provided",
+                      "modelled",
+                      "demo",
+                      "unavailable"
+                    ]
+                  }
+                },
+                "required": [
+                  "monthsCovered",
+                  "sourceType"
+                ],
+                "additionalProperties": false
+              },
+              "benefits": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "text": {
+                      "type": "string",
+                      "maxLength": 600
+                    },
+                    "sourceType": {
+                      "type": "string",
+                      "enum": [
+                        "observed",
+                        "estimated",
+                        "farmer_provided",
+                        "modelled",
+                        "demo",
+                        "unavailable"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "text",
+                    "sourceType"
+                  ],
+                  "additionalProperties": false
+                },
+                "default": []
+              },
+              "risks": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "text": {
+                      "type": "string",
+                      "maxLength": 600
+                    },
+                    "severity": {
+                      "type": "string",
+                      "enum": [
+                        "low",
+                        "medium",
+                        "high"
+                      ]
+                    },
+                    "sourceType": {
+                      "type": "string",
+                      "enum": [
+                        "observed",
+                        "estimated",
+                        "farmer_provided",
+                        "modelled",
+                        "demo",
+                        "unavailable"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "text",
+                    "severity",
+                    "sourceType"
+                  ],
+                  "additionalProperties": false
+                },
+                "default": []
+              },
+              "explanation": {
+                "type": "object",
+                "properties": {
+                  "summary": {
+                    "type": "string",
+                    "maxLength": 800
+                  },
+                  "details": {
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "maxLength": 800
+                    },
+                    "default": []
+                  },
+                  "technical": {
+                    "anyOf": [
+                      {
+                        "type": "string",
+                        "maxLength": 2000
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  }
+                },
+                "required": [
+                  "summary"
+                ],
+                "additionalProperties": false
+              },
+              "dataGaps": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "string",
+                      "maxLength": 60
+                    },
+                    "text": {
+                      "type": "string",
+                      "maxLength": 600
+                    },
+                    "impact": {
+                      "type": "string",
+                      "enum": [
+                        "low",
+                        "medium",
+                        "high"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "text",
+                    "impact"
+                  ],
+                  "additionalProperties": false
+                },
+                "default": []
+              },
+              "localChecks": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "maxLength": 400
+                },
+                "default": []
+              },
+              "uncertainty": {
+                "type": "object",
+                "properties": {
+                  "level": {
+                    "type": "string",
+                    "enum": [
+                      "low",
+                      "medium",
+                      "high",
+                      "unknown"
+                    ]
+                  },
+                  "notes": {
+                    "type": "string",
+                    "maxLength": 800
+                  },
+                  "interval": {
+                    "anyOf": [
+                      {
+                        "type": "object",
+                        "properties": {
+                          "lower": {
+                            "type": "number"
+                          },
+                          "upper": {
+                            "type": "number"
+                          },
+                          "level": {
+                            "anyOf": [
+                              {
+                                "type": "number",
+                                "exclusiveMinimum": 0,
+                                "exclusiveMaximum": 1
+                              },
+                              {
+                                "type": "null"
+                              }
+                            ]
+                          },
+                          "method": {
+                            "anyOf": [
+                              {
+                                "type": "string",
+                                "maxLength": 200
+                              },
+                              {
+                                "type": "null"
+                              }
+                            ]
+                          }
+                        },
+                        "required": [
+                          "lower",
+                          "upper"
+                        ],
+                        "additionalProperties": false
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  }
+                },
+                "required": [
+                  "level",
+                  "notes"
+                ],
+                "additionalProperties": false
+              },
+              "constraintFlags": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "constraintType": {
+                      "type": "string",
+                      "enum": [
+                        "no_irrigation",
+                        "seeds_unavailable",
+                        "soil_floods",
+                        "cannot_sell",
+                        "lacks_equipment",
+                        "crop_failed_before",
+                        "excluded_crop"
+                      ]
+                    },
+                    "cropId": {
+                      "anyOf": [
+                        {
+                          "type": "string",
+                          "minLength": 2,
+                          "maxLength": 64,
+                          "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+                        },
+                        {
+                          "type": "null"
+                        }
+                      ]
+                    },
+                    "effect": {
+                      "type": "string",
+                      "enum": [
+                        "flagged",
+                        "excluded",
+                        "noted"
+                      ]
+                    },
+                    "message": {
+                      "type": "string",
+                      "maxLength": 400
+                    }
+                  },
+                  "required": [
+                    "constraintType",
+                    "effect",
+                    "message"
+                  ],
+                  "additionalProperties": false
+                },
+                "default": []
+              },
+              "priorityFit": {
+                "anyOf": [
+                  {
+                    "type": "object",
+                    "properties": {
+                      "rank": {
+                        "type": "integer",
+                        "minimum": 1
+                      },
+                      "method": {
+                        "type": "string",
+                        "enum": [
+                          "rule",
+                          "model"
+                        ]
+                      },
+                      "explanation": {
+                        "type": "string",
+                        "maxLength": 600
+                      }
+                    },
+                    "required": [
+                      "rank",
+                      "method",
+                      "explanation"
+                    ],
+                    "additionalProperties": false
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "sourceIds": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                },
+                "default": []
+              }
+            },
+            "required": [
+              "id",
+              "name",
+              "kind",
+              "summary",
+              "steps",
+              "feasibility",
+              "suitability",
+              "water",
+              "soilCover",
+              "explanation",
+              "uncertainty"
+            ],
+            "additionalProperties": false
+          },
+          "minItems": 1,
+          "maxItems": 6
+        },
+        "constraintsApplied": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "constraint": {
+                "type": "object",
+                "properties": {
+                  "type": {
+                    "type": "string",
+                    "enum": [
+                      "no_irrigation",
+                      "seeds_unavailable",
+                      "soil_floods",
+                      "cannot_sell",
+                      "lacks_equipment",
+                      "crop_failed_before",
+                      "excluded_crop"
+                    ]
+                  },
+                  "cropId": {
+                    "anyOf": [
+                      {
+                        "type": "string",
+                        "minLength": 2,
+                        "maxLength": 64,
+                        "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "note": {
+                    "anyOf": [
+                      {
+                        "type": "string",
+                        "maxLength": 280
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  }
+                },
+                "required": [
+                  "type"
+                ],
+                "additionalProperties": false
+              },
+              "handled": {
+                "type": "boolean"
+              },
+              "handling": {
+                "type": "string",
+                "enum": [
+                  "rule",
+                  "model",
+                  "not_supported"
+                ]
+              },
+              "message": {
+                "type": "string",
+                "maxLength": 600
+              }
+            },
+            "required": [
+              "constraint",
+              "handled",
+              "handling",
+              "message"
+            ],
+            "additionalProperties": false
+          },
+          "default": []
+        }
+      },
+      "required": [
+        "schemaVersion",
+        "requestId",
+        "mode",
+        "modelVersion",
+        "region",
+        "limitations",
+        "dataSources",
+        "disclaimer",
+        "generatedAt",
+        "analysisType",
+        "environment",
+        "scenario",
+        "strategies"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}

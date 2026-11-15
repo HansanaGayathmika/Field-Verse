@@ -1,0 +1,30 @@
+{
+  "schemaVersion": "1.0",
+  "regionId": "sri-lanka-anuradhapura",
+  "field": {
+    "latitude": 8.3114,
+    "longitude": 80.4037,
+    "currentCrop": "rice",
+    "cropHistory": ["rice", "rice"],
+    "soilType": "unknown",
+    "soilPh": null,
+    "irrigation": "limited"
+  },
+  "priorities": {
+    "water": 0.4,
+    "soilHealth": 0.3,
+    "risk": 0.2,
+    "income": 0.1,
+    "idleLand": 0
+  },
+  "scenario": {
+    "rainfallChangePercent": -20,
+    "temperatureChangeCelsius": 2
+  },
+  "constraints": [
+    { "type": "no_irrigation", "cropId": null, "note": "Tank is often empty in Yala" },
+    { "type": "seeds_unavailable", "cropId": "sunn-hemp", "note": null }
+  ],
+  "baselineRequestId": null,
+  "locale": "en"
+}

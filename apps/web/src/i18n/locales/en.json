@@ -1,0 +1,269 @@
+{
+  "app": {
+    "name": "FieldVerse",
+    "tagline": "One Farm. Three Futures. Better Decisions.",
+    "skip": "Skip to main content"
+  },
+  "nav": {
+    "explore": "Explore",
+    "farm": "My Farm",
+    "rotations": "Rotation Lab",
+    "roots": "Roots of Tomorrow",
+    "climate": "Climate Time Machine",
+    "gaps": "Gap Finder",
+    "plan": "My Plan",
+    "saved": "Saved",
+    "data": "Data & Sources",
+    "menu": "Menu",
+    "close": "Close menu",
+    "account": "Account",
+    "login": "Log in",
+    "signup": "Sign up",
+    "logout": "Log out",
+    "community": "Community"
+  },
+  "prefs": {
+    "lowBandwidth": "Low-bandwidth mode",
+    "lowBandwidthHint": "Hides videos, map tiles and decorative animation.",
+    "language": "Language",
+    "planned": "translation planned"
+  },
+  "common": {
+    "continue": "Continue",
+    "back": "Back",
+    "edit": "Edit",
+    "save": "Save",
+    "saved": "Saved",
+    "delete": "Delete",
+    "cancel": "Cancel",
+    "retry": "Try again",
+    "loading": "Loading…",
+    "dontKnow": "I don't know",
+    "learnMore": "Learn more",
+    "showTable": "Show data table",
+    "hideTable": "Hide data table",
+    "source": "Source",
+    "period": "Period",
+    "print": "Print",
+    "reset": "Reset",
+    "month": "Month"
+  },
+  "provenance": {
+    "observed": "Observed",
+    "estimated": "Estimated",
+    "farmer_provided": "From you",
+    "modelled": "Model result",
+    "demo": "Illustrative demo",
+    "unavailable": "Not available"
+  },
+  "feasibility": {
+    "feasible": "Looks possible",
+    "needs_review": "Needs checking",
+    "not_feasible": "Not possible as stated",
+    "unknown": "Unknown"
+  },
+  "demo": {
+    "bannerTitle": "Illustrative demo",
+    "bannerBody": "These results were prepared by people to show how FieldVerse works. They are not machine-learning predictions or farming advice.",
+    "remoteTitle": "Live analysis",
+    "remoteBody": "Results from the connected analysis service (model {{version}})."
+  },
+  "landing": {
+    "heroBody": "Explore crop-rotation possibilities using NASA climate observations, soil information, and your farming priorities.",
+    "exploreMyFarm": "Explore My Farm",
+    "tryDemo": "Try Demo",
+    "howTitle": "How it works",
+    "step1": "Tell us about your farm",
+    "step1Body": "Pick your area, your current crop and what matters most to you. No sign-up needed.",
+    "step2": "Compare planting possibilities",
+    "step2Body": "See your current rotation next to two alternatives, season by season.",
+    "step3": "Explore benefits, risks and uncertainty",
+    "step3Body": "Every result shows where its information comes from, and what still needs checking locally.",
+    "regionsTitle": "Demo regions around the world",
+    "transparencyTitle": "Honest about what we know",
+    "signupCta": "Sign up to explore"
+  },
+  "wizard": {
+    "title": "Tell us about your farm",
+    "stepOf": "Step {{current}} of {{total}}",
+    "s1": "Location",
+    "s2": "Current crop",
+    "s3": "Farm conditions",
+    "s4": "Your priorities",
+    "s5": "Review",
+    "farmName": "Farm name",
+    "region": "Region",
+    "soilType": "Soil type",
+    "irrigation": "Irrigation",
+    "soilPh": "Soil pH (if you know it from a soil test)",
+    "history": "What did you grow in the last two seasons?",
+    "submit": "See my farm",
+    "submitting": "Preparing your farm…"
+  },
+  "soil": {
+    "clay": "Clay (sticky when wet)",
+    "loam": "Loam (crumbly, mixed)",
+    "sandy": "Sandy (gritty, drains fast)",
+    "silt": "Silt (smooth, floury)",
+    "unknown": "I don't know"
+  },
+  "irrigation": {
+    "none": "No irrigation — rain only",
+    "limited": "Some irrigation, not always",
+    "full": "Reliable irrigation",
+    "unknown": "I don't know"
+  },
+  "priorities": {
+    "water": "Save water",
+    "soilHealth": "Improve soil health",
+    "risk": "Reduce risk",
+    "income": "Explore income opportunities",
+    "idleLand": "Use idle land"
+  },
+  "constraints": {
+    "title": "Farmer's Right to Disagree",
+    "intro": "You know your land best. Tell us what does not match your situation.",
+    "no_irrigation": "I do not have irrigation",
+    "seeds_unavailable": "Seeds are unavailable",
+    "soil_floods": "My soil often floods",
+    "cannot_sell": "I cannot sell this crop locally",
+    "lacks_equipment": "I lack suitable equipment",
+    "crop_failed_before": "This crop failed here before",
+    "whichCrop": "Which crop?",
+    "apply": "Update the comparison",
+    "clear": "Clear my corrections",
+    "excluded_crop": "I do not wish to grow this crop"
+  },
+  "errors": {
+    "NETWORK_ERROR": "We could not reach the server. Check your internet connection.",
+    "SCENARIO_NOT_SUPPORTED": "This combination is not prepared in the demo yet.",
+    "CROP_NOT_SUPPORTED": "We don't have prepared examples for this crop here yet.",
+    "REGION_NOT_SUPPORTED": "This place is outside the prepared demo areas.",
+    "DATABASE_UNAVAILABLE": "Saving is temporarily unavailable. Everything else still works.",
+    "ANALYSIS_UNAVAILABLE": "The analysis service is not available right now.",
+    "ANALYSIS_TIMEOUT": "The analysis service took too long to answer.",
+    "ANALYSIS_BAD_RESPONSE": "The analysis service sent results we could not check, so we did not show them.",
+    "RATE_LIMITED": "Too many requests — please wait a moment.",
+    "DATA_UNAVAILABLE": "We couldn't work this out for your field.",
+    "generic": "Something went wrong. Please try again.",
+    "useDemo": "Show labelled demo results instead"
+  },
+  "form": {
+    "steps": {
+      "location": "Location",
+      "history": "Cropping history and timing",
+      "conditions": "Farm conditions",
+      "priorities": "Constraints and priorities",
+      "review": "Review"
+    },
+    "location": {
+      "label": "Where is your field located?",
+      "helper": "Mark your field on the map or use your current location. A precise location allows us to retrieve soil, rainfall and temperature data for your area.",
+      "change": "Change location",
+      "choose": "Choose your field location",
+      "none": "No location selected yet.",
+      "farmName": "Name for this field",
+      "demoArea": "Inside the {{region}} demo area",
+      "custom": "Your marked location"
+    },
+    "currentCrop": {
+      "label": "What are you growing on this field now?",
+      "fallow": "Fallow (nothing planted)",
+      "other": "Other"
+    },
+    "harvestMonth": {
+      "label": "When do you expect to harvest this crop?",
+      "harvested": "Already harvested",
+      "unknown": "I do not know"
+    },
+    "previousCrop": {
+      "label": "What did you grow in the previous season?",
+      "helper": "This helps us avoid recommending crops that share pests and diseases with your earlier crops.",
+      "unknown": "I do not remember"
+    },
+    "previousCrop2": {
+      "label": "What did you grow in the season before that?"
+    },
+    "nextPlanting": {
+      "label": "When do you plan to plant your next crop?",
+      "helper": "If you are unsure, we will estimate a suitable planting period from your local rainfall pattern.",
+      "unsure": "I am not sure"
+    },
+    "seasons": {
+      "label": "How many growing seasons do you usually cultivate each year?",
+      "one": "One",
+      "two": "Two",
+      "three": "Three",
+      "unsure": "I am not sure"
+    },
+    "water": {
+      "label": "How does your field receive water?",
+      "none": "Rainfall only",
+      "limited": "Limited irrigation (not available in every season)",
+      "full": "Reliable irrigation throughout the year",
+      "unknown": "I do not know"
+    },
+    "waterlogging": {
+      "label": "Does water remain standing in your field during the rainy season?",
+      "several_weeks": "Yes, for several weeks or longer",
+      "few_days": "Yes, for a few days",
+      "drains_well": "No, the field drains well",
+      "unknown": "I do not know"
+    },
+    "inputs": {
+      "label": "What level of farm inputs do you normally use?",
+      "minimal": "Minimal: little or no fertiliser, local seed",
+      "moderate": "Moderate: some fertiliser or improved seed",
+      "high": "High: regular fertiliser, improved seed and crop protection",
+      "unknown": "I do not know"
+    },
+    "soil": {
+      "label": "Which description best matches your soil?",
+      "clay": "Clay: heavy and sticky when wet",
+      "loam": "Loam: crumbly, a mixture of sand, silt and clay",
+      "sandy": "Sandy: gritty, drains quickly",
+      "silt": "Silt: smooth and floury",
+      "unknown": "I do not know"
+    },
+    "slider": {
+      "water": { "none": "Rainfall only", "limited": "Limited irrigation", "full": "Reliable irrigation" },
+      "waterlogging": { "drains_well": "Drains well", "few_days": "A few days", "several_weeks": "Several weeks" },
+      "inputs": { "minimal": "Minimal", "moderate": "Moderate", "high": "High" },
+      "soil": { "sandy": "Sandy", "loam": "Loam", "silt": "Silt", "clay": "Clay" }
+    },
+    "ph": {
+      "label": "Soil pH (if you have a soil test result)",
+      "helper": "Enter a value only if you have a soil test. Leaving this blank will not affect your ability to receive recommendations."
+    },
+    "exclude": {
+      "label": "Are there crops you cannot or do not wish to grow?",
+      "helper": "Reasons may include unavailable seed, lack of a market, or personal preference. Selected crops will not be recommended."
+    },
+    "priorities": {
+      "label": "Please indicate how important each goal is to you.",
+      "helper": "Your answers determine the order of the options; no option is hidden.",
+      "levels": [
+        "Not important",
+        "Slightly important",
+        "Important",
+        "Very important"
+      ],
+      "water": "Conserve water",
+      "soilHealth": "Improve soil health",
+      "risk": "Reduce production risk",
+      "income": "Increase income",
+      "idleLand": "Make productive use of fallow periods",
+      "foodSecurity": "Secure my household's food supply"
+    },
+    "review": {
+      "heading": "Review your information",
+      "intro": "Please check your answers before we prepare your recommendations. You may edit any section.",
+      "notice": "Where you selected \"I do not know\", we estimate the value from satellite and regional data. These recommendations will carry a lower confidence level.",
+      "button": "Generate recommendations",
+      "preparing": "Preparing your recommendations…",
+      "disclaimer": "These recommendations are decision-support guidance based on regional data. They do not replace advice from a local agricultural extension officer.",
+      "unknownCount": "You answered \"I do not know\" or skipped {{count}} question(s)."
+    },
+    "required": "Please answer this question."
+  }
+}

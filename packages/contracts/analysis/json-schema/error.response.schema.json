@@ -1,0 +1,41 @@
+{
+  "$ref": "#/definitions/error.response",
+  "definitions": {
+    "error.response": {
+      "type": "object",
+      "properties": {
+        "error": {
+          "type": "object",
+          "properties": {
+            "code": {
+              "type": "string",
+              "enum": [
+                "VALIDATION_ERROR",
+                "REGION_NOT_SUPPORTED",
+                "CROP_NOT_SUPPORTED",
+                "SCENARIO_NOT_SUPPORTED",
+                "DATA_UNAVAILABLE",
+                "MODEL_NOT_READY",
+                "INTERNAL_ERROR"
+              ]
+            },
+            "message": {
+              "type": "string"
+            },
+            "details": {}
+          },
+          "required": [
+            "code",
+            "message"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "error"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}

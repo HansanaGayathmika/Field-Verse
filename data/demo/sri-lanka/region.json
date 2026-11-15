@@ -1,0 +1,82 @@
+{
+  "id": "sri-lanka-anuradhapura",
+  "name": "Anuradhapura, Sri Lanka",
+  "shortName": "Anuradhapura",
+  "country": "Sri Lanka",
+  "countryCode": "LK",
+  "latitude": 8.3114,
+  "longitude": 80.4037,
+  "elevationNote": "Lowland plains, roughly 80–100 m above sea level",
+  "agroEcologicalZone": "Dry Zone (low country)",
+  "tagline": "Paddy fields fed by monsoon rain and ancient village tanks",
+  "description": "Anuradhapura is in Sri Lanka's Dry Zone. Most rain arrives with the northeast monsoon late in the year, and many farmers depend on reservoirs (tanks) to grow a second crop.",
+  "farmingContext": [
+    "Rice is the main crop, grown in two seasons: Maha (main, wetter season) and Yala (secondary, drier season).",
+    "Yala cultivation often depends on how much water is stored in tanks after Maha.",
+    "Other field crops (such as mung bean and cowpea) are commonly grown on paddy land when water is short."
+  ],
+  "seasons": [
+    {
+      "name": "Maha",
+      "months": [
+        10,
+        11,
+        12,
+        1,
+        2,
+        3
+      ],
+      "description": "Main season, with rain from the northeast monsoon."
+    },
+    {
+      "name": "Yala",
+      "months": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "description": "Secondary season; usually drier from June to September."
+    }
+  ],
+  "supportedCrops": [
+    "rice",
+    "maize",
+    "mung-bean",
+    "cowpea",
+    "sunn-hemp"
+  ],
+  "commonCrops": [
+    "rice",
+    "mung-bean",
+    "cowpea",
+    "maize"
+  ],
+  "demoFarm": {
+    "farmName": "Demo paddy field — Anuradhapura",
+    "currentCrop": "rice",
+    "cropHistory": [
+      "rice",
+      "rice"
+    ],
+    "soilType": "unknown",
+    "irrigation": "limited",
+    "harvestMonth": 2,
+    "nextPlantingMonth": 4,
+    "seasonsPerYear": 2
+  },
+  "dataStatus": {
+    "climate": "observed",
+    "soil": "estimated",
+    "vegetation": "observed",
+    "rotations": "demo",
+    "scenarios": "demo"
+  },
+  "contentSource": {
+    "sourceType": "estimated",
+    "note": "Regional farming context is general background compiled by the Field Verse team for the demo. Verify details with the local Department of Agriculture extension office."
+  },
+  "supportRadiusKm": 60
+}

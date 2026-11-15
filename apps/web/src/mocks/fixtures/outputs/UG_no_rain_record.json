@@ -1,0 +1,734 @@
+{
+ "knowledge_base_version": "starter-0.1 (unreviewed by agronomists)",
+ "farmer_input_normalised": {
+  "lat": 1.37,
+  "lon": 32.3,
+  "current_crop": "maize",
+  "previous_crop": "phaseolus_bean",
+  "previous_crop_2": "maize",
+  "harvested": false,
+  "harvest_month": 7,
+  "next_planting_month": 9,
+  "seasons_per_year": 2,
+  "water_access": "rainfall_only",
+  "waterlogging": "days",
+  "input_level": "minimal",
+  "soil_texture": "loam",
+  "soil_ph": 5.2,
+  "excluded_crops": [],
+  "priorities": {
+   "water_saving": "important",
+   "soil_health": "very_important",
+   "risk_reduction": "important",
+   "income": "important",
+   "fallow_use": "important",
+   "food_security": "very_important"
+  }
+ },
+ "assumptions": [],
+ "warnings": [
+  "No rainfall record within 100 km in the current data, so rainy-season fit is not checked. Add a rainfall pull for this location to enable it.",
+  "Few crops are well suited here, so the minimum suitability was lowered (very marginal land); treat options with caution.",
+  "Reality check: The regional model rates your own recent crop(s) (Maize, Common bean) as marginal or worse for your area. If they do well for you, the model may be under-rating your area, so treat suitability scores as conservative."
+ ],
+ "site_profile": {
+  "gaez_cell_id": "r1065c2547",
+  "gaez_cell_lat": 1.208333,
+  "gaez_cell_lon": 32.291667,
+  "distance_to_cell_km": 18.0,
+  "gaez_classes_by_management": {
+   "HRLM": {
+    "wetland_rice": 4,
+    "maize": 3,
+    "soybean": 3,
+    "wheat": 8,
+    "sorghum": 3,
+    "pearl_millet": 5,
+    "phaseolus_bean": 4,
+    "cowpea": 2,
+    "pigeonpea": 3,
+    "groundnut": 3,
+    "sesame": 5,
+    "sweet_potato": 1
+   },
+   "HILM": {
+    "wetland_rice": 2,
+    "maize": 3,
+    "soybean": 3,
+    "wheat": 8,
+    "sorghum": 3,
+    "pearl_millet": 5,
+    "phaseolus_bean": 4,
+    "cowpea": 2,
+    "pigeonpea": 3,
+    "groundnut": 3,
+    "sesame": 4,
+    "sweet_potato": 1
+   },
+   "LRLM": {
+    "wetland_rice": 5,
+    "maize": 7,
+    "soybean": 7,
+    "wheat": 8,
+    "sorghum": 7,
+    "pearl_millet": 7,
+    "phaseolus_bean": 7,
+    "cowpea": 7,
+    "pigeonpea": 7,
+    "groundnut": 8,
+    "sesame": 7,
+    "sweet_potato": 4
+   },
+   "LILM": {
+    "wetland_rice": 5,
+    "maize": 7,
+    "soybean": 7,
+    "wheat": 8,
+    "sorghum": 7,
+    "pearl_millet": 7,
+    "phaseolus_bean": 7,
+    "cowpea": 7,
+    "pigeonpea": 7,
+    "groundnut": 8,
+    "sesame": 7,
+    "sweet_potato": 4
+   }
+  },
+  "soil": {
+   "ph": 6.02,
+   "clay_pct": 36.6,
+   "sand_pct": 42.3,
+   "silt_pct": 21.1,
+   "organic_carbon_g_kg": 23.1,
+   "total_nitrogen_g_kg": 1.72,
+   "texture_class": "clay",
+   "source": "SoilGrids 5 km, 0-30 cm depth-weighted, at the suitability cell"
+  },
+  "rainfall": null,
+  "neighbourhood_variation_classes": 0.64,
+  "seasons_per_year_used": 2,
+  "season_plan": [
+   {
+    "season": 1,
+    "plant_month": "Sep"
+   },
+   {
+    "season": 2,
+    "plant_month": "Mar"
+   },
+   {
+    "season": 3,
+    "plant_month": "Sep"
+   }
+  ],
+  "minimum_suitability_score_used": 10
+ },
+ "crops_considered": [
+  {
+   "crop": "wetland_rice",
+   "eligible_in_seasons": [
+    1,
+    2,
+    3
+   ],
+   "suitability_score": 40.0,
+   "why_not": []
+  },
+  {
+   "crop": "maize",
+   "eligible_in_seasons": [],
+   "suitability_score": 10.0,
+   "why_not": [
+    "rated not suitable or too marginal here by the regional model (after your soil answers)"
+   ]
+  },
+  {
+   "crop": "soybean",
+   "eligible_in_seasons": [],
+   "suitability_score": 10.0,
+   "why_not": [
+    "rated not suitable or too marginal here by the regional model (after your soil answers)"
+   ]
+  },
+  {
+   "crop": "wheat",
+   "eligible_in_seasons": [],
+   "suitability_score": 0.0,
+   "why_not": [
+    "rated not suitable or too marginal here by the regional model"
+   ]
+  },
+  {
+   "crop": "sorghum",
+   "eligible_in_seasons": [],
+   "suitability_score": 10.0,
+   "why_not": [
+    "rated not suitable or too marginal here by the regional model (after your soil answers)"
+   ]
+  },
+  {
+   "crop": "pearl_millet",
+   "eligible_in_seasons": [
+    1,
+    2,
+    3
+   ],
+   "suitability_score": 10.0,
+   "why_not": []
+  },
+  {
+   "crop": "phaseolus_bean",
+   "eligible_in_seasons": [],
+   "suitability_score": 10.0,
+   "why_not": [
+    "rated not suitable or too marginal here by the regional model (after your soil answers)"
+   ]
+  },
+  {
+   "crop": "cowpea",
+   "eligible_in_seasons": [],
+   "suitability_score": 10.0,
+   "why_not": [
+    "rated not suitable or too marginal here by the regional model (after your soil answers)"
+   ]
+  },
+  {
+   "crop": "pigeonpea",
+   "eligible_in_seasons": [],
+   "suitability_score": 10.0,
+   "why_not": [
+    "rated not suitable or too marginal here by the regional model (after your soil answers)"
+   ]
+  },
+  {
+   "crop": "groundnut",
+   "eligible_in_seasons": [],
+   "suitability_score": 0.0,
+   "why_not": [
+    "rated not suitable or too marginal here by the regional model"
+   ]
+  },
+  {
+   "crop": "sesame",
+   "eligible_in_seasons": [],
+   "suitability_score": 10.0,
+   "why_not": [
+    "rated not suitable or too marginal here by the regional model (after your soil answers)"
+   ]
+  },
+  {
+   "crop": "sweet_potato",
+   "eligible_in_seasons": [
+    1,
+    2,
+    3
+   ],
+   "suitability_score": 55.0,
+   "why_not": []
+  }
+ ],
+ "confidence": {
+  "level": "Low",
+  "score": 45,
+  "reasons": [
+   "No rainfall record nearby: rainy-season fit not checked.",
+   "The regional model rates your own recent crop(s) (Maize, Common bean) as marginal or worse for your area. If they do well for you, the model may be under-rating your area, so treat suitability scores as conservative."
+  ],
+  "note": "Heuristic: points are deducted for each unknown or weak input. Not a statistical probability."
+ },
+ "status": "provisional",
+ "status_note": "Low confidence: treat these as starting points to discuss with a local extension officer, not as firm advice.",
+ "plans": [
+  {
+   "option": 1,
+   "label": "Best match to your priorities",
+   "sequence": [
+    {
+     "season": 1,
+     "plant_month": "Sep",
+     "crop": "sweet_potato",
+     "crop_name": "Sweet potato",
+     "suitability_score": 55.0,
+     "suitability_range": [
+      55.0,
+      55.0
+     ],
+     "approx_duration_days": 120,
+     "rain_fit": {
+      "ratio": null,
+      "status": "not checked"
+     },
+     "gaez_classes_at_site": {
+      "HRLM": 1,
+      "HILM": 1,
+      "LRLM": 4,
+      "LILM": 4
+     },
+     "notes": [
+      "sensitive to a few days of standing water"
+     ]
+    },
+    {
+     "season": 2,
+     "plant_month": "Mar",
+     "crop": "wetland_rice",
+     "crop_name": "Wetland rice",
+     "suitability_score": 40.0,
+     "suitability_range": [
+      40.0,
+      40.0
+     ],
+     "approx_duration_days": 127,
+     "rain_fit": {
+      "ratio": null,
+      "status": "not checked"
+     },
+     "gaez_classes_at_site": {
+      "HRLM": 4,
+      "HILM": 2,
+      "LRLM": 5,
+      "LILM": 5
+     },
+     "notes": []
+    },
+    {
+     "season": 3,
+     "plant_month": "Sep",
+     "crop": "sweet_potato",
+     "crop_name": "Sweet potato",
+     "suitability_score": 55.0,
+     "suitability_range": [
+      55.0,
+      55.0
+     ],
+     "approx_duration_days": 120,
+     "rain_fit": {
+      "ratio": null,
+      "status": "not checked"
+     },
+     "gaez_classes_at_site": {
+      "HRLM": 1,
+      "HILM": 1,
+      "LRLM": 4,
+      "LILM": 4
+     },
+     "notes": [
+      "sensitive to a few days of standing water"
+     ]
+    }
+   ],
+   "scores": {
+    "agronomic_fit": 48.7,
+    "composite": 45.5,
+    "goals": {
+     "water_saving": 42.2,
+     "soil_health": 15.0,
+     "risk_reduction": 48.8,
+     "income": 21.5,
+     "fallow_use": 67.2,
+     "food_security": 62.5
+    }
+   },
+   "benefits": [
+    {
+     "goal": "fallow_use",
+     "title": "Land in use for most of each season",
+     "text": "Crop durations fill about 67% of the available season length.",
+     "evidence_level": "calculation from typical crop durations (starter values)",
+     "conditions": [
+      "Duration values are general starter figures; local varieties differ."
+     ],
+     "sources": []
+    }
+   ],
+   "trade_offs": [
+    "Season 1 (Sweet potato): sensitive to a few days of standing water.",
+    "Season 2 (Wetland rice): only moderate suitability here (score 40/100).",
+    "Season 3 (Sweet potato): sensitive to a few days of standing water.",
+    "No legume in this plan, so no nitrogen credit."
+   ],
+   "vs_current_practice": {
+    "current_practice_sequence": [
+     "maize",
+     "maize",
+     "maize"
+    ],
+    "composite_change": 31.6,
+    "goal_changes": {
+     "water_saving": 0.6,
+     "soil_health": 15.0,
+     "risk_reduction": 34.2,
+     "income": 21.5,
+     "fallow_use": 4.1,
+     "food_security": 12.5
+    },
+    "note": "Compared with repeating your current crop for three seasons (scored with the same method)."
+   },
+   "rule_events": [
+    {
+     "rule": "same_family_2back",
+     "season": 2,
+     "detail": "wetland_rice",
+     "points": -2
+    },
+    {
+     "rule": "same_family_2back",
+     "season": 3,
+     "detail": "sweet_potato",
+     "points": -2
+    }
+   ]
+  },
+  {
+   "option": 2,
+   "label": "Best for soil health",
+   "sequence": [
+    {
+     "season": 1,
+     "plant_month": "Sep",
+     "crop": "wetland_rice",
+     "crop_name": "Wetland rice",
+     "suitability_score": 40.0,
+     "suitability_range": [
+      40.0,
+      40.0
+     ],
+     "approx_duration_days": 127,
+     "rain_fit": {
+      "ratio": null,
+      "status": "not checked"
+     },
+     "gaez_classes_at_site": {
+      "HRLM": 4,
+      "HILM": 2,
+      "LRLM": 5,
+      "LILM": 5
+     },
+     "notes": []
+    },
+    {
+     "season": 2,
+     "plant_month": "Mar",
+     "crop": "wetland_rice",
+     "crop_name": "Wetland rice",
+     "suitability_score": 40.0,
+     "suitability_range": [
+      40.0,
+      40.0
+     ],
+     "approx_duration_days": 127,
+     "rain_fit": {
+      "ratio": null,
+      "status": "not checked"
+     },
+     "gaez_classes_at_site": {
+      "HRLM": 4,
+      "HILM": 2,
+      "LRLM": 5,
+      "LILM": 5
+     },
+     "notes": []
+    },
+    {
+     "season": 3,
+     "plant_month": "Sep",
+     "crop": "wetland_rice",
+     "crop_name": "Wetland rice",
+     "suitability_score": 40.0,
+     "suitability_range": [
+      40.0,
+      40.0
+     ],
+     "approx_duration_days": 127,
+     "rain_fit": {
+      "ratio": null,
+      "status": "not checked"
+     },
+     "gaez_classes_at_site": {
+      "HRLM": 4,
+      "HILM": 2,
+      "LRLM": 5,
+      "LILM": 5
+     },
+     "notes": []
+    }
+   ],
+   "scores": {
+    "agronomic_fit": 33.0,
+    "composite": 33.0,
+    "goals": {
+     "water_saving": 10.0,
+     "soil_health": 0.0,
+     "risk_reduction": 34.6,
+     "income": 26.0,
+     "fallow_use": 69.9,
+     "food_security": 60.0
+    }
+   },
+   "benefits": [
+    {
+     "goal": "fallow_use",
+     "title": "Land in use for most of each season",
+     "text": "Crop durations fill about 70% of the available season length.",
+     "evidence_level": "calculation from typical crop durations (starter values)",
+     "conditions": [
+      "Duration values are general starter figures; local varieties differ."
+     ],
+     "sources": []
+    }
+   ],
+   "trade_offs": [
+    "Season 1 (Wetland rice): only moderate suitability here (score 40/100).",
+    "Season 2 (Wetland rice): only moderate suitability here (score 40/100).",
+    "Season 3 (Wetland rice): only moderate suitability here (score 40/100).",
+    "Season 1: Wetland rice follows a crop from the same family, which can carry over pests and diseases (uncited principle).",
+    "Season 2: repeats Wetland rice (irrigated paddy rice allows this); yield penalties for repeated crops have been reported.",
+    "Season 3: repeats Wetland rice (irrigated paddy rice allows this); yield penalties for repeated crops have been reported.",
+    "No legume in this plan, so no nitrogen credit."
+   ],
+   "vs_current_practice": {
+    "current_practice_sequence": [
+     "maize",
+     "maize",
+     "maize"
+    ],
+    "composite_change": 19.1,
+    "goal_changes": {
+     "water_saving": -31.7,
+     "soil_health": 0.0,
+     "risk_reduction": 20.0,
+     "income": 26.0,
+     "fallow_use": 6.9,
+     "food_security": 10.0
+    },
+    "note": "Compared with repeating your current crop for three seasons (scored with the same method)."
+   },
+   "rule_events": [
+    {
+     "rule": "same_family",
+     "season": 1,
+     "detail": "wetland_rice",
+     "points": -5
+    },
+    {
+     "rule": "same_crop",
+     "season": 2,
+     "detail": "wetland_rice",
+     "points": -8
+    },
+    {
+     "rule": "same_crop",
+     "season": 3,
+     "detail": "wetland_rice",
+     "points": -8
+    }
+   ]
+  },
+  {
+   "option": 3,
+   "label": "Alternative option",
+   "sequence": [
+    {
+     "season": 1,
+     "plant_month": "Sep",
+     "crop": "pearl_millet",
+     "crop_name": "Pearl millet",
+     "suitability_score": 10.0,
+     "suitability_range": [
+      10.0,
+      10.0
+     ],
+     "approx_duration_days": 85,
+     "rain_fit": {
+      "ratio": null,
+      "status": "not checked"
+     },
+     "gaez_classes_at_site": {
+      "HRLM": 5,
+      "HILM": 5,
+      "LRLM": 7,
+      "LILM": 7
+     },
+     "notes": [
+      "sensitive to a few days of standing water"
+     ]
+    },
+    {
+     "season": 2,
+     "plant_month": "Mar",
+     "crop": "sweet_potato",
+     "crop_name": "Sweet potato",
+     "suitability_score": 55.0,
+     "suitability_range": [
+      55.0,
+      55.0
+     ],
+     "approx_duration_days": 120,
+     "rain_fit": {
+      "ratio": null,
+      "status": "not checked"
+     },
+     "gaez_classes_at_site": {
+      "HRLM": 1,
+      "HILM": 1,
+      "LRLM": 4,
+      "LILM": 4
+     },
+     "notes": [
+      "sensitive to a few days of standing water"
+     ]
+    },
+    {
+     "season": 3,
+     "plant_month": "Sep",
+     "crop": "pearl_millet",
+     "crop_name": "Pearl millet",
+     "suitability_score": 10.0,
+     "suitability_range": [
+      10.0,
+      10.0
+     ],
+     "approx_duration_days": 85,
+     "rain_fit": {
+      "ratio": null,
+      "status": "not checked"
+     },
+     "gaez_classes_at_site": {
+      "HRLM": 5,
+      "HILM": 5,
+      "LRLM": 7,
+      "LILM": 7
+     },
+     "notes": [
+      "sensitive to a few days of standing water"
+     ]
+    }
+   ],
+   "scores": {
+    "agronomic_fit": 22.7,
+    "composite": 29.0,
+    "goals": {
+     "water_saving": 58.3,
+     "soil_health": 0.0,
+     "risk_reduction": 43.3,
+     "income": 8.8,
+     "fallow_use": 53.0,
+     "food_security": 56.2
+    }
+   },
+   "benefits": [
+    {
+     "goal": "water_saving",
+     "title": "Lower seasonal water demand",
+     "text": "This plan is in the top quarter of the options for your field on water use; Pearl millet is its least water-demanding crop (about 450-650 mm per season, FAO 1986 ranges).",
+     "evidence_level": "FAO guideline values (the score itself is a heuristic)",
+     "conditions": [
+      "Seasonal need varies with climate; values are approximate ranges."
+     ],
+     "sources": [
+      {
+       "id": "S4",
+       "cite": "FAO (1986) seasonal crop water needs, as tabulated by SSWM (Crop Selection factsheet).",
+       "url": "https://sswm.info/water-nutrient-cycle/water-use/hardwares/conservation-soil-moisture/crop-selection"
+      }
+     ]
+    }
+   ],
+   "trade_offs": [
+    "Season 1 (Pearl millet): only moderate suitability here (score 10/100).",
+    "Season 1 (Pearl millet): sensitive to a few days of standing water.",
+    "Season 2 (Sweet potato): sensitive to a few days of standing water.",
+    "Season 3 (Pearl millet): only moderate suitability here (score 10/100).",
+    "Season 3 (Pearl millet): sensitive to a few days of standing water.",
+    "Season 1: Pearl millet follows a crop from the same family, which can carry over pests and diseases (uncited principle).",
+    "No legume in this plan, so no nitrogen credit."
+   ],
+   "vs_current_practice": {
+    "current_practice_sequence": [
+     "maize",
+     "maize",
+     "maize"
+    ],
+    "composite_change": 15.2,
+    "goal_changes": {
+     "water_saving": 16.7,
+     "soil_health": 0.0,
+     "risk_reduction": 28.7,
+     "income": 8.8,
+     "fallow_use": -10.1,
+     "food_security": 6.2
+    },
+    "note": "Compared with repeating your current crop for three seasons (scored with the same method)."
+   },
+   "rule_events": [
+    {
+     "rule": "same_family",
+     "season": 1,
+     "detail": "pearl_millet",
+     "points": -5
+    },
+    {
+     "rule": "same_family_2back",
+     "season": 3,
+     "detail": "pearl_millet",
+     "points": -2
+    }
+   ]
+  }
+ ],
+ "current_practice_reference": {
+  "sequence": [
+   "maize",
+   "maize",
+   "maize"
+  ],
+  "composite": 13.9,
+  "goals": {
+   "water_saving": 41.7,
+   "soil_health": 0.0,
+   "risk_reduction": 14.6,
+   "income": 0.0,
+   "fallow_use": 63.0,
+   "food_security": 50.0
+  }
+ },
+ "disclaimer": "These recommendations are decision-support guidance based on regional data. They do not replace advice from a local agricultural extension officer.",
+ "sources": {
+  "S1": {
+   "cite": "Mudare S., Jing J., Makowski D., et al. (2025). Crop rotations synergize yield, nutrition, and revenue: a meta-analysis. Nature Communications 16, 9552.",
+   "url": "https://doi.org/10.1038/s41467-025-64567-9"
+  },
+  "S2": {
+   "cite": "Franke A.C., van den Brand G.J., Vanlauwe B., Giller K.E. (2018). Systematic review of grain-legume rotations with cereals in sub-Saharan Africa (44 publications, 199 observations).",
+   "url": "https://thehive.icipe.org/all-prp/490"
+  },
+  "S3": {
+   "cite": "Bagayoko M., Buerkert A., Lung G., Bationo A., Roemheld V. (2000). Cereal/legume rotation effects on cereal growth in Sudano-Sahelian West Africa. Plant and Soil 218:103-116.",
+   "url": "https://doi.org/10.1023/A:1014957605852"
+  },
+  "S4": {
+   "cite": "FAO (1986) seasonal crop water needs, as tabulated by SSWM (Crop Selection factsheet).",
+   "url": "https://sswm.info/water-nutrient-cycle/water-use/hardwares/conservation-soil-moisture/crop-selection"
+  },
+  "S5": {
+   "cite": "University of Nebraska CropWatch (2020), summarising Gentry et al. (2013) and Seifert et al.: Yield penalties for continuous corn and soybean in the Midwest, US.",
+   "url": "https://cropwatch.unl.edu/2020/yield-penalties-continuous-corn-and-soybean-midwest-us"
+  },
+  "S6": {
+   "cite": "China crop-rotation meta-analysis (45 studies, 214 comparisons), record 19654813 on peeref.",
+   "url": "https://peeref.com/works/19654813"
+  },
+  "S7": {
+   "cite": "FAO and IIASA (2025). Global Agro-ecological Zoning v5 (GAEZ v5) model documentation.",
+   "url": "https://www.fao.org/gaez/en"
+  },
+  "S8": {
+   "cite": "Global systematic review with meta-analysis reveals yield advantage of legume-based rotations and its drivers. Nature Communications 13 (2022).",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/9395539"
+  },
+  "S9": {
+   "cite": "Yao et al. (2025). Legume-rice rotations. One Earth.",
+   "url": "https://agritrop.cirad.fr/611529/1/Yao%20et%20al.%2C%202025.pdf"
+  }
+ }
+}

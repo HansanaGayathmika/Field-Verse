@@ -1,0 +1,427 @@
+{
+  "schemaVersion": "1.0",
+  "note": "General agronomic reference compiled by the Field Verse SE team for the demo. Duration and tolerance values are broad typical ranges across varieties and climates — they are NOT location-specific recommendations and must be verified with local extension services and seed suppliers.",
+  "crops": [
+    {
+      "id": "rice",
+      "names": {
+        "en": "Rice"
+      },
+      "scientificName": "Oryza sativa",
+      "family": "Poaceae (grass family)",
+      "category": "cereal",
+      "image": {
+        "src": "/crops/rice.svg",
+        "alt": "Illustration of rice plants with drooping golden grain heads standing in shallow water",
+        "credit": "Original illustration, Field Verse (CC0)"
+      },
+      "description": "A staple grain usually grown in flooded or very wet fields. It needs a lot of water, so it depends on reliable rain or irrigation.",
+      "roles": [
+        "main"
+      ],
+      "characteristics": {
+        "durationDays": {
+          "min": 90,
+          "max": 150
+        },
+        "waterNeed": "high",
+        "droughtTolerance": "low",
+        "waterloggingTolerance": "high",
+        "nitrogenFixing": false,
+        "rootSystem": "fibrous"
+      },
+      "regions": [
+        "sri-lanka-anuradhapura"
+      ],
+      "source": {
+        "sourceType": "estimated",
+        "name": "General agronomic reference (Field Verse team)",
+        "note": "Typical range across varieties; short-duration varieties exist. Verify locally."
+      }
+    },
+    {
+      "id": "maize",
+      "names": {
+        "en": "Maize (corn)"
+      },
+      "scientificName": "Zea mays",
+      "family": "Poaceae (grass family)",
+      "category": "cereal",
+      "image": {
+        "src": "/crops/maize.svg",
+        "alt": "Illustration of a tall maize plant with a yellow cob, silk and a tassel on top",
+        "credit": "Original illustration, Field Verse (CC0)"
+      },
+      "description": "A tall grain crop used for food and animal feed. It needs steady moisture, especially around flowering.",
+      "roles": [
+        "main"
+      ],
+      "characteristics": {
+        "durationDays": {
+          "min": 90,
+          "max": 180
+        },
+        "waterNeed": "medium",
+        "droughtTolerance": "medium",
+        "waterloggingTolerance": "low",
+        "nitrogenFixing": false,
+        "rootSystem": "fibrous"
+      },
+      "regions": [
+        "sri-lanka-anuradhapura",
+        "kenya-nakuru",
+        "brazil-mato-grosso"
+      ],
+      "source": {
+        "sourceType": "estimated",
+        "name": "General agronomic reference (Field Verse team)",
+        "note": "Highland maize can take longer than lowland maize. Verify locally."
+      }
+    },
+    {
+      "id": "mung-bean",
+      "names": {
+        "en": "Mung bean (green gram)"
+      },
+      "scientificName": "Vigna radiata",
+      "family": "Fabaceae (legume family)",
+      "category": "legume",
+      "image": {
+        "src": "/crops/mung-bean.svg",
+        "alt": "Illustration of a mung bean plant with clusters of thin green pods and small green beans",
+        "credit": "Original illustration, Field Verse (CC0)"
+      },
+      "description": "A fast-growing legume with small green beans. It usually needs less water than rice and, like other legumes, works with soil bacteria to add nitrogen.",
+      "roles": [
+        "short_season",
+        "main"
+      ],
+      "characteristics": {
+        "durationDays": {
+          "min": 60,
+          "max": 90
+        },
+        "waterNeed": "low",
+        "droughtTolerance": "medium",
+        "waterloggingTolerance": "low",
+        "nitrogenFixing": true,
+        "rootSystem": "taproot"
+      },
+      "regions": [
+        "sri-lanka-anuradhapura"
+      ],
+      "source": {
+        "sourceType": "estimated",
+        "name": "General agronomic reference (Field Verse team)",
+        "note": "Sensitive to waterlogging. Verify variety duration locally."
+      }
+    },
+    {
+      "id": "cowpea",
+      "names": {
+        "en": "Cowpea"
+      },
+      "scientificName": "Vigna unguiculata",
+      "family": "Fabaceae (legume family)",
+      "category": "legume",
+      "image": {
+        "src": "/crops/cowpea.svg",
+        "alt": "Illustration of a cowpea plant with long thin pods and pale purple flowers",
+        "credit": "Original illustration, Field Verse (CC0)"
+      },
+      "description": "A hardy legume known for coping with heat and dry spells. Leaves and beans are eaten, and it can add nitrogen to the soil.",
+      "roles": [
+        "short_season",
+        "main",
+        "cover"
+      ],
+      "characteristics": {
+        "durationDays": {
+          "min": 60,
+          "max": 100
+        },
+        "waterNeed": "low",
+        "droughtTolerance": "high",
+        "waterloggingTolerance": "low",
+        "nitrogenFixing": true,
+        "rootSystem": "taproot"
+      },
+      "regions": [
+        "sri-lanka-anuradhapura",
+        "kenya-nakuru"
+      ],
+      "source": {
+        "sourceType": "estimated",
+        "name": "General agronomic reference (Field Verse team)",
+        "note": "Grain types vs. leafy types differ in duration. Verify locally."
+      }
+    },
+    {
+      "id": "common-bean",
+      "names": {
+        "en": "Common bean"
+      },
+      "scientificName": "Phaseolus vulgaris",
+      "family": "Fabaceae (legume family)",
+      "category": "legume",
+      "image": {
+        "src": "/crops/common-bean.svg",
+        "alt": "Illustration of a common bean plant with flat green pods and red speckled kidney-shaped beans",
+        "credit": "Original illustration, Field Verse (CC0)"
+      },
+      "description": "A widely eaten bean that grows well in cooler highland areas. It is sensitive to drought and very high heat during flowering.",
+      "roles": [
+        "main",
+        "short_season"
+      ],
+      "characteristics": {
+        "durationDays": {
+          "min": 70,
+          "max": 110
+        },
+        "waterNeed": "medium",
+        "droughtTolerance": "low",
+        "waterloggingTolerance": "low",
+        "nitrogenFixing": true,
+        "rootSystem": "taproot"
+      },
+      "regions": [
+        "kenya-nakuru"
+      ],
+      "source": {
+        "sourceType": "estimated",
+        "name": "General agronomic reference (Field Verse team)",
+        "note": "Bush types are shorter than climbing types. Verify locally."
+      }
+    },
+    {
+      "id": "sorghum",
+      "names": {
+        "en": "Sorghum"
+      },
+      "scientificName": "Sorghum bicolor",
+      "family": "Poaceae (grass family)",
+      "category": "cereal",
+      "image": {
+        "src": "/crops/sorghum.svg",
+        "alt": "Illustration of a sorghum plant with a compact reddish-brown grain head on a tall stalk",
+        "credit": "Original illustration, Field Verse (CC0)"
+      },
+      "description": "A grain crop known for tolerating heat and dry conditions better than maize. Used for food, feed and fodder.",
+      "roles": [
+        "main",
+        "short_season"
+      ],
+      "characteristics": {
+        "durationDays": {
+          "min": 90,
+          "max": 130
+        },
+        "waterNeed": "low",
+        "droughtTolerance": "high",
+        "waterloggingTolerance": "medium",
+        "nitrogenFixing": false,
+        "rootSystem": "fibrous"
+      },
+      "regions": [
+        "kenya-nakuru",
+        "brazil-mato-grosso"
+      ],
+      "source": {
+        "sourceType": "estimated",
+        "name": "General agronomic reference (Field Verse team)",
+        "note": "Cold highland sites may slow growth. Verify locally."
+      }
+    },
+    {
+      "id": "soybean",
+      "names": {
+        "en": "Soybean"
+      },
+      "scientificName": "Glycine max",
+      "family": "Fabaceae (legume family)",
+      "category": "legume",
+      "image": {
+        "src": "/crops/soybean.svg",
+        "alt": "Illustration of a soybean plant with fuzzy pods in clusters and pale yellow beans",
+        "credit": "Original illustration, Field Verse (CC0)"
+      },
+      "description": "A protein-rich legume grown widely for oil and animal feed. It can form nitrogen-fixing partnerships with soil bacteria.",
+      "roles": [
+        "main"
+      ],
+      "characteristics": {
+        "durationDays": {
+          "min": 90,
+          "max": 130
+        },
+        "waterNeed": "medium",
+        "droughtTolerance": "medium",
+        "waterloggingTolerance": "low",
+        "nitrogenFixing": true,
+        "rootSystem": "taproot"
+      },
+      "regions": [
+        "brazil-mato-grosso",
+        "kenya-nakuru"
+      ],
+      "source": {
+        "sourceType": "estimated",
+        "name": "General agronomic reference (Field Verse team)",
+        "note": "Maturity group strongly affects duration. Verify locally."
+      }
+    },
+    {
+      "id": "sunn-hemp",
+      "names": {
+        "en": "Sunn hemp (cover crop)"
+      },
+      "scientificName": "Crotalaria juncea",
+      "family": "Fabaceae (legume family)",
+      "category": "cover",
+      "image": {
+        "src": "/crops/sunn-hemp.svg",
+        "alt": "Illustration of sunn hemp with tall thin stems, narrow leaves and bright yellow flowers",
+        "credit": "Original illustration, Field Verse (CC0)"
+      },
+      "description": "A fast-growing legume cover crop. It keeps soil covered, adds plant material, and can add nitrogen when it is turned into the soil.",
+      "roles": [
+        "cover",
+        "short_season"
+      ],
+      "characteristics": {
+        "durationDays": {
+          "min": 45,
+          "max": 90
+        },
+        "waterNeed": "low",
+        "droughtTolerance": "high",
+        "waterloggingTolerance": "low",
+        "nitrogenFixing": true,
+        "rootSystem": "taproot"
+      },
+      "regions": [
+        "sri-lanka-anuradhapura",
+        "brazil-mato-grosso"
+      ],
+      "source": {
+        "sourceType": "estimated",
+        "name": "General agronomic reference (Field Verse team)",
+        "note": "Duration shown is to green-manure stage, not seed harvest. Verify locally."
+      }
+    },
+    {
+      "id": "lablab",
+      "names": {
+        "en": "Lablab (dolichos bean)"
+      },
+      "scientificName": "Lablab purpureus",
+      "family": "Fabaceae (legume family)",
+      "category": "cover",
+      "image": {
+        "src": "/crops/lablab.svg",
+        "alt": "Illustration of a lablab vine with purple flowers and flat curved purple-green pods",
+        "credit": "Original illustration, Field Verse (CC0)"
+      },
+      "description": "A vigorous climbing legume used as food, fodder and cover. It has deep roots and can keep growing into the dry season.",
+      "roles": [
+        "cover",
+        "main"
+      ],
+      "characteristics": {
+        "durationDays": {
+          "min": 90,
+          "max": 150
+        },
+        "waterNeed": "low",
+        "droughtTolerance": "high",
+        "waterloggingTolerance": "low",
+        "nitrogenFixing": true,
+        "rootSystem": "taproot"
+      },
+      "regions": [
+        "kenya-nakuru"
+      ],
+      "source": {
+        "sourceType": "estimated",
+        "name": "General agronomic reference (Field Verse team)",
+        "note": "Grows slowly at first. Verify suitability for highland sites locally."
+      }
+    },
+    {
+      "id": "wheat",
+      "names": {
+        "en": "Wheat"
+      },
+      "scientificName": "Triticum aestivum",
+      "family": "Poaceae (grass family)",
+      "category": "cereal",
+      "image": {
+        "src": "/crops/wheat.svg",
+        "alt": "Illustration of golden wheat stalks with long bearded grain heads",
+        "credit": "Original illustration, Field Verse (CC0)"
+      },
+      "description": "A grain crop for bread and flour that grows best in cooler, drier seasons. Too much heat or rain at harvest can lower grain quality.",
+      "roles": [
+        "main"
+      ],
+      "characteristics": {
+        "durationDays": {
+          "min": 90,
+          "max": 150
+        },
+        "waterNeed": "medium",
+        "droughtTolerance": "medium",
+        "waterloggingTolerance": "low",
+        "nitrogenFixing": false,
+        "rootSystem": "fibrous"
+      },
+      "regions": [
+        "kenya-nakuru"
+      ],
+      "source": {
+        "sourceType": "estimated",
+        "name": "General agronomic reference (Field Verse team)",
+        "note": "Spring and winter wheat differ greatly in duration. Verify locally."
+      }
+    },
+    {
+      "id": "cassava",
+      "names": {
+        "en": "Cassava"
+      },
+      "scientificName": "Manihot esculenta",
+      "family": "Euphorbiaceae (spurge family)",
+      "category": "root",
+      "image": {
+        "src": "/crops/cassava.svg",
+        "alt": "Illustration of a cassava plant with hand-shaped leaves and brown starchy roots in the soil",
+        "credit": "Original illustration, Field Verse (CC0)"
+      },
+      "description": "A hardy root crop grown for its starchy roots. It copes with poor soils and dry spells, but stays in the field for many months.",
+      "roles": [
+        "main"
+      ],
+      "characteristics": {
+        "durationDays": {
+          "min": 240,
+          "max": 540
+        },
+        "waterNeed": "low",
+        "droughtTolerance": "high",
+        "waterloggingTolerance": "low",
+        "nitrogenFixing": false,
+        "rootSystem": "fibrous"
+      },
+      "regions": [
+        "brazil-mato-grosso",
+        "sri-lanka-anuradhapura"
+      ],
+      "source": {
+        "sourceType": "estimated",
+        "name": "General agronomic reference (Field Verse team)",
+        "note": "Harvest age varies widely by variety and use (8–18 months). Verify locally."
+      }
+    }
+  ]
+}

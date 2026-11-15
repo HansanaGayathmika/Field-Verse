@@ -1,0 +1,14 @@
+{
+  "schemaVersion": "1.0",
+  "fixtureType": "illustrative_demo",
+  "note": "Demo crop calendar for a typical long-rains maize field near Njoro, and hand-picked gap candidates. Fit is a documented rule (crop duration vs. idle window length), not a model prediction.",
+  "calendar": [
+    { "cropId": "maize", "label": "Long-rains maize", "months": [3, 4, 5, 6, 7, 8], "plantingMonths": [3, 4], "harvestMonths": [8], "sourceType": "demo" }
+  ],
+  "defaultIdleMonths": [9, 10, 11, 12, 1, 2],
+  "candidates": [
+    { "cropId": "common-bean", "role": "short_season", "benefits": ["Uses the short rains.", "Legume that may add nitrogen."], "risks": ["Sensitive to drought.", "Leaf diseases in wet weather."], "explanation": "A familiar short-rains crop in the highlands." },
+    { "cropId": "lablab", "role": "cover", "benefits": ["Protects soil into the dry season.", "Fodder for livestock."], "risks": ["May grow slowly in cool highland temperatures."], "explanation": "A deep-rooted legume cover." },
+    { "cropId": "cowpea", "role": "short_season", "benefits": ["Hardy in dry spells."], "risks": ["Prefers warmer conditions than the 14–17 °C mean temperatures observed here (NASA POWER)."], "explanation": "Included to show a crop that may not suit cool highlands." }
+  ]
+}

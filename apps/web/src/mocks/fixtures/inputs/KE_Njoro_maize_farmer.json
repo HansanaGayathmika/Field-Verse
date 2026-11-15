@@ -1,0 +1,28 @@
+{
+ "location": {
+  "lat": -0.33143,
+  "lon": 35.94196
+ },
+ "current_crop": "maize",
+ "harvest_month": 8,
+ "previous_crop": "maize",
+ "previous_crop_2": "maize",
+ "next_planting_month": 10,
+ "seasons_per_year": 2,
+ "water_access": "rainfall_only",
+ "waterlogging": "none",
+ "input_level": "minimal",
+ "soil_texture": "loam",
+ "soil_ph": null,
+ "excluded_crops": [
+  "pearl_millet"
+ ],
+ "priorities": {
+  "water_saving": "slightly_important",
+  "soil_health": "very_important",
+  "risk_reduction": "important",
+  "income": "important",
+  "fallow_use": "slightly_important",
+  "food_security": "very_important"
+ }
+}

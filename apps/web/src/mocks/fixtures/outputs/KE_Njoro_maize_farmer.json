@@ -1,0 +1,890 @@
+{
+ "knowledge_base_version": "starter-0.1 (unreviewed by agronomists)",
+ "farmer_input_normalised": {
+  "lat": -0.33143,
+  "lon": 35.94196,
+  "current_crop": "maize",
+  "previous_crop": "maize",
+  "previous_crop_2": "maize",
+  "harvested": false,
+  "harvest_month": 8,
+  "next_planting_month": 10,
+  "seasons_per_year": 2,
+  "water_access": "rainfall_only",
+  "waterlogging": "none",
+  "input_level": "minimal",
+  "soil_texture": "loam",
+  "soil_ph": null,
+  "excluded_crops": [
+   "pearl_millet"
+  ],
+  "priorities": {
+   "water_saving": "slightly_important",
+   "soil_health": "very_important",
+   "risk_reduction": "important",
+   "income": "important",
+   "fallow_use": "slightly_important",
+   "food_security": "very_important"
+  }
+ },
+ "assumptions": [],
+ "warnings": [
+  "Suitability changes a lot between the surrounding sample cells, so this area is heterogeneous; treat the scores as regional."
+ ],
+ "site_profile": {
+  "gaez_cell_id": "r1083c2591",
+  "gaez_cell_lat": -0.291667,
+  "gaez_cell_lon": 35.958333,
+  "distance_to_cell_km": 4.8,
+  "gaez_classes_by_management": {
+   "HRLM": {
+    "wetland_rice": 8,
+    "maize": 4,
+    "soybean": 8,
+    "wheat": 2,
+    "sorghum": 2,
+    "pearl_millet": 8,
+    "phaseolus_bean": 2,
+    "cowpea": 8,
+    "pigeonpea": 8,
+    "groundnut": 8,
+    "sesame": 8,
+    "sweet_potato": 8
+   },
+   "HILM": {
+    "wetland_rice": 8,
+    "maize": 1,
+    "soybean": 8,
+    "wheat": 1,
+    "sorghum": 1,
+    "pearl_millet": 8,
+    "phaseolus_bean": 2,
+    "cowpea": 8,
+    "pigeonpea": 8,
+    "groundnut": 8,
+    "sesame": 8,
+    "sweet_potato": 8
+   },
+   "LRLM": {
+    "wetland_rice": 8,
+    "maize": 2,
+    "soybean": 8,
+    "wheat": 1,
+    "sorghum": 1,
+    "pearl_millet": 8,
+    "phaseolus_bean": 2,
+    "cowpea": 8,
+    "pigeonpea": 8,
+    "groundnut": 8,
+    "sesame": 8,
+    "sweet_potato": 8
+   },
+   "LILM": {
+    "wetland_rice": 8,
+    "maize": 1,
+    "soybean": 8,
+    "wheat": 1,
+    "sorghum": 1,
+    "pearl_millet": 8,
+    "phaseolus_bean": 2,
+    "cowpea": 8,
+    "pigeonpea": 8,
+    "groundnut": 8,
+    "sesame": 8,
+    "sweet_potato": 8
+   }
+  },
+  "soil": {
+   "ph": 6.2,
+   "clay_pct": 35.6,
+   "sand_pct": 32.9,
+   "silt_pct": 31.5,
+   "organic_carbon_g_kg": 21.6,
+   "total_nitrogen_g_kg": 2.32,
+   "texture_class": "clay",
+   "source": "SoilGrids 5 km, 0-30 cm depth-weighted, at the suitability cell"
+  },
+  "rainfall": {
+   "source": "GPM IMERG monthly 11 years at site AF01 (0 km away)",
+   "monthly_mean_mm": [
+    66.4,
+    44.3,
+    91.1,
+    225.2,
+    175.5,
+    112.4,
+    123.8,
+    128.7,
+    120.0,
+    119.9,
+    151.9,
+    86.2
+   ],
+   "monthly_cv": [
+    0.81,
+    0.54,
+    0.64,
+    0.43,
+    0.27,
+    0.43,
+    0.28,
+    0.41,
+    0.34,
+    0.49,
+    0.46,
+    0.74
+   ],
+   "annual_mm": 1445.0,
+   "wet_months_ge_100mm": 8
+  },
+  "neighbourhood_variation_classes": 4.5,
+  "seasons_per_year_used": 2,
+  "season_plan": [
+   {
+    "season": 1,
+    "plant_month": "Oct"
+   },
+   {
+    "season": 2,
+    "plant_month": "Apr"
+   },
+   {
+    "season": 3,
+    "plant_month": "Oct"
+   }
+  ],
+  "minimum_suitability_score_used": 40
+ },
+ "crops_considered": [
+  {
+   "crop": "wetland_rice",
+   "eligible_in_seasons": [],
+   "suitability_score": 0.0,
+   "why_not": [
+    "rated not suitable or too marginal here by the regional model",
+    "wetland rice needs standing water, but the field drains well and has no irrigation"
+   ]
+  },
+  {
+   "crop": "maize",
+   "eligible_in_seasons": [
+    2
+   ],
+   "suitability_score": 85.0,
+   "why_not": []
+  },
+  {
+   "crop": "soybean",
+   "eligible_in_seasons": [],
+   "suitability_score": 0.0,
+   "why_not": [
+    "rated not suitable or too marginal here by the regional model",
+    "too dry in the growing window (rain covers about 48% of need)"
+   ]
+  },
+  {
+   "crop": "wheat",
+   "eligible_in_seasons": [
+    1,
+    2,
+    3
+   ],
+   "suitability_score": 100.0,
+   "why_not": []
+  },
+  {
+   "crop": "sorghum",
+   "eligible_in_seasons": [
+    1,
+    2,
+    3
+   ],
+   "suitability_score": 100.0,
+   "why_not": []
+  },
+  {
+   "crop": "pearl_millet",
+   "eligible_in_seasons": [],
+   "suitability_score": 0.0,
+   "why_not": [
+    "excluded by the farmer"
+   ]
+  },
+  {
+   "crop": "phaseolus_bean",
+   "eligible_in_seasons": [
+    1,
+    2,
+    3
+   ],
+   "suitability_score": 85.0,
+   "why_not": []
+  },
+  {
+   "crop": "cowpea",
+   "eligible_in_seasons": [],
+   "suitability_score": 0.0,
+   "why_not": [
+    "rated not suitable or too marginal here by the regional model"
+   ]
+  },
+  {
+   "crop": "pigeonpea",
+   "eligible_in_seasons": [],
+   "suitability_score": 0.0,
+   "why_not": [
+    "rated not suitable or too marginal here by the regional model"
+   ]
+  },
+  {
+   "crop": "groundnut",
+   "eligible_in_seasons": [],
+   "suitability_score": 0.0,
+   "why_not": [
+    "rated not suitable or too marginal here by the regional model",
+    "too dry in the growing window (rain covers about 48% of need)"
+   ]
+  },
+  {
+   "crop": "sesame",
+   "eligible_in_seasons": [],
+   "suitability_score": 0.0,
+   "why_not": [
+    "rated not suitable or too marginal here by the regional model"
+   ]
+  },
+  {
+   "crop": "sweet_potato",
+   "eligible_in_seasons": [],
+   "suitability_score": 0.0,
+   "why_not": [
+    "rated not suitable or too marginal here by the regional model"
+   ]
+  }
+ ],
+ "confidence": {
+  "level": "High",
+  "score": 92,
+  "reasons": [
+   "Suitability varies a lot between nearby sample cells."
+  ],
+  "note": "Heuristic: points are deducted for each unknown or weak input. Not a statistical probability."
+ },
+ "status": "ok",
+ "status_note": "",
+ "plans": [
+  {
+   "option": 1,
+   "label": "Best match to your priorities",
+   "sequence": [
+    {
+     "season": 1,
+     "plant_month": "Oct",
+     "crop": "phaseolus_bean",
+     "crop_name": "Common bean",
+     "suitability_score": 81.0,
+     "suitability_range": [
+      85.0,
+      85.0
+     ],
+     "approx_duration_days": 85,
+     "rain_fit": {
+      "ratio": 0.6,
+      "status": "marginal"
+     },
+     "gaez_classes_at_site": {
+      "HRLM": 2,
+      "HILM": 2,
+      "LRLM": 2,
+      "LILM": 2
+     },
+     "notes": [
+      "rainfall in the growing window covers about 60% of the crop's water need"
+     ]
+    },
+    {
+     "season": 2,
+     "plant_month": "Apr",
+     "crop": "wheat",
+     "crop_name": "Wheat",
+     "suitability_score": 100.0,
+     "suitability_range": [
+      100.0,
+      100.0
+     ],
+     "approx_duration_days": 130,
+     "rain_fit": {
+      "ratio": 0.85,
+      "status": "good"
+     },
+     "gaez_classes_at_site": {
+      "HRLM": 2,
+      "HILM": 1,
+      "LRLM": 1,
+      "LILM": 1
+     },
+     "notes": []
+    },
+    {
+     "season": 3,
+     "plant_month": "Oct",
+     "crop": "phaseolus_bean",
+     "crop_name": "Common bean",
+     "suitability_score": 81.0,
+     "suitability_range": [
+      85.0,
+      85.0
+     ],
+     "approx_duration_days": 85,
+     "rain_fit": {
+      "ratio": 0.6,
+      "status": "marginal"
+     },
+     "gaez_classes_at_site": {
+      "HRLM": 2,
+      "HILM": 2,
+      "LRLM": 2,
+      "LILM": 2
+     },
+     "notes": [
+      "rainfall in the growing window covers about 60% of the crop's water need"
+     ]
+    }
+   ],
+   "scores": {
+    "agronomic_fit": 90.0,
+    "composite": 83.4,
+    "goals": {
+     "water_saving": 75.0,
+     "soil_health": 85.0,
+     "risk_reduction": 66.3,
+     "income": 56.8,
+     "fallow_use": 54.8,
+     "food_security": 96.8
+    }
+   },
+   "benefits": [
+    {
+     "goal": "soil_health",
+     "title": "Nitrogen and yield carry-over from legumes",
+     "text": "Legume-to-next-crop sequences in this plan (phaseolus bean then wheat) are the pattern that rotation studies link to higher yield in the following crop: 23% on average for legume pre-crops versus 16% for non-legumes in 3,663 field comparisons worldwide. In sub-Saharan Africa, effects were larger after soybean and groundnut than after cowpea, and larger for maize than for millet or sorghum.",
+     "evidence_level": "meta-analysis (peer-reviewed)",
+     "conditions": [
+      "Average of many trials, not a forecast for your field; roughly one trial in four showed no gain or a loss.",
+      "The gain shrinks where nitrogen fertiliser use is high."
+     ],
+     "sources": [
+      {
+       "id": "S1",
+       "cite": "Mudare S., Jing J., Makowski D., et al. (2025). Crop rotations synergize yield, nutrition, and revenue: a meta-analysis. Nature Communications 16, 9552.",
+       "url": "https://doi.org/10.1038/s41467-025-64567-9"
+      },
+      {
+       "id": "S8",
+       "cite": "Global systematic review with meta-analysis reveals yield advantage of legume-based rotations and its drivers. Nature Communications 13 (2022).",
+       "url": "https://pmc.ncbi.nlm.nih.gov/articles/9395539"
+      },
+      {
+       "id": "S2",
+       "cite": "Franke A.C., van den Brand G.J., Vanlauwe B., Giller K.E. (2018). Systematic review of grain-legume rotations with cereals in sub-Saharan Africa (44 publications, 199 observations).",
+       "url": "https://thehive.icipe.org/all-prp/490"
+      },
+      {
+       "id": "S3",
+       "cite": "Bagayoko M., Buerkert A., Lung G., Bationo A., Roemheld V. (2000). Cereal/legume rotation effects on cereal growth in Sudano-Sahelian West Africa. Plant and Soil 218:103-116.",
+       "url": "https://doi.org/10.1023/A:1014957605852"
+      }
+     ]
+    },
+    {
+     "goal": "water_saving",
+     "title": "Lower seasonal water demand",
+     "text": "This plan is in the top quarter of the options for your field on water use; Common bean is its least water-demanding crop (about 300-500 mm per season, FAO 1986 ranges).",
+     "evidence_level": "FAO guideline values (the score itself is a heuristic)",
+     "conditions": [
+      "Seasonal need varies with climate; values are approximate ranges."
+     ],
+     "sources": [
+      {
+       "id": "S4",
+       "cite": "FAO (1986) seasonal crop water needs, as tabulated by SSWM (Crop Selection factsheet).",
+       "url": "https://sswm.info/water-nutrient-cycle/water-use/hardwares/conservation-soil-moisture/crop-selection"
+      }
+     ]
+    },
+    {
+     "goal": "food_security",
+     "title": "Staple grain plus protein-rich legume",
+     "text": "Combining cereals and legumes supports both energy and protein from your own fields; rotation systems in the global analysis produced about 24% more dietary energy and 14% more protein.",
+     "evidence_level": "meta-analysis (peer-reviewed)",
+     "conditions": [
+      "Experimental averages; depends on how much of the harvest your household eats."
+     ],
+     "sources": [
+      {
+       "id": "S1",
+       "cite": "Mudare S., Jing J., Makowski D., et al. (2025). Crop rotations synergize yield, nutrition, and revenue: a meta-analysis. Nature Communications 16, 9552.",
+       "url": "https://doi.org/10.1038/s41467-025-64567-9"
+      }
+     ]
+    },
+    {
+     "goal": "income",
+     "title": "Higher-value crops matched to good suitability",
+     "text": "Income is indicative only: it combines how suitable the land is with a rough market class (high, medium, low) for each crop. No local prices are included.",
+     "evidence_level": "heuristic (no price data)",
+     "conditions": [
+      "Check local prices before deciding."
+     ],
+     "sources": []
+    }
+   ],
+   "trade_offs": [
+    "Season 1 (Common bean): rainfall in the growing window covers about 60% of the crop's water need, so some dry-spell risk.",
+    "Season 3 (Common bean): rainfall in the growing window covers about 60% of the crop's water need, so some dry-spell risk."
+   ],
+   "vs_current_practice": {
+    "current_practice_sequence": [
+     "maize",
+     "maize",
+     "maize"
+    ],
+    "composite_change": 23.6,
+    "goal_changes": {
+     "water_saving": 33.3,
+     "soil_health": 85.0,
+     "risk_reduction": 15.2,
+     "income": 4.1,
+     "fallow_use": -8.2,
+     "food_security": 26.6
+    },
+    "note": "Compared with repeating your current crop for three seasons (scored with the same method)."
+   },
+   "rule_events": [
+    {
+     "rule": "same_family_2back",
+     "season": 2,
+     "detail": "wheat",
+     "points": -2
+    },
+    {
+     "rule": "legume_credit",
+     "season": 2,
+     "detail": "phaseolus_bean->wheat",
+     "points": 12.0
+    },
+    {
+     "rule": "same_family_2back",
+     "season": 3,
+     "detail": "phaseolus_bean",
+     "points": -2
+    }
+   ]
+  },
+  {
+   "option": 2,
+   "label": "Best for soil health",
+   "sequence": [
+    {
+     "season": 1,
+     "plant_month": "Oct",
+     "crop": "sorghum",
+     "crop_name": "Sorghum",
+     "suitability_score": 88.0,
+     "suitability_range": [
+      100.0,
+      100.0
+     ],
+     "approx_duration_days": 110,
+     "rain_fit": {
+      "ratio": 0.51,
+      "status": "marginal"
+     },
+     "gaez_classes_at_site": {
+      "HRLM": 2,
+      "HILM": 1,
+      "LRLM": 1,
+      "LILM": 1
+     },
+     "notes": [
+      "rainfall in the growing window covers about 51% of the crop's water need"
+     ]
+    },
+    {
+     "season": 2,
+     "plant_month": "Apr",
+     "crop": "phaseolus_bean",
+     "crop_name": "Common bean",
+     "suitability_score": 93.0,
+     "suitability_range": [
+      85.0,
+      85.0
+     ],
+     "approx_duration_days": 85,
+     "rain_fit": {
+      "ratio": 0.82,
+      "status": "good"
+     },
+     "gaez_classes_at_site": {
+      "HRLM": 2,
+      "HILM": 2,
+      "LRLM": 2,
+      "LILM": 2
+     },
+     "notes": []
+    },
+    {
+     "season": 3,
+     "plant_month": "Oct",
+     "crop": "sorghum",
+     "crop_name": "Sorghum",
+     "suitability_score": 88.0,
+     "suitability_range": [
+      100.0,
+      100.0
+     ],
+     "approx_duration_days": 110,
+     "rain_fit": {
+      "ratio": 0.51,
+      "status": "marginal"
+     },
+     "gaez_classes_at_site": {
+      "HRLM": 2,
+      "HILM": 1,
+      "LRLM": 1,
+      "LILM": 1
+     },
+     "notes": [
+      "rainfall in the growing window covers about 51% of the crop's water need"
+     ]
+    }
+   ],
+   "scores": {
+    "agronomic_fit": 90.9,
+    "composite": 81.5,
+    "goals": {
+     "water_saving": 66.7,
+     "soil_health": 70.0,
+     "risk_reduction": 79.4,
+     "income": 40.7,
+     "fallow_use": 55.7,
+     "food_security": 97.4
+    }
+   },
+   "benefits": [
+    {
+     "goal": "soil_health",
+     "title": "Nitrogen and yield carry-over from legumes",
+     "text": "Legume-to-next-crop sequences in this plan (phaseolus bean then sorghum) are the pattern that rotation studies link to higher yield in the following crop: 23% on average for legume pre-crops versus 16% for non-legumes in 3,663 field comparisons worldwide. In sub-Saharan Africa, effects were larger after soybean and groundnut than after cowpea, and larger for maize than for millet or sorghum.",
+     "evidence_level": "meta-analysis (peer-reviewed)",
+     "conditions": [
+      "Average of many trials, not a forecast for your field; roughly one trial in four showed no gain or a loss.",
+      "The gain shrinks where nitrogen fertiliser use is high."
+     ],
+     "sources": [
+      {
+       "id": "S1",
+       "cite": "Mudare S., Jing J., Makowski D., et al. (2025). Crop rotations synergize yield, nutrition, and revenue: a meta-analysis. Nature Communications 16, 9552.",
+       "url": "https://doi.org/10.1038/s41467-025-64567-9"
+      },
+      {
+       "id": "S8",
+       "cite": "Global systematic review with meta-analysis reveals yield advantage of legume-based rotations and its drivers. Nature Communications 13 (2022).",
+       "url": "https://pmc.ncbi.nlm.nih.gov/articles/9395539"
+      },
+      {
+       "id": "S2",
+       "cite": "Franke A.C., van den Brand G.J., Vanlauwe B., Giller K.E. (2018). Systematic review of grain-legume rotations with cereals in sub-Saharan Africa (44 publications, 199 observations).",
+       "url": "https://thehive.icipe.org/all-prp/490"
+      },
+      {
+       "id": "S3",
+       "cite": "Bagayoko M., Buerkert A., Lung G., Bationo A., Roemheld V. (2000). Cereal/legume rotation effects on cereal growth in Sudano-Sahelian West Africa. Plant and Soil 218:103-116.",
+       "url": "https://doi.org/10.1023/A:1014957605852"
+      }
+     ]
+    },
+    {
+     "goal": "water_saving",
+     "title": "Lower seasonal water demand",
+     "text": "This plan is in the top quarter of the options for your field on water use; Common bean is its least water-demanding crop (about 300-500 mm per season, FAO 1986 ranges).",
+     "evidence_level": "FAO guideline values (the score itself is a heuristic)",
+     "conditions": [
+      "Seasonal need varies with climate; values are approximate ranges."
+     ],
+     "sources": [
+      {
+       "id": "S4",
+       "cite": "FAO (1986) seasonal crop water needs, as tabulated by SSWM (Crop Selection factsheet).",
+       "url": "https://sswm.info/water-nutrient-cycle/water-use/hardwares/conservation-soil-moisture/crop-selection"
+      }
+     ]
+    },
+    {
+     "goal": "food_security",
+     "title": "Staple grain plus protein-rich legume",
+     "text": "Combining cereals and legumes supports both energy and protein from your own fields; rotation systems in the global analysis produced about 24% more dietary energy and 14% more protein.",
+     "evidence_level": "meta-analysis (peer-reviewed)",
+     "conditions": [
+      "Experimental averages; depends on how much of the harvest your household eats."
+     ],
+     "sources": [
+      {
+       "id": "S1",
+       "cite": "Mudare S., Jing J., Makowski D., et al. (2025). Crop rotations synergize yield, nutrition, and revenue: a meta-analysis. Nature Communications 16, 9552.",
+       "url": "https://doi.org/10.1038/s41467-025-64567-9"
+      }
+     ]
+    }
+   ],
+   "trade_offs": [
+    "Season 1 (Sorghum): rainfall in the growing window covers about 51% of the crop's water need, so some dry-spell risk.",
+    "Season 3 (Sorghum): rainfall in the growing window covers about 51% of the crop's water need, so some dry-spell risk.",
+    "Season 1: Sorghum follows a crop from the same family, which can carry over pests and diseases (uncited principle)."
+   ],
+   "vs_current_practice": {
+    "current_practice_sequence": [
+     "maize",
+     "maize",
+     "maize"
+    ],
+    "composite_change": 21.7,
+    "goal_changes": {
+     "water_saving": 25.0,
+     "soil_health": 70.0,
+     "risk_reduction": 28.3,
+     "income": -12.0,
+     "fallow_use": -7.3,
+     "food_security": 27.2
+    },
+    "note": "Compared with repeating your current crop for three seasons (scored with the same method)."
+   },
+   "rule_events": [
+    {
+     "rule": "same_family",
+     "season": 1,
+     "detail": "sorghum",
+     "points": -5
+    },
+    {
+     "rule": "same_family_2back",
+     "season": 3,
+     "detail": "sorghum",
+     "points": -2
+    },
+    {
+     "rule": "legume_credit",
+     "season": 3,
+     "detail": "phaseolus_bean->sorghum",
+     "points": 10.8
+    }
+   ]
+  },
+  {
+   "option": 3,
+   "label": "Alternative option",
+   "sequence": [
+    {
+     "season": 1,
+     "plant_month": "Oct",
+     "crop": "wheat",
+     "crop_name": "Wheat",
+     "suitability_score": 88.0,
+     "suitability_range": [
+      100.0,
+      100.0
+     ],
+     "approx_duration_days": 130,
+     "rain_fit": {
+      "ratio": 0.55,
+      "status": "marginal"
+     },
+     "gaez_classes_at_site": {
+      "HRLM": 2,
+      "HILM": 1,
+      "LRLM": 1,
+      "LILM": 1
+     },
+     "notes": [
+      "rainfall in the growing window covers about 55% of the crop's water need"
+     ]
+    },
+    {
+     "season": 2,
+     "plant_month": "Apr",
+     "crop": "sorghum",
+     "crop_name": "Sorghum",
+     "suitability_score": 88.0,
+     "suitability_range": [
+      100.0,
+      100.0
+     ],
+     "approx_duration_days": 110,
+     "rain_fit": {
+      "ratio": 0.74,
+      "status": "marginal"
+     },
+     "gaez_classes_at_site": {
+      "HRLM": 2,
+      "HILM": 1,
+      "LRLM": 1,
+      "LILM": 1
+     },
+     "notes": [
+      "rainfall in the growing window covers about 74% of the crop's water need"
+     ]
+    },
+    {
+     "season": 3,
+     "plant_month": "Oct",
+     "crop": "wheat",
+     "crop_name": "Wheat",
+     "suitability_score": 88.0,
+     "suitability_range": [
+      100.0,
+      100.0
+     ],
+     "approx_duration_days": 130,
+     "rain_fit": {
+      "ratio": 0.55,
+      "status": "marginal"
+     },
+     "gaez_classes_at_site": {
+      "HRLM": 2,
+      "HILM": 1,
+      "LRLM": 1,
+      "LILM": 1
+     },
+     "notes": [
+      "rainfall in the growing window covers about 55% of the crop's water need"
+     ]
+    }
+   ],
+   "scores": {
+    "agronomic_fit": 83.0,
+    "composite": 66.4,
+    "goals": {
+     "water_saving": 58.3,
+     "soil_health": 0.0,
+     "risk_reduction": 79.0,
+     "income": 48.4,
+     "fallow_use": 67.6,
+     "food_security": 72.0
+    }
+   },
+   "benefits": [
+    {
+     "goal": "fallow_use",
+     "title": "Land in use for most of each season",
+     "text": "Crop durations fill about 68% of the available season length.",
+     "evidence_level": "calculation from typical crop durations (starter values)",
+     "conditions": [
+      "Duration values are general starter figures; local varieties differ."
+     ],
+     "sources": []
+    }
+   ],
+   "trade_offs": [
+    "Season 1 (Wheat): rainfall in the growing window covers about 55% of the crop's water need, so some dry-spell risk.",
+    "Season 2 (Sorghum): rainfall in the growing window covers about 74% of the crop's water need, so some dry-spell risk.",
+    "Season 3 (Wheat): rainfall in the growing window covers about 55% of the crop's water need, so some dry-spell risk.",
+    "Season 1: Wheat follows a crop from the same family, which can carry over pests and diseases (uncited principle).",
+    "Season 2: Sorghum follows a crop from the same family, which can carry over pests and diseases (uncited principle).",
+    "Season 3: Wheat follows a crop from the same family, which can carry over pests and diseases (uncited principle).",
+    "No legume in this plan, so no nitrogen credit."
+   ],
+   "vs_current_practice": {
+    "current_practice_sequence": [
+     "maize",
+     "maize",
+     "maize"
+    ],
+    "composite_change": 6.6,
+    "goal_changes": {
+     "water_saving": 16.7,
+     "soil_health": 0.0,
+     "risk_reduction": 27.9,
+     "income": -4.2,
+     "fallow_use": 4.6,
+     "food_security": 1.8
+    },
+    "note": "Compared with repeating your current crop for three seasons (scored with the same method)."
+   },
+   "rule_events": [
+    {
+     "rule": "same_family",
+     "season": 1,
+     "detail": "wheat",
+     "points": -5
+    },
+    {
+     "rule": "same_family",
+     "season": 2,
+     "detail": "sorghum",
+     "points": -5
+    },
+    {
+     "rule": "same_family",
+     "season": 3,
+     "detail": "wheat",
+     "points": -5
+    }
+   ]
+  }
+ ],
+ "current_practice_reference": {
+  "sequence": [
+   "maize",
+   "maize",
+   "maize"
+  ],
+  "composite": 59.8,
+  "goals": {
+   "water_saving": 41.7,
+   "soil_health": 0.0,
+   "risk_reduction": 51.1,
+   "income": 52.6,
+   "fallow_use": 63.0,
+   "food_security": 70.2
+  }
+ },
+ "disclaimer": "These recommendations are decision-support guidance based on regional data. They do not replace advice from a local agricultural extension officer.",
+ "sources": {
+  "S1": {
+   "cite": "Mudare S., Jing J., Makowski D., et al. (2025). Crop rotations synergize yield, nutrition, and revenue: a meta-analysis. Nature Communications 16, 9552.",
+   "url": "https://doi.org/10.1038/s41467-025-64567-9"
+  },
+  "S2": {
+   "cite": "Franke A.C., van den Brand G.J., Vanlauwe B., Giller K.E. (2018). Systematic review of grain-legume rotations with cereals in sub-Saharan Africa (44 publications, 199 observations).",
+   "url": "https://thehive.icipe.org/all-prp/490"
+  },
+  "S3": {
+   "cite": "Bagayoko M., Buerkert A., Lung G., Bationo A., Roemheld V. (2000). Cereal/legume rotation effects on cereal growth in Sudano-Sahelian West Africa. Plant and Soil 218:103-116.",
+   "url": "https://doi.org/10.1023/A:1014957605852"
+  },
+  "S4": {
+   "cite": "FAO (1986) seasonal crop water needs, as tabulated by SSWM (Crop Selection factsheet).",
+   "url": "https://sswm.info/water-nutrient-cycle/water-use/hardwares/conservation-soil-moisture/crop-selection"
+  },
+  "S5": {
+   "cite": "University of Nebraska CropWatch (2020), summarising Gentry et al. (2013) and Seifert et al.: Yield penalties for continuous corn and soybean in the Midwest, US.",
+   "url": "https://cropwatch.unl.edu/2020/yield-penalties-continuous-corn-and-soybean-midwest-us"
+  },
+  "S6": {
+   "cite": "China crop-rotation meta-analysis (45 studies, 214 comparisons), record 19654813 on peeref.",
+   "url": "https://peeref.com/works/19654813"
+  },
+  "S7": {
+   "cite": "FAO and IIASA (2025). Global Agro-ecological Zoning v5 (GAEZ v5) model documentation.",
+   "url": "https://www.fao.org/gaez/en"
+  },
+  "S8": {
+   "cite": "Global systematic review with meta-analysis reveals yield advantage of legume-based rotations and its drivers. Nature Communications 13 (2022).",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/9395539"
+  },
+  "S9": {
+   "cite": "Yao et al. (2025). Legume-rice rotations. One Earth.",
+   "url": "https://agritrop.cirad.fr/611529/1/Yao%20et%20al.%2C%202025.pdf"
+  }
+ }
+}

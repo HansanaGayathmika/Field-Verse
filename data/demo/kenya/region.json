@@ -1,0 +1,87 @@
+{
+  "id": "kenya-nakuru",
+  "name": "Nakuru County (near Njoro), Kenya",
+  "shortName": "Nakuru",
+  "country": "Kenya",
+  "countryCode": "KE",
+  "latitude": -0.33,
+  "longitude": 35.94,
+  "elevationNote": "Highlands of the Rift Valley, roughly 2,100–2,300 m above sea level",
+  "agroEcologicalZone": "Rift Valley highlands",
+  "tagline": "Cool highland farms with two rainy seasons",
+  "description": "The farmland around Njoro in Nakuru County sits high in Kenya's Rift Valley. Temperatures stay cool all year and rain comes in two seasons — the 'long rains' and the 'short rains'.",
+  "farmingContext": [
+    "Maize and beans are important household and market crops in the area.",
+    "Many farms grow maize during the long rains; the short rains can support a second, shorter crop.",
+    "Cool temperatures at this altitude slow crop growth, so crops take longer than in the lowlands."
+  ],
+  "seasons": [
+    {
+      "name": "Long rains",
+      "months": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "description": "Main growing season; rain peaks around April."
+    },
+    {
+      "name": "Short rains",
+      "months": [
+        10,
+        11,
+        12
+      ],
+      "description": "Second, shorter rainy period."
+    },
+    {
+      "name": "Dry period",
+      "months": [
+        1,
+        2
+      ],
+      "description": "Driest months of the year."
+    }
+  ],
+  "supportedCrops": [
+    "maize",
+    "common-bean",
+    "lablab",
+    "cowpea",
+    "sorghum",
+    "soybean"
+  ],
+  "commonCrops": [
+    "maize",
+    "common-bean",
+    "soybean"
+  ],
+  "demoFarm": {
+    "farmName": "Demo maize farm — Njoro",
+    "currentCrop": "maize",
+    "cropHistory": [
+      "maize",
+      "maize"
+    ],
+    "soilType": "unknown",
+    "irrigation": "none",
+    "harvestMonth": 8,
+    "nextPlantingMonth": 10,
+    "seasonsPerYear": 1
+  },
+  "dataStatus": {
+    "climate": "observed",
+    "soil": "estimated",
+    "vegetation": "observed",
+    "rotations": "demo",
+    "scenarios": "demo"
+  },
+  "contentSource": {
+    "sourceType": "estimated",
+    "note": "Regional farming context is general background compiled by the Field Verse team for the demo. Verify details with the county agricultural extension office."
+  },
+  "supportRadiusKm": 50
+}

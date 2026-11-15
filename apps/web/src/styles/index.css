@@ -1,0 +1,283 @@
+@import 'tailwindcss';
+@import '@fontsource-variable/manrope';
+@import '@fontsource-variable/fraunces';
+@import 'leaflet/dist/leaflet.css';
+
+/* ------------------------------------------------------------------
+   FieldVerse design tokens  (see docs/DESIGN_SYSTEM.md)
+   ------------------------------------------------------------------ */
+@theme {
+  --color-forest-950: #0b1f19;
+  --color-forest-900: #102d24;
+  --color-forest-800: #17402f;
+  --color-forest-700: #1d533d;
+  --color-emerald-700: #106247;
+  --color-emerald-600: #16805d;
+  --color-emerald-500: #1e9a71;
+  --color-emerald-100: #dcefe5;
+  --color-sage-400: #8fbfa5;
+  --color-sage-200: #cfe3d7;
+  --color-sage-100: #e7f1eb;
+  --color-gold-600: #b48a3c;
+  --color-gold-500: #d6ac60;
+  --color-gold-100: #f6ead2;
+  --color-cream-50: #fbfaf5;
+  --color-cream-100: #f5f3eb;
+  --color-cream-200: #ebe7d9;
+  --color-charcoal: #17231d;
+  --color-ink-muted: #4a5a51;
+  --color-soil-700: #5b3a22;
+  --color-soil-500: #8a6142;
+  --color-soil-300: #c19a74;
+  --color-sky-200: #cfe6f5;
+  --color-sky-100: #e8f3fa;
+
+  /* Chart palette — validated reference slots (dataviz skill) */
+  --color-series-1: #2a78d6; /* rainfall / strategy 1 */
+  --color-series-2: #eb6834; /* temperature / strategy 2 */
+  --color-series-3: #1baf7a; /* strategy 3 */
+  --color-series-veg: #008300;
+
+  /* Status (reserved; always paired with icon + text) */
+  --color-good: #157347;
+  --color-warning: #a35f00;
+  --color-critical: #b42318;
+
+  --font-sans: 'Manrope Variable', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Fraunces Variable', ui-serif, Georgia, serif;
+
+  --radius-xl: 1rem;
+  --radius-2xl: 1.25rem;
+  --shadow-card: 0 1px 2px rgb(16 45 36 / 0.06), 0 8px 24px -12px rgb(16 45 36 / 0.18);
+}
+
+@layer base {
+  html {
+    -webkit-text-size-adjust: 100%;
+  }
+  body {
+    @apply bg-cream-100 text-charcoal font-sans antialiased;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  h1,
+  h2,
+  h3 {
+    @apply font-display text-forest-900;
+    letter-spacing: -0.01em;
+    line-height: 1.15;
+  }
+  :focus-visible {
+    outline: 3px solid var(--color-gold-500);
+    outline-offset: 2px;
+    border-radius: 6px;
+  }
+  ::selection {
+    background: var(--color-gold-100);
+  }
+}
+
+/* Leaflet controls should be large enough to tap */
+.leaflet-touch .leaflet-bar a {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+}
+.leaflet-container {
+  font-family: var(--font-sans);
+  /* Keep Leaflet's internal z-indexes (controls use 1000) inside the map, so they never draw over the navbar. */
+  isolation: isolate;
+}
+
+/* Low-bandwidth mode: no decorative motion */
+.low-bandwidth *,
+.low-bandwidth *::before,
+.low-bandwidth *::after {
+  animation-duration: 0.001ms !important;
+  animation-iteration-count: 1 !important;
+  transition-duration: 0.001ms !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Ambient keyframes used by illustrations */
+@keyframes fv-sway {
+  0%,
+  100% {
+    transform: rotate(-2deg);
+  }
+  50% {
+    transform: rotate(2deg);
+  }
+}
+@keyframes fv-drift {
+  from {
+    transform: translateX(-10%);
+  }
+  to {
+    transform: translateX(110%);
+  }
+}
+@keyframes fv-rain {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  20% {
+    opacity: 0.8;
+  }
+  to {
+    transform: translateY(120px);
+    opacity: 0;
+  }
+}
+.fv-sway {
+  animation: fv-sway 4s ease-in-out infinite;
+  transform-box: fill-box;
+  transform-origin: 50% 100%;
+}
+
+/* Print: decision card */
+@media print {
+  @page {
+    margin: 14mm;
+  }
+  body {
+    background: white !important;
+  }
+  .no-print {
+    display: none !important;
+  }
+  .print-card {
+    box-shadow: none !important;
+    border: 1px solid #ccc !important;
+    break-inside: avoid;
+  }
+  a[href^='http']::after {
+    content: ' (' attr(href) ')';
+    font-size: 0.75em;
+    color: #555;
+  }
+}
+
+/* ==================================================================
+   "Fresh Pine" app theme — Explore, My Farm (and its tools), My Plan, Community.
+   Applied by <AppLayout> as <html class="fv-theme-app"> on those routes only,
+   so dialogs and popovers rendered outside the page tree match as well.
+   It re-points the existing design tokens (components stay unchanged).
+   All text pairs checked against WCAG AA (see docs/DESIGN_SYSTEM.md).
+   ------------------------------------------------------------------ */
+html.fv-theme-app {
+  /* Canvas: cool mist instead of warm parchment — cards separate cleanly */
+  --color-cream-50: #fafcfb; /* header / light surfaces, light text on dark */
+  --color-cream-100: #f3f6f4; /* page background, inner stat tiles */
+  --color-cream-200: #e4ebe7; /* neutral badges, dividers */
+
+  /* Primary — deeper, more confident pine */
+  --color-emerald-700: #0a6247; /* hover / links (7.4:1 on white) */
+  --color-emerald-600: #0e7a57; /* primary buttons, active states (5.3:1 with white text) */
+  --color-emerald-500: #17956b; /* focus ring, highlights */
+  --color-emerald-100: #dff1e8; /* selected chips, success tint */
+
+  /* Supporting greens */
+  --color-sage-400: #86b8a0;
+  --color-sage-200: #cde3d8;
+  --color-sage-100: #e6f1ec; /* insight / info boxes */
+
+  /* Deep surfaces (location banner, tool tiles) */
+  --color-forest-950: #0a1f19;
+  --color-forest-900: #0f2a22;
+  --color-forest-800: #163d30;
+  --color-forest-700: #1d5340;
+
+  /* Accent — richer harvest gold, used sparingly for secondary CTAs and demo labels */
+  --color-gold-600: #8e651c; /* hover: white text now 5.2:1 (was 3.2:1) */
+  --color-gold-500: #d4a24c;
+  --color-gold-100: #f8efdc;
+
+  /* Text */
+  --color-charcoal: #10201a; /* 15.5:1 on the page background */
+  --color-ink-muted: #4a5b53; /* 6.8:1 on the gradient, 6.4:1 on the #DBDBDB boxes */
+
+  /* Information */
+  --color-sky-100: #e7f1fa;
+  --color-sky-200: #cfe4f5;
+
+  /* Softer, more even elevation */
+  --shadow-card: 0 1px 2px rgb(15 42 34 / 0.05), 0 10px 30px -14px rgb(15 42 34 / 0.16);
+}
+
+/* Interaction rules live in the base layer so component utilities (e.g. error borders) still win. */
+@layer base {
+  /* Keyboard focus: pine ring (≥3:1 on white and on dark tiles; the global gold ring is too faint on white) */
+  html.fv-theme-app :focus-visible {
+    outline-color: var(--color-emerald-500);
+  }
+  /* Form fields: one consistent border and focus treatment */
+  html.fv-theme-app :is(input:not([type='checkbox'], [type='radio'], [type='range']), select, textarea) {
+    border-color: rgb(15 42 34 / 0.16);
+    transition:
+      border-color 0.15s ease,
+      box-shadow 0.15s ease;
+  }
+  html.fv-theme-app :is(input:not([type='checkbox'], [type='radio'], [type='range']), select, textarea):hover {
+    border-color: rgb(15 42 34 / 0.3);
+  }
+  html.fv-theme-app :is(input:not([type='checkbox'], [type='radio'], [type='range']), select, textarea):focus-visible {
+    outline: none;
+    border-color: var(--color-emerald-600);
+    box-shadow: 0 0 0 3px rgb(23 149 107 / 0.22);
+  }
+  html.fv-theme-app ::selection {
+    background: var(--color-emerald-100);
+    color: var(--color-forest-900);
+  }
+}
+
+/* ------------------------------------------------------------------
+   Background picture, light boxes and dark navbar (same sections as the theme above)
+   - Page area between header and footer (edge to edge, no frame): the farmland background picture.
+   - White boxes become #DBDBDB; form fields stay white for easy typing.
+   - Navbar: solid #124B35 with white text (set in AppLayout).
+   Unlayered on purpose so it wins over the utility classes it replaces.
+   ------------------------------------------------------------------ */
+/* Background picture (soft farmland hills, public/media/app/backgground.jpg) on the page and the
+   content area. Fixed while scrolling; anchored to the bottom so the hills and leaves always show.
+   The cream fallback matches the picture's sky while it loads. */
+/* "Dusk veil": a soft, slightly darker wash over every page background — deep blue at the top, a
+   touch of violet in the middle, back to green at the bottom — so the greens sit in a richer scene.
+   Kept light enough that dark text on the page stays above 4.5:1. */
+:root {
+  --fv-veil: linear-gradient(180deg, rgb(36 54 132 / 0.22) 0%, rgb(92 66 156 / 0.13) 40%, rgb(18 92 72 / 0.14) 100%);
+}
+html.fv-theme-app body,
+html.fv-theme-app main#main {
+  background:
+    var(--fv-veil),
+    url('/media/app/backg.png') center bottom / cover no-repeat,
+    #e9eae4;
+  background-attachment: fixed;
+}
+/* The other pages (account, saved plans, data, …) get the same veil over a calm blue-violet-green wash. */
+html:not(.fv-theme-app) body {
+  background:
+    var(--fv-veil),
+    linear-gradient(160deg, #e6ebf4 0%, #ebe6f3 45%, #e2eee6 100%);
+  background-attachment: fixed;
+}
+/* Room at the end of the page so the last content clears the floating astronaut. */
+html.fv-theme-app main#main {
+  padding-bottom: 4rem;
+}
+html.fv-theme-app main#main .bg-white:not(input, select, textarea) {
+  background-color: #DBDBDB;
+}

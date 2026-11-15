@@ -1,0 +1,28 @@
+{
+ "location": {
+  "lat": -12.56,
+  "lon": -55.72
+ },
+ "current_crop": "soybean",
+ "harvest_month": 2,
+ "previous_crop": "maize",
+ "previous_crop_2": "soybean",
+ "next_planting_month": 3,
+ "seasons_per_year": 2,
+ "water_access": "rainfall_only",
+ "waterlogging": "none",
+ "input_level": "high",
+ "soil_texture": "unknown",
+ "soil_ph": null,
+ "excluded_crops": [
+  "wetland_rice"
+ ],
+ "priorities": {
+  "water_saving": "slightly_important",
+  "soil_health": "important",
+  "risk_reduction": "important",
+  "income": "very_important",
+  "fallow_use": "important",
+  "food_security": "slightly_important"
+ }
+}

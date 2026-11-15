@@ -1,0 +1,184 @@
+{
+  "$ref": "#/definitions/model-info.response",
+  "definitions": {
+    "model-info.response": {
+      "type": "object",
+      "properties": {
+        "schemaVersion": {
+          "type": "string",
+          "const": "1.0"
+        },
+        "provider": {
+          "type": "string",
+          "enum": [
+            "demo",
+            "remote"
+          ]
+        },
+        "name": {
+          "type": "string",
+          "maxLength": 200
+        },
+        "modelVersion": {
+          "anyOf": [
+            {
+              "type": "string",
+              "maxLength": 100
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "ready",
+            "degraded",
+            "unavailable"
+          ]
+        },
+        "capabilities": {
+          "type": "object",
+          "properties": {
+            "rotationComparison": {
+              "type": "boolean"
+            },
+            "climateScenario": {
+              "type": "boolean"
+            },
+            "gapAnalysis": {
+              "type": "boolean"
+            },
+            "constraints": {
+              "type": "string",
+              "enum": [
+                "none",
+                "rules",
+                "model"
+              ]
+            },
+            "scenarioInput": {
+              "type": "string",
+              "enum": [
+                "presets",
+                "continuous"
+              ]
+            }
+          },
+          "required": [
+            "rotationComparison",
+            "climateScenario",
+            "gapAnalysis",
+            "constraints",
+            "scenarioInput"
+          ],
+          "additionalProperties": false
+        },
+        "supportedRegions": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 2,
+            "maxLength": 64,
+            "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+          }
+        },
+        "supportedCrops": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 2,
+            "maxLength": 64,
+            "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+          },
+          "default": []
+        },
+        "scenarioPresets": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "rainfallChangePercent": {
+                "type": "number",
+                "minimum": -50,
+                "maximum": 50
+              },
+              "temperatureChangeCelsius": {
+                "type": "number",
+                "minimum": -2,
+                "maximum": 5
+              },
+              "id": {
+                "type": "string",
+                "maxLength": 60
+              },
+              "label": {
+                "type": "string",
+                "maxLength": 120
+              },
+              "description": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "maxLength": 400
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              }
+            },
+            "required": [
+              "rainfallChangePercent",
+              "temperatureChangeCelsius",
+              "id",
+              "label"
+            ],
+            "additionalProperties": false
+          },
+          "default": []
+        },
+        "trainingDataSummary": {
+          "anyOf": [
+            {
+              "type": "string",
+              "maxLength": 2000
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "lastUpdated": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "notes": {
+          "anyOf": [
+            {
+              "type": "string",
+              "maxLength": 2000
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "schemaVersion",
+        "provider",
+        "name",
+        "modelVersion",
+        "status",
+        "capabilities",
+        "supportedRegions"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}

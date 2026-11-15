@@ -1,0 +1,22 @@
+{
+  "name": "@fieldverse/contracts",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "main": "./index.ts",
+  "types": "./index.ts",
+  "exports": {
+    ".": "./index.ts"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "jsonschema": "tsx scripts/export-json-schema.ts"
+  },
+  "dependencies": {
+    "zod": "^3.25.0"
+  },
+  "devDependencies": {
+    "zod-to-json-schema": "^3.24.5"
+  }
+}

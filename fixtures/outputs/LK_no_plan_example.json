@@ -1,0 +1,273 @@
+{
+ "knowledge_base_version": "starter-0.1 (unreviewed by agronomists)",
+ "farmer_input_normalised": {
+  "lat": 8.2632,
+  "lon": 80.2082,
+  "current_crop": "fallow",
+  "previous_crop": "wetland_rice",
+  "previous_crop_2": "wetland_rice",
+  "harvested": false,
+  "harvest_month": null,
+  "next_planting_month": 10,
+  "seasons_per_year": 1,
+  "water_access": "rainfall_only",
+  "waterlogging": "weeks",
+  "input_level": "minimal",
+  "soil_texture": "clay",
+  "soil_ph": null,
+  "excluded_crops": [
+   "wetland_rice"
+  ],
+  "priorities": {
+   "water_saving": "important",
+   "soil_health": "important",
+   "risk_reduction": "important",
+   "income": "important",
+   "fallow_use": "important",
+   "food_security": "important"
+  }
+ },
+ "assumptions": [],
+ "warnings": [
+  "Only a few crops can be grown under the conditions you described (for example long standing water, no irrigation or a short season), so fewer clearly different plans are possible.",
+  "Reality check: The regional model rates your own recent crop(s) (Wetland rice) as marginal or worse for your area. If they do well for you, the model may be under-rating your area, so treat suitability scores as conservative.",
+  "No valid 3-season plan could be built. Only Sorghum is workable under the answers given, and a rotation needs at least two crops. Relaxing an excluded crop, or confirming irrigation or drainage, may open more options."
+ ],
+ "site_profile": {
+  "gaez_cell_id": "r980c3122",
+  "gaez_cell_lat": 8.291667,
+  "gaez_cell_lon": 80.208333,
+  "distance_to_cell_km": 3.2,
+  "gaez_classes_by_management": {
+   "HRLM": {
+    "wetland_rice": 4,
+    "maize": 1,
+    "soybean": 1,
+    "wheat": 8,
+    "sorghum": 2,
+    "pearl_millet": 4,
+    "phaseolus_bean": 2,
+    "cowpea": 1,
+    "pigeonpea": 1,
+    "groundnut": 1,
+    "sesame": 2,
+    "sweet_potato": 2
+   },
+   "HILM": {
+    "wetland_rice": 2,
+    "maize": 1,
+    "soybean": 1,
+    "wheat": 8,
+    "sorghum": 1,
+    "pearl_millet": 3,
+    "phaseolus_bean": 2,
+    "cowpea": 1,
+    "pigeonpea": 1,
+    "groundnut": 1,
+    "sesame": 2,
+    "sweet_potato": 1
+   },
+   "LRLM": {
+    "wetland_rice": 5,
+    "maize": 2,
+    "soybean": 4,
+    "wheat": 8,
+    "sorghum": 3,
+    "pearl_millet": 4,
+    "phaseolus_bean": 4,
+    "cowpea": 4,
+    "pigeonpea": 2,
+    "groundnut": 4,
+    "sesame": 4,
+    "sweet_potato": 4
+   },
+   "LILM": {
+    "wetland_rice": 3,
+    "maize": 2,
+    "soybean": 4,
+    "wheat": 8,
+    "sorghum": 3,
+    "pearl_millet": 4,
+    "phaseolus_bean": 4,
+    "cowpea": 3,
+    "pigeonpea": 2,
+    "groundnut": 3,
+    "sesame": 4,
+    "sweet_potato": 3
+   }
+  },
+  "soil": {
+   "ph": 5.87,
+   "clay_pct": 27.0,
+   "sand_pct": 49.9,
+   "silt_pct": 23.1,
+   "organic_carbon_g_kg": 25.8,
+   "total_nitrogen_g_kg": 2.08,
+   "texture_class": "loam",
+   "source": "SoilGrids 5 km, 0-30 cm depth-weighted, at the suitability cell"
+  },
+  "rainfall": {
+   "source": "GPM IMERG monthly 11 years at site AS01 (0 km away)",
+   "monthly_mean_mm": [
+    80.9,
+    60.8,
+    66.6,
+    151.5,
+    195.6,
+    42.9,
+    42.9,
+    70.5,
+    100.5,
+    243.2,
+    303.2,
+    183.5
+   ],
+   "monthly_cv": [
+    0.82,
+    0.64,
+    0.83,
+    0.51,
+    0.61,
+    0.39,
+    1.06,
+    0.57,
+    0.54,
+    0.51,
+    0.35,
+    0.53
+   ],
+   "annual_mm": 1542.0,
+   "wet_months_ge_100mm": 6
+  },
+  "neighbourhood_variation_classes": 1.09,
+  "seasons_per_year_used": 1,
+  "season_plan": [
+   {
+    "season": 1,
+    "plant_month": "Oct"
+   },
+   {
+    "season": 2,
+    "plant_month": "Oct"
+   },
+   {
+    "season": 3,
+    "plant_month": "Oct"
+   }
+  ],
+  "minimum_suitability_score_used": 25
+ },
+ "crops_considered": [
+  {
+   "crop": "wetland_rice",
+   "eligible_in_seasons": [],
+   "suitability_score": 40.0,
+   "why_not": [
+    "excluded by the farmer"
+   ]
+  },
+  {
+   "crop": "maize",
+   "eligible_in_seasons": [],
+   "suitability_score": 85.0,
+   "why_not": [
+    "standing water for weeks; this crop does not tolerate waterlogging"
+   ]
+  },
+  {
+   "crop": "soybean",
+   "eligible_in_seasons": [],
+   "suitability_score": 55.0,
+   "why_not": [
+    "standing water for weeks; this crop does not tolerate waterlogging"
+   ]
+  },
+  {
+   "crop": "wheat",
+   "eligible_in_seasons": [],
+   "suitability_score": 0.0,
+   "why_not": [
+    "rated not suitable or too marginal here by the regional model",
+    "standing water for weeks; this crop does not tolerate waterlogging"
+   ]
+  },
+  {
+   "crop": "sorghum",
+   "eligible_in_seasons": [
+    1,
+    2,
+    3
+   ],
+   "suitability_score": 70.0,
+   "why_not": []
+  },
+  {
+   "crop": "pearl_millet",
+   "eligible_in_seasons": [],
+   "suitability_score": 55.0,
+   "why_not": [
+    "standing water for weeks; this crop does not tolerate waterlogging"
+   ]
+  },
+  {
+   "crop": "phaseolus_bean",
+   "eligible_in_seasons": [],
+   "suitability_score": 55.0,
+   "why_not": [
+    "standing water for weeks; this crop does not tolerate waterlogging"
+   ]
+  },
+  {
+   "crop": "cowpea",
+   "eligible_in_seasons": [],
+   "suitability_score": 55.0,
+   "why_not": [
+    "standing water for weeks; this crop does not tolerate waterlogging"
+   ]
+  },
+  {
+   "crop": "pigeonpea",
+   "eligible_in_seasons": [],
+   "suitability_score": 85.0,
+   "why_not": [
+    "standing water for weeks; this crop does not tolerate waterlogging"
+   ]
+  },
+  {
+   "crop": "groundnut",
+   "eligible_in_seasons": [],
+   "suitability_score": 55.0,
+   "why_not": [
+    "standing water for weeks; this crop does not tolerate waterlogging"
+   ]
+  },
+  {
+   "crop": "sesame",
+   "eligible_in_seasons": [],
+   "suitability_score": 55.0,
+   "why_not": [
+    "standing water for weeks; this crop does not tolerate waterlogging"
+   ]
+  },
+  {
+   "crop": "sweet_potato",
+   "eligible_in_seasons": [],
+   "suitability_score": 55.0,
+   "why_not": [
+    "standing water for weeks; this crop does not tolerate waterlogging"
+   ]
+  }
+ ],
+ "confidence": {
+  "level": "Low",
+  "score": 45,
+  "reasons": [
+   "The regional model rates your own recent crop(s) (Wetland rice) as marginal or worse for your area. If they do well for you, the model may be under-rating your area, so treat suitability scores as conservative."
+  ],
+  "note": "Heuristic: points are deducted for each unknown or weak input. Not a statistical probability."
+ },
+ "status": "single_crop_only",
+ "status_note": "Only Sorghum is workable under the answers given, and a rotation needs at least two crops. Relaxing an excluded crop, or confirming irrigation or drainage, may open more options.",
+ "plans": [],
+ "disclaimer": "These recommendations are decision-support guidance based on regional data. They do not replace advice from a local agricultural extension officer."
+}

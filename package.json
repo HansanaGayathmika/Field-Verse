@@ -1,0 +1,45 @@
+{
+  "name": "field-verse",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Field Verse — One Farm. Three Futures. Better Decisions. NASA Space Apps Challenge 2026 (Software Engineering component).",
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "dev": "concurrently -n api,web -c green,cyan \"npm run dev -w @fieldverse/api\" \"npm run dev -w @fieldverse/web\"",
+    "dev:api": "npm run dev -w @fieldverse/api",
+    "dev:web": "npm run dev -w @fieldverse/web",
+    "db:memory": "npm run db:memory -w @fieldverse/api",
+    "seed": "npm run seed -w @fieldverse/api",
+    "build": "npm run build -w @fieldverse/api && npm run build -w @fieldverse/web",
+    "typecheck": "npm run typecheck --workspaces --if-present",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "test": "npm run test --workspaces --if-present",
+    "test:e2e": "playwright test",
+    "contracts:jsonschema": "npm run jsonschema -w @fieldverse/contracts",
+    "data:prepare": "node scripts/prepare-demo-data.mjs",
+    "verify:ml": "npm run verify:ml -w @fieldverse/api"
+  },
+  "type": "module",
+  "engines": {
+    "node": ">=20.11"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.28.0",
+    "@playwright/test": "^1.52.0",
+    "@types/node": "^22.15.0",
+    "concurrently": "^9.1.2",
+    "eslint": "^9.28.0",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-react-refresh": "^0.4.20",
+    "globals": "^16.2.0",
+    "prettier": "^3.5.3",
+    "tsx": "^4.19.4",
+    "typescript": "^5.8.3",
+    "typescript-eslint": "^8.33.0",
+    "vitest": "^3.2.0"
+  }
+}

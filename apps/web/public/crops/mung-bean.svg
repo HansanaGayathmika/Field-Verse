@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-labelledby="t"><title id="t">Mung bean plant with thin green pods and small green beans</title>
+<circle cx="60" cy="60" r="58" fill="#E7F1EB"/>
+<path d="M18 100h84" stroke="#8A6142" stroke-width="4" stroke-linecap="round"/>
+<path d="M60 100V48M60 70l-18-14M60 62l18-14" stroke="#4E8F3A" stroke-width="3" stroke-linecap="round"/>
+<g fill="#6BAA4C"><ellipse cx="38" cy="50" rx="8" ry="5" transform="rotate(-30 38 50)"/><ellipse cx="32" cy="58" rx="8" ry="5" transform="rotate(20 32 58)"/><ellipse cx="44" cy="44" rx="8" ry="5" transform="rotate(-80 44 44)"/>
+<ellipse cx="82" cy="44" rx="8" ry="5" transform="rotate(30 82 44)"/><ellipse cx="88" cy="52" rx="8" ry="5" transform="rotate(-20 88 52)"/><ellipse cx="76" cy="38" rx="8" ry="5" transform="rotate(80 76 38)"/>
+<ellipse cx="60" cy="36" rx="7" ry="10" fill="#5FA046"/><ellipse cx="52" cy="40" rx="5" ry="8" transform="rotate(-40 52 40)"/><ellipse cx="68" cy="40" rx="5" ry="8" transform="rotate(40 68 40)"/></g>
+<g stroke="#2F6B2A" stroke-width="2.6" stroke-linecap="round" fill="none"><path d="M60 72c-4 6-6 12-6 18"/><path d="M60 72c-1 7 0 13 2 18"/><path d="M60 72c3 6 7 10 12 14"/><path d="M60 72c-6 4-10 10-12 16"/></g>
+<g fill="#7FB83E" stroke="#4E8F3A" stroke-width=".8"><ellipse cx="28" cy="94" rx="3.2" ry="2.4"/><ellipse cx="35" cy="96" rx="3.2" ry="2.4"/><ellipse cx="31" cy="90" rx="3.2" ry="2.4"/><ellipse cx="86" cy="94" rx="3.2" ry="2.4"/><ellipse cx="92" cy="91" rx="3.2" ry="2.4"/></g></svg>

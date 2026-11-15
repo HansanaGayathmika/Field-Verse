@@ -1,0 +1,154 @@
+{
+  "schemaVersion": "1.0",
+  "fixtureType": "illustrative_demo",
+  "note": "ILLUSTRATIVE DEMO FIXTURE prepared by the Field Verse SE team to demonstrate the interface. These strategies are NOT ML predictions or agronomic recommendations. Indicator ratings are illustrative 1–5 values chosen by people from general crop knowledge.",
+  "appliesTo": { "currentCrops": ["rice"] },
+  "limitations": [
+    "Demo strategies were prepared by hand for a typical rice field near Anuradhapura; they are not calculated for your exact field.",
+    "No market prices, seed availability or labour data were used.",
+    "Soil values come from a global estimate (SoilGrids), not a soil test of your field."
+  ],
+  "strategies": [
+    {
+      "id": "current-rice-rice",
+      "name": "Rice – Rice (current)",
+      "kind": "current",
+      "summary": "Rice in both Maha and Yala seasons, which needs plenty of water in both seasons.",
+      "steps": [
+        { "cropId": "rice", "role": "main", "season": { "name": "Maha", "startMonth": 10, "endMonth": 2 }, "plantingWindow": { "startMonth": 10, "endMonth": 11 } },
+        { "cropId": "rice", "role": "main", "season": { "name": "Yala", "startMonth": 4, "endMonth": 8 }, "plantingWindow": { "startMonth": 4, "endMonth": 5 } }
+      ],
+      "feasibility": { "status": "feasible", "reasons": ["This is the pattern many farms already follow when tank water is available for Yala."] },
+      "suitability": { "level": "medium", "score": null, "scoreType": "none", "sourceType": "demo" },
+      "indicators": [
+        { "id": "water_demand", "label": "Water needed", "rating": 5, "direction": "lower_is_better", "ratingType": "illustrative", "sourceType": "demo", "explanation": "Rice usually needs standing water, and the Yala crop grows through the driest months." },
+        { "id": "soil_cover", "label": "Soil cover through the year", "rating": 4, "direction": "higher_is_better", "ratingType": "illustrative", "sourceType": "demo", "explanation": "Two crops keep the field covered for most of the year." },
+        { "id": "nitrogen_contribution", "label": "Natural nitrogen added", "rating": 1, "direction": "higher_is_better", "ratingType": "illustrative", "sourceType": "demo", "explanation": "Rice does not add nitrogen; it depends on fertiliser and soil reserves." },
+        { "id": "climate_risk", "label": "Exposure to dry spells", "rating": 4, "direction": "lower_is_better", "ratingType": "illustrative", "sourceType": "demo", "explanation": "A Yala rice crop can fail if tank water runs short." },
+        { "id": "income_opportunity", "label": "Range of products to sell", "rating": 2, "direction": "higher_is_better", "ratingType": "illustrative", "sourceType": "demo", "explanation": "One crop type means one market. No price data was used." }
+      ],
+      "water": { "relativeDemand": "similar", "notes": ["NASA POWER shows June–August is the driest part of the year here, so Yala rice relies on stored water."], "sourceType": "observed" },
+      "soilCover": { "monthsCovered": 10, "notes": ["Field is bare for short periods between seasons."], "sourceType": "demo" },
+      "benefits": [
+        { "text": "Familiar crop with known methods, equipment and markets.", "sourceType": "demo" },
+        { "text": "Rice tolerates waterlogged paddy soils well.", "sourceType": "estimated" }
+      ],
+      "risks": [
+        { "text": "Yala rice may be lost or reduced in years when tanks do not fill.", "severity": "high", "sourceType": "demo" },
+        { "text": "Growing the same crop repeatedly can build up pests, diseases and weeds.", "severity": "medium", "sourceType": "estimated" }
+      ],
+      "explanation": {
+        "summary": "This is your current pattern. It is shown so you can compare the alternatives against what you already do.",
+        "details": ["Rainfall data shows most rain falls October–December, which supports Maha rice.", "Yala rice grows mostly in months with little rain, so stored water matters most."],
+        "technical": "Baseline strategy. Indicator ratings are illustrative demo values, not model outputs."
+      },
+      "dataGaps": [
+        { "id": "tank-storage", "text": "How much water your tank or canal can supply in Yala is unknown.", "impact": "high" },
+        { "id": "field-soil-test", "text": "No soil test of your field is available.", "impact": "medium" }
+      ],
+      "localChecks": ["Ask your farmer organisation or irrigation officer about expected Yala water issues this year."],
+      "uncertainty": { "level": "high", "notes": "Illustrative demo content; no model has evaluated this field." }
+    },
+    {
+      "id": "alt-rice-mung-bean",
+      "name": "Rice – Mung bean",
+      "kind": "alternative",
+      "summary": "Keep rice in Maha, then grow quick mung bean in early Yala using less water.",
+      "steps": [
+        { "cropId": "rice", "role": "main", "season": { "name": "Maha", "startMonth": 10, "endMonth": 2 }, "plantingWindow": { "startMonth": 10, "endMonth": 11 } },
+        { "cropId": "mung-bean", "role": "short_season", "season": { "name": "Yala", "startMonth": 4, "endMonth": 6 }, "plantingWindow": { "startMonth": 4, "endMonth": 4 } },
+        { "cropId": "fallow", "role": "fallow", "season": { "name": "Dry months", "startMonth": 7, "endMonth": 9 }, "notes": "Rest period before Maha land preparation." }
+      ],
+      "feasibility": { "status": "feasible", "reasons": ["Mung bean is a short crop that can use April–May rains after the Maha harvest."] },
+      "suitability": { "level": "medium", "score": null, "scoreType": "none", "sourceType": "demo" },
+      "indicators": [
+        { "id": "water_demand", "label": "Water needed", "rating": 2, "direction": "lower_is_better", "ratingType": "illustrative", "sourceType": "demo", "explanation": "Mung bean generally needs much less water than a second rice crop." },
+        { "id": "soil_cover", "label": "Soil cover through the year", "rating": 3, "direction": "higher_is_better", "ratingType": "illustrative", "sourceType": "demo", "explanation": "The field is bare from July to September." },
+        { "id": "nitrogen_contribution", "label": "Natural nitrogen added", "rating": 3, "direction": "higher_is_better", "ratingType": "illustrative", "sourceType": "demo", "explanation": "Legumes can work with soil bacteria to add some nitrogen." },
+        { "id": "climate_risk", "label": "Exposure to dry spells", "rating": 2, "direction": "lower_is_better", "ratingType": "illustrative", "sourceType": "demo", "explanation": "A short crop finishes before the driest months." },
+        { "id": "income_opportunity", "label": "Range of products to sell", "rating": 4, "direction": "higher_is_better", "ratingType": "illustrative", "sourceType": "demo", "explanation": "Adds a second product. No price data was used." }
+      ],
+      "water": { "relativeDemand": "lower", "notes": ["April–May average roughly 100–120 mm of rain per month (NASA POWER), which a short legume may use, but dry spells still happen."], "sourceType": "observed" },
+      "soilCover": { "monthsCovered": 8, "notes": ["Bare from July to September unless a cover crop is added."], "sourceType": "demo" },
+      "benefits": [
+        { "text": "Uses less water than Yala rice, which matters in years when tanks are low.", "sourceType": "estimated" },
+        { "text": "As a legume, mung bean may add nitrogen for the next rice crop.", "sourceType": "estimated" },
+        { "text": "Changing crops can interrupt rice pest and weed cycles.", "sourceType": "estimated" }
+      ],
+      "risks": [
+        { "text": "Mung bean is damaged by waterlogging; paddy fields need good drainage.", "severity": "high", "sourceType": "estimated" },
+        { "text": "Heavy rain at harvest can spoil pods.", "severity": "medium", "sourceType": "estimated" },
+        { "text": "Market price and seed availability were not checked.", "severity": "medium", "sourceType": "demo" }
+      ],
+      "explanation": {
+        "summary": "This option lowers water needs in Yala by swapping the second rice crop for a fast legume.",
+        "details": [
+          "NASA POWER rainfall shows a smaller rainy period in April–May before the dry months.",
+          "A crop of about 60–90 days could fit in that window, depending on the variety."
+        ],
+        "technical": "Illustrative demo strategy. Indicator ratings are hand-prepared, not model outputs."
+      },
+      "dataGaps": [
+        { "id": "drainage", "text": "Whether your paddy field drains well enough for a dry-land crop.", "impact": "high" },
+        { "id": "market", "text": "Local buyers and prices for mung bean.", "impact": "medium" },
+        { "id": "seed", "text": "Availability of a suitable short-duration variety.", "impact": "medium" }
+      ],
+      "localChecks": [
+        "Ask the agricultural extension officer which mung bean varieties are recommended locally.",
+        "Check whether your field can be drained after Maha harvest.",
+        "Ask local buyers about demand before planting."
+      ],
+      "uncertainty": { "level": "high", "notes": "Illustrative demo content; actual suitability depends on drainage, variety and the season's rainfall." }
+    },
+    {
+      "id": "alt-rice-cowpea-sunn-hemp",
+      "name": "Rice – Cowpea – Sunn hemp cover",
+      "kind": "alternative",
+      "summary": "Rice in Maha, hardy cowpea in Yala, then a sunn hemp cover crop to protect and feed the soil.",
+      "steps": [
+        { "cropId": "rice", "role": "main", "season": { "name": "Maha", "startMonth": 11, "endMonth": 3 }, "plantingWindow": { "startMonth": 11, "endMonth": 11 } },
+        { "cropId": "cowpea", "role": "short_season", "season": { "name": "Yala", "startMonth": 4, "endMonth": 6 }, "plantingWindow": { "startMonth": 4, "endMonth": 4 } },
+        { "cropId": "sunn-hemp", "role": "cover", "season": { "name": "Cover period", "startMonth": 7, "endMonth": 9 }, "notes": "Turned into the soil before Maha land preparation." }
+      ],
+      "feasibility": { "status": "needs_review", "reasons": ["The sunn hemp cover crop grows in the driest months and may establish poorly without some water."] },
+      "suitability": { "level": "unknown", "score": null, "scoreType": "none", "sourceType": "demo" },
+      "indicators": [
+        { "id": "water_demand", "label": "Water needed", "rating": 2, "direction": "lower_is_better", "ratingType": "illustrative", "sourceType": "demo", "explanation": "Cowpea and sunn hemp generally cope with dry conditions." },
+        { "id": "soil_cover", "label": "Soil cover through the year", "rating": 5, "direction": "higher_is_better", "ratingType": "illustrative", "sourceType": "demo", "explanation": "The field stays covered nearly all year." },
+        { "id": "nitrogen_contribution", "label": "Natural nitrogen added", "rating": 4, "direction": "higher_is_better", "ratingType": "illustrative", "sourceType": "demo", "explanation": "Two legumes in the rotation." },
+        { "id": "climate_risk", "label": "Exposure to dry spells", "rating": 3, "direction": "lower_is_better", "ratingType": "illustrative", "sourceType": "demo", "explanation": "Cowpea is hardy, but the cover crop depends on scarce rain." },
+        { "id": "income_opportunity", "label": "Range of products to sell", "rating": 3, "direction": "higher_is_better", "ratingType": "illustrative", "sourceType": "demo", "explanation": "Cowpea adds a product; sunn hemp is for the soil, not for sale." }
+      ],
+      "water": { "relativeDemand": "lower", "notes": ["July–September rainfall is low (NASA POWER), so the cover crop may need supplementary water to establish."], "sourceType": "observed" },
+      "soilCover": { "monthsCovered": 12, "notes": ["Continuous cover can reduce erosion and weed growth."], "sourceType": "demo" },
+      "benefits": [
+        { "text": "Keeps the soil covered all year, which can reduce erosion and weeds.", "sourceType": "estimated" },
+        { "text": "Cowpea tolerates heat and dry spells better than many crops.", "sourceType": "estimated" },
+        { "text": "Turning in sunn hemp adds organic matter to the soil.", "sourceType": "estimated" }
+      ],
+      "risks": [
+        { "text": "The cover crop may fail in a very dry July–September.", "severity": "medium", "sourceType": "observed" },
+        { "text": "Extra work and seed cost for a crop that is not sold.", "severity": "medium", "sourceType": "demo" },
+        { "text": "Cowpea, like mung bean, does not tolerate waterlogging.", "severity": "high", "sourceType": "estimated" }
+      ],
+      "explanation": {
+        "summary": "This option focuses on soil health by adding two legumes and keeping the ground covered.",
+        "details": [
+          "Rainfall data shows a dry gap from June to September; the cover crop is placed in that gap, which is why it needs review.",
+          "Benefits to soil build up over several seasons, not immediately."
+        ],
+        "technical": "Illustrative demo strategy with feasibility flagged for review because cover-crop months coincide with the lowest observed rainfall."
+      },
+      "dataGaps": [
+        { "id": "cover-water", "text": "Whether any water is available to establish a cover crop in July.", "impact": "high" },
+        { "id": "seed", "text": "Local availability of sunn hemp seed.", "impact": "medium" },
+        { "id": "field-soil-test", "text": "No soil test of your field is available.", "impact": "medium" }
+      ],
+      "localChecks": [
+        "Ask whether sunn hemp seed is sold locally or through farmer organisations.",
+        "Discuss with an extension officer whether a green-manure crop fits your land preparation timing."
+      ],
+      "uncertainty": { "level": "high", "notes": "Illustrative demo content; cover-crop establishment in the dry season is especially uncertain." }
+    }
+  ]
+}

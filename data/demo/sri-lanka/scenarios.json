@@ -1,0 +1,58 @@
+{
+  "schemaVersion": "1.0",
+  "fixtureType": "illustrative_demo",
+  "note": "ILLUSTRATIVE DEMO FIXTURE. Each preset describes, in words prepared by people, how the demo strategies might be affected by a hypothetical change. These are NOT climate projections or model outputs. Unsupported slider combinations return SCENARIO_NOT_SUPPORTED.",
+  "presets": [
+    { "id": "baseline", "label": "Today's climate (baseline)", "rainfallChangePercent": 0, "temperatureChangeCelsius": 0, "description": "Observed 2001–2025 average conditions." },
+    { "id": "drier", "label": "20% less rain", "rainfallChangePercent": -20, "temperatureChangeCelsius": 0, "description": "What if every month had a fifth less rain?" },
+    { "id": "wetter", "label": "20% more rain", "rainfallChangePercent": 20, "temperatureChangeCelsius": 0, "description": "What if every month had a fifth more rain?" },
+    { "id": "hotter", "label": "2 °C warmer", "rainfallChangePercent": 0, "temperatureChangeCelsius": 2, "description": "What if every month were 2 °C warmer?" },
+    { "id": "hot-dry", "label": "Hotter and drier", "rainfallChangePercent": -20, "temperatureChangeCelsius": 2, "description": "20% less rain and 2 °C warmer together." }
+  ],
+  "effects": {
+    "drier": {
+      "explanation": [
+        "With less rain, tanks may store less water after Maha, which matters most for the Yala season.",
+        "Short, lower-water crops in Yala are generally less exposed than a second rice crop."
+      ],
+      "strategies": {
+        "current-rice-rice": { "feasibility": "needs_review", "feasibilityReason": "Yala rice may not have enough stored water in a drier year.", "indicatorDeltas": { "climate_risk": 1 }, "addRisk": { "text": "Under 20% less rain, the Yala rice crop is the most exposed part of this rotation.", "severity": "high" }, "direction": "worsens", "summary": "Yala rice becomes riskier because it relies on stored water." },
+        "alt-rice-mung-bean": { "indicatorDeltas": { "climate_risk": 1 }, "addRisk": { "text": "Less April–May rain could stress mung bean at establishment.", "severity": "medium" }, "direction": "worsens", "summary": "Slightly more risk, but mung bean still needs much less water than rice." },
+        "alt-rice-cowpea-sunn-hemp": { "feasibility": "needs_review", "feasibilityReason": "Cover crop establishment in July–September becomes even less likely.", "indicatorDeltas": { "climate_risk": 1 }, "addRisk": { "text": "The sunn hemp cover may need to be skipped in a drier year.", "severity": "medium" }, "direction": "worsens", "summary": "Cowpea likely still possible; the cover crop is doubtful." }
+      }
+    },
+    "wetter": {
+      "explanation": [
+        "More rain could fill tanks better, but heavy rain also brings waterlogging risk for dry-land crops.",
+        "Rice is less affected by wet fields than legumes."
+      ],
+      "strategies": {
+        "current-rice-rice": { "indicatorDeltas": { "climate_risk": -1 }, "direction": "improves", "summary": "More stored water could support Yala rice." },
+        "alt-rice-mung-bean": { "feasibility": "needs_review", "feasibilityReason": "Wetter Aprils raise waterlogging risk for mung bean.", "addRisk": { "text": "Waterlogging and pod rot risk increase with more rain.", "severity": "high" }, "direction": "worsens", "summary": "Waterlogging becomes a bigger concern for mung bean." },
+        "alt-rice-cowpea-sunn-hemp": { "feasibility": "feasible", "feasibilityReason": "More rain may help the cover crop establish.", "addRisk": { "text": "Cowpea may suffer in waterlogged patches.", "severity": "medium" }, "direction": "unknown", "summary": "Cover crop may establish better, but cowpea faces waterlogging risk." }
+      }
+    },
+    "hotter": {
+      "explanation": [
+        "Warmer temperatures increase how fast soil and crops lose water, even if rainfall stays the same.",
+        "Very high temperatures at flowering can reduce grain and pod setting in many crops."
+      ],
+      "strategies": {
+        "current-rice-rice": { "indicatorDeltas": { "climate_risk": 1, "water_demand": 0 }, "addRisk": { "text": "Heat during flowering in the hot Yala months may reduce rice grain filling.", "severity": "medium" }, "direction": "worsens", "summary": "More water loss and heat stress during Yala." },
+        "alt-rice-mung-bean": { "indicatorDeltas": { "climate_risk": 1 }, "addRisk": { "text": "Heat at flowering can reduce pod setting.", "severity": "medium" }, "direction": "worsens", "summary": "Some heat stress; still lower water needs than rice." },
+        "alt-rice-cowpea-sunn-hemp": { "direction": "unchanged", "summary": "Cowpea and sunn hemp are generally heat tolerant; little change in this illustrative view." }
+      }
+    },
+    "hot-dry": {
+      "explanation": [
+        "Hotter and drier conditions together are the toughest case for the Yala season.",
+        "Strategies that avoid a second rice crop are generally less exposed in this illustrative view."
+      ],
+      "strategies": {
+        "current-rice-rice": { "feasibility": "not_feasible", "feasibilityReason": "In this illustrative case, Yala rice would likely lack water.", "indicatorDeltas": { "climate_risk": 1 }, "addRisk": { "text": "High chance of Yala rice failure under hotter, drier conditions.", "severity": "high" }, "direction": "worsens", "summary": "Yala rice is unlikely to be possible." },
+        "alt-rice-mung-bean": { "feasibility": "needs_review", "feasibilityReason": "Mung bean may still be possible if planted right after harvest to use early rains.", "indicatorDeltas": { "climate_risk": 1 }, "addRisk": { "text": "Heat and dry spells could reduce mung bean yields.", "severity": "medium" }, "direction": "worsens", "summary": "Possible but riskier; timing becomes critical." },
+        "alt-rice-cowpea-sunn-hemp": { "feasibility": "needs_review", "feasibilityReason": "Cowpea is hardy, but the cover crop is unlikely without water.", "indicatorDeltas": { "climate_risk": 1 }, "addRisk": { "text": "The cover crop would probably need to be dropped.", "severity": "medium" }, "direction": "worsens", "summary": "Cowpea may cope best; the cover crop likely fails." }
+      }
+    }
+  }
+}

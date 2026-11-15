@@ -1,0 +1,27 @@
+{
+ "created": "2026-11-14 14:15",
+ "period": [
+  "2001-01-01",
+  "2020-12-31"
+ ],
+ "cells": 85857,
+ "power_stores": [
+  "https://nasa-power.s3.us-west-2.amazonaws.com/merra2/spatial/power_merra2_monthly_spatial_utc.zarr",
+  "https://nasa-power.s3.us-west-2.amazonaws.com/syn1deg/spatial/power_syn1deg_monthly_spatial_utc.zarr"
+ ],
+ "power_units": {
+  "T2M": "C",
+  "T2M_MAX": "C",
+  "T2M_MIN": "C",
+  "PRECTOTCORR": "mm/day",
+  "RH2M": "%",
+  "GWETROOT": "1",
+  "ALLSKY_SFC_SW_DWN": "W m-2"
+ },
+ "power_validation": {
+  "temp_ok": true,
+  "precip_ok": true
+ },
+ "gaez_mapset": "RES05-YXX (attainable yield) HP0120 AGERA5 HIST",
+ "gaez_spearman_class_vs_yield": -0.9879275079489074
+}
